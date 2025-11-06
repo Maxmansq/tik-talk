@@ -1,1 +1,45 @@
-<p>sidebar works!</p>
+<img 
+  src="/assets/imags/Logo-Tik-Talk_small.png"
+  alt="Logo-Tik-Talk_small"
+  class="ml16 mb20">
+<nav>
+  <ul class="main-menu-list mb20">
+    @for (item of menuItems; track item.id) {
+      <li>
+        <button class="menu-item">
+        <svg [icon]="item.icon"></svg>
+        <span>{{item.lable}}</span></button>
+      </li>
+    }
+  </ul>
+</nav>
+
+<p class="medium-text mb20">Подписчики</p>
+
+@for (profile of subscribers$ | async; track profile.id) {
+  <app-subscriber-card [profile]="profile">
+  </app-subscriber-card>
+}
+
+<div class="mt20 to-subscribers">
+  <a
+    [routerLink]="['/subscribers']"
+    class="to-subscribers-link medium-text"
+  >Все подписчики</a>
+  <svg icon="arrow" class="to-subscribers-icon"></svg>
+</div>
+
+<footer class="sidebar__footer">
+  @if (me(); as me) {
+    @if(me.avatarUrl) {
+      <img [src]="me.avatarUrl | imgUrl" alt="">
+    } @else {
+      <img src="/assets/imags/avatar.png" alt="">
+    }
+    <div class="medium-text username-text">{{ me.username }}</div>
+    <a
+      [routerLink]="['/settings']"
+      class="settings-btn">
+    <svg icon="settings"></svg></a>
+  }
+</footer>

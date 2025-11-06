@@ -1,10 +1,12 @@
 @import "fonts";
+@import "margins";
 
 :root {
   --dark-color: #000000;
   --light-color: #FFFFFF;
   --primary-color: #AE7AFF;
   --grey-color: #5F646D;
+  --dark-hover-color: #161616;
 
 }
 
@@ -17,10 +19,13 @@
 }
 
 body {
+  height: 100dvh;
   font-family: "JetBrains Mono", sans-serif;
   background: var(--dark-color);
   color: var(--light-color);
   background-image: url(/assets/imags/background_login.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .skill-tag {
@@ -42,4 +47,11 @@ body {
   font-weight: 800;
   font-size: 14px;
   line-height: 24px;
+}
+
+.medium-text {
+  font-family: "JetBrains Mono", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
 }
