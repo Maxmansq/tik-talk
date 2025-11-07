@@ -7,6 +7,7 @@
   --primary-color: #AE7AFF;
   --grey-color: #5F646D;
   --dark-hover-color: #161616;
+  --light-transparent-color: #FFFFFFBF;
 
 }
 
@@ -16,6 +17,32 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+}
+
+.h4 {
+  font-weight: 800;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0px;
+
+}
+
+.regular {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0px;
+}
+
+.h6 {
+  font-weight: 800;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0px;
+
 }
 
 body {
@@ -41,12 +68,16 @@ body {
 
 .btn {
   border: none;
+  width: 100%;
   background: var(--primary-color);
   color: var(--dark-color);
   padding: 10px 20px;
   font-weight: 800;
   font-size: 14px;
   line-height: 24px;
+  text-decoration: none;
+  cursor: pointer;
+  
 }
 
 .medium-text {
@@ -54,4 +85,41 @@ body {
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;
+}
+
+
+.tt-form-lable {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tt-form-lable__text {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  color: var(--light-transparent-color);
+}
+
+.tt-form-input {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  border: none;
+  border-bottom: 1px solid var(--light-color);
+  height: 33px;
+  background: none;
+  color: white;
+  border-radius: 4px;
+
+  &:focus-visible {
+    outline: 1px solid var(--primary-color);
+  }
+}
+
+.tt-textarea {
+  height: 84px;
+  // resize: none;
 }

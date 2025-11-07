@@ -6,9 +6,11 @@
   <ul class="main-menu-list mb20">
     @for (item of menuItems; track item.id) {
       <li>
-        <button class="menu-item">
+        <a
+          class="menu-item"
+          [routerLink]="[item.link]">
         <svg [icon]="item.icon"></svg>
-        <span>{{item.lable}}</span></button>
+        <span>{{item.lable}}</span></a>
       </li>
     }
   </ul>
