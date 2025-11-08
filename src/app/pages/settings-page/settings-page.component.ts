@@ -1,4 +1,4 @@
-import { Component, effect, inject } from '@angular/core';
+import { Component, effect, inject, ViewChild,} from '@angular/core';
 import { ProfileHeaderComponent } from '../../common-ul/profile-header/profile-header.component';
 import { FormBuilder, Validators, ɵInternalFormsSharedModule, ReactiveFormsModule } from '@angular/forms';
 import { ProfileService } from '../../data/services/profile';
@@ -14,6 +14,8 @@ import { AvatarUploadComponent } from './avatar-upload/avatar-upload.component';
 export class SettingsPageComponent {
   fb = inject(FormBuilder)
   profaleServise = inject(ProfileService)
+
+  @ViewChild(AvatarUploadComponent) avatarUploader!: any
 
   form = this.fb.group({
     firstName: ['', Validators.required],
@@ -35,12 +37,20 @@ export class SettingsPageComponent {
     
   }
 
+  ngAfterViewInit() {
+    this.avatarUploader.avatar
+  }
+
   onSave() {
     this.form.markAllAsTouched()
     this.form.updateValueAndValidity()
 
     if(this.form.invalid) {
       return
+    }
+
+    if (this.avatarUploader.avatar) {
+      firstValueFrom(this.profaleServise.uploadAvatar(this.avatarUploader.avatar))
     }
     //@ts-ignore
     firstValueFrom(this.profaleServise.patchProfile({
