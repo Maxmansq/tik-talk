@@ -8,7 +8,7 @@
   --grey-color: #5F646D;
   --dark-hover-color: #161616;
   --light-transparent-color: #FFFFFFBF;
-
+  --red-primary-color: #E99898;
 }
 
 *,
@@ -72,7 +72,7 @@ body {
   background: var(--primary-color);
   color: var(--dark-color);
   padding: 10px 20px;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 14px;
   line-height: 24px;
   text-decoration: none;

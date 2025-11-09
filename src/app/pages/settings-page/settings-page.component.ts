@@ -4,10 +4,12 @@ import { FormBuilder, Validators, ɵInternalFormsSharedModule, ReactiveFormsModu
 import { ProfileService } from '../../data/services/profile';
 import { firstValueFrom } from 'rxjs';
 import { AvatarUploadComponent } from './avatar-upload/avatar-upload.component';
+import { RouterLink } from "@angular/router";
+import { SvgIconComponent } from "../../common-ul/svg-icon/svg-icon.component";
 
 @Component({
   selector: 'app-settings-page',
-  imports: [ProfileHeaderComponent, ɵInternalFormsSharedModule, ReactiveFormsModule, AvatarUploadComponent],
+  imports: [ProfileHeaderComponent, ɵInternalFormsSharedModule, ReactiveFormsModule, AvatarUploadComponent, RouterLink, SvgIconComponent],
   templateUrl: './settings-page.component.html',
   styleUrl: './settings-page.component.scss',
 })
@@ -40,6 +42,14 @@ export class SettingsPageComponent {
   ngAfterViewInit() {
     this.avatarUploader.avatar
   }
+
+  onClear() {
+    this.form.patchValue({
+      ...this.profaleServise.me(),
+      //@ts-ignore
+      stack: this.mergeStack(this.profaleServise.me()?.stack)})
+    }
+
 
   onSave() {
     this.form.markAllAsTouched()

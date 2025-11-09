@@ -35,8 +35,19 @@
   </div>
 
   <div>
-    <div>
-      <button class="btn" (click)="onSave()">Сохранить</button>
+    <div class="settings-menu">
+      <div class="settings-menu__left">
+        <a routerLink="[]" class="dark_btn mini">
+          <svg icon="delete" class="settings-menu_icon red_color_icon"></svg>
+        </a>
+        <a [routerLink]="['/login']" class="dark_btn mini">
+          <svg icon="out" class="settings-menu_icon"></svg>
+        </a>
+      </div>
+      <div class="settings-menu__right">
+        <button class="btn dark_btn" (click)="onClear()">Отмена</button>
+        <button class="btn widtch_btn" (click)="onSave()">Сохранить</button>
+      </div>
     </div>
   </div>
 </form>
