@@ -1,0 +1,8 @@
+@if (avatarUrl(); as avatarUrl) {
+  @if(avatarUrl) {
+    <img
+      class="profile-avatar-haeder" [src]="avatarUrl | imgUrl" alt="">
+  } @else {
+      <img src="/assets/imags/avatar.png" alt="">
+  }
+}

@@ -1,0 +1,40 @@
+ :host {
+  display: grid;
+  padding: 16px;
+  background: var(--dark-color);
+  border: 1px solid var(--light-color);
+  grid-template-columns: 32px 1fr 44px;
+  grid-gap: 12px;
+  align-items: center;
+ }
+
+ .hidden-textarea {
+  background: var(--dark-color);
+  resize: none;
+  border: none;
+  color: var(--light-color);
+
+  &:hover,
+  &:focus-visible {
+    outline: 1px solid var(--primary-color);
+  }
+}
+
+.post-input__title {
+  padding-left: 20px;
+  border-radius: 4px;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-end: 1;
+  background: var(--dark-color);
+  border: 1px solid var(--light-color);
+  height: 40px;
+  width: 200px;
+  color: var(--light-color);
+  
+  &:hover,
+  &:focus-visible{
+    border: none;
+    outline: 1px solid var(--primary-color);
+  }
+}

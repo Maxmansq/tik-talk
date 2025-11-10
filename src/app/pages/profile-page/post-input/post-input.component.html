@@ -1,1 +1,24 @@
-<p>post-input works!</p>
+<input
+  type="text"
+  [(ngModel)]="titlePost"
+  class="post-input__title"
+  placeholder="Введите тему">
+@if (profile(); as profile) {
+  <app-avatar-circle
+  class="size32"
+  [avatarUrl]="profile.avatarUrl">
+</app-avatar-circle>
+}
+<textarea
+  placeholder="Напишите что нибудь"
+  [(ngModel)]="postText"
+  class="hidden-textarea"
+  (input)="onTextAreaInput($event)"></textarea>
+
+<button
+  class="btn-icon"
+  (click)="onCreatePost()">
+  <svg icon="send-me" class="svg16"></svg>
+
+  <svg icon="send-me" class="icon-color svg16"></svg>
+</button>
