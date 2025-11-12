@@ -1,4 +1,4 @@
-import { Component, inject, Renderer2 } from '@angular/core';
+import { Component, EventEmitter, HostBinding, inject, input, Output, Renderer2 } from '@angular/core';
 import { AvatarCircleComponent } from '../../../common-ul/avatar-circle/avatar-circle.component';
 import { ProfileService } from '../../../data/services/profile';
 import { PostService } from '../../../data/services/post.service';
@@ -12,11 +12,20 @@ import { firstValueFrom } from 'rxjs';
   styleUrl: './post-input.component.scss',
 })
 export class PostInputComponent {
+  postId = input<number>(0)
+  isCommentInput = input(false)
   titlePost = ''
   postText = ''
   r2 = inject(Renderer2)
   postService = inject(PostService)
   profile = inject(ProfileService).me
+
+  @Output() created = new EventEmitter()
+
+  @HostBinding('class.commentBorder')
+  get isComment() {
+    return this.isCommentInput()
+  }
 
   onTextAreaInput(event: Event) {
     const textarea = event.target as HTMLTextAreaElement
@@ -28,7 +37,21 @@ export class PostInputComponent {
 
 
   onCreatePost() {
-    if (!this.postText || !this.titlePost) return
+    if (!this.postText) return
+    if (!this.isCommentInput() && !this.titlePost) return
+    
+    if (this.isCommentInput()) {
+      firstValueFrom(this.postService.createComment({
+      text: this.postText,
+      postId: this.postId(),
+      authorId: this.profile()!.id,
+      // communityId: 
+    })).then(() => {
+      this.postText = ''
+      this.created.emit()
+    })
+      return
+    }
 
     firstValueFrom(this.postService.createPost({
       title: this.titlePost,

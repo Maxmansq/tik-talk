@@ -13,10 +13,6 @@
 
 }
 
-.post-header {
-
-}
-
 .post__author {
   font-weight: 700;
   font-style: normal;
@@ -46,4 +42,23 @@
 
 .primary-color {
   color: var(--primary-color);
+}
+
+.post__comments-wrapper {
+  padding: 8px 0px;
+  max-height: 150px;
+  overflow-y: scroll;
+  display: grid;
+  grid-gap: 8px;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 136px;
+    background: var(--dark-hover-color);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 30px;
+  }
 }

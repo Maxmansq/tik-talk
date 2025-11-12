@@ -1,8 +1,10 @@
-<input
+<div class="title">
+  <input
   type="text"
-  [(ngModel)]="titlePost"
   class="post-input__title"
+  [(ngModel)]="titlePost"
   placeholder="Введите тему">
+</div>
 @if (profile(); as profile) {
   <app-avatar-circle
   class="size32"
@@ -18,7 +20,5 @@
 <button
   class="btn-icon"
   (click)="onCreatePost()">
-  <svg icon="send-me" class="svg16"></svg>
-
-  <svg icon="send-me" class="icon-color svg16"></svg>
+  <svg icon="send" class="icon-color svg16"></svg>
 </button>
