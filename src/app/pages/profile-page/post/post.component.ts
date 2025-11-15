@@ -6,7 +6,7 @@ import { SvgIconComponent } from "../../../common-ul/svg-icon/svg-icon.component
 import { PostInputComponent } from '../post-input/post-input.component';
 import { CommentComponent } from './comment/comment.component';
 import { PostService } from '../../../data/services/post.service';
-import { firstValueFrom } from 'rxjs';
+import { debounce, debounceTime, filter, firstValueFrom } from 'rxjs';
 import { PassedTimePipe } from '../../../helpers/pipes/passed-time.pipe';
 
 @Component({
@@ -23,8 +23,17 @@ export class PostComponent implements OnInit{
   postService = inject(PostService)
 
   async ngOnInit() {
+    this.postService.$dataPotok.pipe(
+      debounceTime(100)
+    )
+      .subscribe(val => {
+        if (val.postId != 0){
+          this.onCreated()
+        }
+      })
     this.comment.set(this.post()!.comments)
   }
+
 
   async onCreated() {
     const comments = await firstValueFrom(this.postService.getCommentsByPostId(this.post()!.id))

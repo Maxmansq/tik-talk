@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable, signal } from '@angular/core';
 import { CommentCreateDto, Post, PostCreateDto } from '../interfaces/post.interfaces';
-import { map, switchMap, tap } from 'rxjs';
+import { map, Subject, switchMap, tap } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -38,4 +38,13 @@ export class PostService {
         map(res => res.comments)
       )
   }
+
+  private linkDataPost = new Subject<any>()
+
+  $dataPotok = this.linkDataPost.asObservable()
+
+  sendDataMessage(value: any) {
+    this.linkDataPost.next(value)
+  }
+
 }

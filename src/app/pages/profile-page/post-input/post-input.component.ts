@@ -1,9 +1,11 @@
-import { Component, EventEmitter, HostBinding, inject, input, Output, Renderer2 } from '@angular/core';
+import { Component, EventEmitter, HostBinding, inject, input, output, Output, Renderer2 } from '@angular/core';
 import { AvatarCircleComponent } from '../../../common-ul/avatar-circle/avatar-circle.component';
 import { ProfileService } from '../../../data/services/profile';
 import { PostService } from '../../../data/services/post.service';
 import { FormsModule } from '@angular/forms';
-import { firstValueFrom } from 'rxjs';
+import { firstValueFrom, Subject } from 'rxjs';
+import { PostFeedComponent } from '../post-feed/post-feed.component';
+import { PostCreateDto } from '../../../data/interfaces/post.interfaces';
 
 @Component({
   selector: 'app-post-input',
@@ -20,7 +22,7 @@ export class PostInputComponent {
   postService = inject(PostService)
   profile = inject(ProfileService).me
 
-  @Output() created = new EventEmitter()
+  @Output() inputText = new EventEmitter<PostCreateDto>();
 
   @HostBinding('class.commentBorder')
   get isComment() {
@@ -35,33 +37,16 @@ export class PostInputComponent {
     this.r2.setStyle(textarea, 'height', textarea.scrollHeight + 'px')
   }
 
-
-  onCreatePost() {
-    if (!this.postText) return
-    if (!this.isCommentInput() && !this.titlePost) return
-    
-    if (this.isCommentInput()) {
-      firstValueFrom(this.postService.createComment({
-      text: this.postText,
-      postId: this.postId(),
-      authorId: this.profile()!.id,
-      // communityId: 
-    })).then(() => {
-      this.postText = ''
-      this.created.emit()
-    })
-      return
-    }
-
-    firstValueFrom(this.postService.createPost({
+  //Отправка данных инпута в поток
+  onCreateMassage() {
+    this.postService.sendDataMessage({
       title: this.titlePost,
       content: this.postText,
       authorId: this.profile()!.id,
-      // communityId: 
-    })).then(() => {
-      this.postText = ''
-      this.titlePost = ''
+      postId: this.postId()
     })
-    
+    this.postText = ''
+    this.titlePost = ''
   }
+    
 }

@@ -12,6 +12,11 @@
   </header>
 
   <main class="profile-page__body">
+    <div class="profile-info-bar">
+      <app-info-profile-bar
+        [profileBar]="pushProfile">
+      </app-info-profile-bar>
+    </div>
     <div>
       <app-post-feed></app-post-feed>
     </div>
@@ -24,6 +29,7 @@
             <img
               class="sab-img-list"
               [src]="item.avatarUrl | imgUrl"
+              (mouseenter)="target(item)"
             ></a>
         }
         <a

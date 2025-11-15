@@ -20,8 +20,8 @@ export class PassedTimePipe implements PipeTransform {
     if (!value) return null
     
     var now = DateTime.now()
-    var creatPost = DateTime.fromISO(value)
-    var interval = Interval.fromDateTimes(creatPost.plus({hours: 3}), now)
+    var creatPost = DateTime.fromISO(value, { zone: "utc" }).toLocal()
+    var interval = Interval.fromDateTimes(creatPost, now)
     var formatDate = this.searchFormatDate(interval)
     var durValue = interval.toDuration([formatDate])
     var result = durValue.toHuman({maximumFractionDigits: 0})

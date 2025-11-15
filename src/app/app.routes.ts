@@ -5,6 +5,8 @@ import { ProfilePageComponent } from './pages/profile-page/profile-page.componen
 import { LayoutComponent } from './common-ul/layout/layout.component';
 import { canActivateAuth } from './auth/access.guard';
 import { SettingsPageComponent } from './pages/settings-page/settings-page.component';
+import { InfoProfileBarComponent } from './common-ul/info-profile-bar/info-profile-bar.component';
+import { ChatRoutes } from './pages/chats/chatRoutes';
 
 export const routes: Routes = [
   {
@@ -13,6 +15,12 @@ export const routes: Routes = [
       {path: 'profile/:id', component: ProfilePageComponent},
       {path: 'settings', component: SettingsPageComponent},
       {path: 'search', component: SearchPageComponent},
+      {path: 'profilebar', component: InfoProfileBarComponent},
+      {
+        path: 'chat',
+        loadChildren: () => ChatRoutes
+
+      }
     ],
     canActivate: [canActivateAuth]
 },
