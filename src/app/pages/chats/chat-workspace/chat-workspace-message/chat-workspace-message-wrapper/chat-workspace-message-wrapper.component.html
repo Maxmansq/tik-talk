@@ -1,1 +1,16 @@
-<p>chat-workspace-message-wrapper works!</p>
+<div class="messages-wrapper">
+  @for (message of messages(); track message.id) {
+    <div class="data-message">
+      <p>Сегодня</p>
+    </div>
+    <app-chat-workspace-message
+      [message]="message">
+    </app-chat-workspace-message>
+  }
+</div>
+<div class="input-wrapper">
+  <app-input-message
+  (created)="onSendMessage($event)"
+></app-input-message>
+</div>
+

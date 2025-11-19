@@ -1,9 +1,8 @@
-import { Component, ElementRef, HostListener, inject, input, Renderer2 } from '@angular/core';
+import { Component, ElementRef, inject, input, Renderer2 } from '@angular/core';
 import { PostInputComponent } from '../post-input/post-input.component';
 import { PostComponent } from '../post/post.component';
 import { PostService } from '../../../data/services/post.service';
-import { debounce, debounceTime, firstValueFrom, from, fromEvent, Subject, takeUntil } from 'rxjs';
-import { PostCreateDto } from '../../../data/interfaces/post.interfaces';
+import { debounceTime, firstValueFrom, fromEvent, Subject, takeUntil } from 'rxjs';
 
 
 @Component({
@@ -47,7 +46,6 @@ export class PostFeedComponent {
     const {top} = this.hostElement.nativeElement.getBoundingClientRect();
 
     const height = window.innerHeight - top - 24 - 24
-    console.log(`${height}`)
     this.r2.setStyle(this.hostElement.nativeElement, 'height', `${height}px`)
   }
 

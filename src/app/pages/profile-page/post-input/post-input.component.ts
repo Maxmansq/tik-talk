@@ -3,13 +3,12 @@ import { AvatarCircleComponent } from '../../../common-ul/avatar-circle/avatar-c
 import { ProfileService } from '../../../data/services/profile';
 import { PostService } from '../../../data/services/post.service';
 import { FormsModule } from '@angular/forms';
-import { firstValueFrom, Subject } from 'rxjs';
-import { PostFeedComponent } from '../post-feed/post-feed.component';
 import { PostCreateDto } from '../../../data/interfaces/post.interfaces';
+import { SvgIconComponent } from '../../../common-ul/svg-icon/svg-icon.component';
 
 @Component({
   selector: 'app-post-input',
-  imports: [AvatarCircleComponent, FormsModule],
+  imports: [AvatarCircleComponent, FormsModule, SvgIconComponent],
   templateUrl: './post-input.component.html',
   styleUrl: './post-input.component.scss',
 })

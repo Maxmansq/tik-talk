@@ -9,6 +9,9 @@
   --dark-hover-color: #161616;
   --light-transparent-color: #FFFFFFBF;
   --red-primary-color: #E99898;
+  --light-border: 1px solid var(--light-color);
+  --message-color: #404040;
+  --dark-acive-color: #161616;
 }
 
 *,
@@ -17,6 +20,11 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+}
+
+.subtitle {
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .h1 {
