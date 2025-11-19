@@ -1,11 +1,23 @@
 <div class="messages-wrapper">
-  @for (message of messages(); track message.id) {
-    <div class="data-message">
-      <p>Сегодня</p>
+  @if (other()) {
+    <div class="wrapper-time">
+      <p class="time-messages">Вчера</p>
     </div>
+  @for (message of other(); track message.id) {
     <app-chat-workspace-message
       [message]="message">
     </app-chat-workspace-message>
+    }
+  }
+  @if (today()) {
+    <div class="wrapper-time">
+      <p class="time-messages">Сегодня</p>
+    </div>
+  @for (message of today(); track message.id) {
+    <app-chat-workspace-message
+      [message]="message">
+    </app-chat-workspace-message>
+    }
   }
 </div>
 <div class="input-wrapper">

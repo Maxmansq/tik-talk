@@ -23,7 +23,7 @@ export class ChatsListComponent {
             startWith(''),
             map(inputValue => {
               return chats.filter(chats => {
-                return `${chats.userFrom.lastName} ${chats.userFrom.firstName}`.toLowerCase()
+                return `${chats.userFrom.lastName} ${chats.userFrom.firstName}`.toLowerCase().includes(inputValue?.toLowerCase() ?? '')
               })
             })
           )

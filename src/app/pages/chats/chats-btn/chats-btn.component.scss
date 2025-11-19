@@ -21,9 +21,35 @@
   gap: 16px;
   text-align: left;
   color: var(--light-color);
-  overflow-x: hidden;
 }
 
 .chat-user {
+  display: flex;
   color: var(--light-transparent-color);
+  justify-content: space-between;
+}
+
+.wrapper-last-message {
+  display: grid;
+  grid-template-columns: 1fr 26px;
+
+}
+
+.last-message {
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  overflow: hidden;
+}
+
+.unreaing-message {
+  display: grid;
+  place-content: center;
+  background: var(--primary-color);
+  width: 26px;
+  height: 16px;
+  color: var(--dark-color);
+  font-weight: 700;
+  font-size: 12px;
+  
 }

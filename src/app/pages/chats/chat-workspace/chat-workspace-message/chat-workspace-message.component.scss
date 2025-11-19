@@ -21,13 +21,20 @@
 
 
   .message-text {
-    // mask: linear-gradient(#000 0 0), linear-gradient(-223deg, #000 50%, #0000 0) border-box 100% 100% / 200% 200% no-repeat;
-    // mask-composite: exclude;
-    // mask-position: 66% 123%;
     background: var(--primary-color);
     color: var(--dark-color);
   }
 
+  .time-message {
+    order: -1;
+  }
+
+}
+
+.heder-wrapper {
+  display: flex;
+  font-size: 12px;
+  gap: 4px;
 }
 
 .message-text {
@@ -35,9 +42,6 @@
   background: var(--message-color);
   font-weight: 500;
   color: var(--light-color);
-  // mask: linear-gradient(#000 0 0), linear-gradient(-135deg, #000 50%, #0000 0) border-box 100% 100% / 200% 200% no-repeat;
-  // mask-composite: exclude;
-  // mask-position: 10% 94%;
   word-break: break-word;
   overflow-wrap: break-word;
   white-space: normal;

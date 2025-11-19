@@ -1,14 +1,15 @@
-import { Component, ElementRef, inject, input, Renderer2, signal } from '@angular/core';
+import { Component, computed, ElementRef, inject, input, Renderer2, Signal, signal } from '@angular/core';
 import { ChatWorkspaceMessageComponent } from '../chat-workspace-message.component';
 import { InputMessageComponent } from '../../../../../common-ul/input-message/input-message.component';
 import { ChatsService } from '../../../../../data/services/chats.service';
-import { Chat } from '../../../../../data/interfaces/chats.interfaces';
+import { Chat, Message } from '../../../../../data/interfaces/chats.interfaces';
 import { debounceTime, firstValueFrom, fromEvent, Subject, takeUntil, timer } from 'rxjs';
 import { DatePipe } from '@angular/common';
+import { DateTime } from 'luxon';
 
 @Component({
   selector: 'app-chat-workspace-message-wrapper',
-  imports: [ChatWorkspaceMessageComponent, InputMessageComponent, DatePipe],
+  imports: [ChatWorkspaceMessageComponent, InputMessageComponent],
   templateUrl: './chat-workspace-message-wrapper.component.html',
   styleUrl: './chat-workspace-message-wrapper.component.scss',
 })
@@ -16,13 +17,27 @@ export class ChatWorkspaceMessageWrapperComponent {
   chatservice = inject(ChatsService)
   private destroy$ = new Subject<void>();
 
+  dateNow = DateTime.now()
+
   chat = input.required<Chat>()
-
-  messages = this.chatservice.activeChatMessage
-
-  datainject = () => {
-
-  }
+  
+  today  = computed(() => {
+    const todayMessage = this.chatservice.activeChatMessage().filter(val => {
+            const create = DateTime.fromISO(val.createdAt, { zone: "utc" }).toLocal()
+            return this.dateNow.hasSame(create, 'day')
+          })
+    if (todayMessage.length > 0) return todayMessage
+    return null
+  }) 
+  
+  other = computed(() => {
+    const otherMessage = this.chatservice.activeChatMessage().filter(val => {
+            const create = DateTime.fromISO(val.createdAt, { zone: "utc" }).toLocal()
+            return !this.dateNow.hasSame(create, 'day')
+          })
+    if (otherMessage.length > 0) return otherMessage
+    return null
+  })
 
 
   constructor() {

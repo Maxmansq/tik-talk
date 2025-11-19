@@ -29,3 +29,20 @@
   top: 0px;
   left: 50%;
 }
+
+.time-messages {
+  display: grid;
+  place-content: center;
+  width: 111px;
+  height: 28px;
+  background: var(--dark-acive-color);
+  size: 12px;
+  font-weight: 700;
+  
+
+}
+
+.wrapper-time {
+  display: grid;
+  place-content: center;
+}
