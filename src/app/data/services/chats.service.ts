@@ -1,8 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable, signal } from '@angular/core';
-import { Chat, LastMessage, Message } from '../interfaces/chats.interfaces';
+import { Chat, GroupMessages, LastMessage, Message } from '../interfaces/chats.interfaces';
 import { ProfileService } from './profile';
 import { map, Subject } from 'rxjs';
+import { DateTime } from 'luxon';
 
 @Injectable({
   providedIn: 'root',
@@ -14,7 +15,7 @@ export class ChatsService {
   messageUrl = `${this.baseUrl}message/`
   profileServiceMe = inject(ProfileService).me
 
-  activeChatMessage = signal<Message[]>([])
+  activeChatMessage = signal<GroupMessages[]>([])
 
   createChat(userId: number){
     return this.http.post<Chat>(`${this.chatsUrl}${userId}`, {})
@@ -35,8 +36,8 @@ export class ChatsService {
                 isMine: message.userFromId === this.profileServiceMe()!.id
               }
             })
-
-          this.activeChatMessage.set(patchedMessages)
+          
+          this.activeChatMessage.set(this.listDateMessage(patchedMessages))
 
           return {
             ...chat,
@@ -53,6 +54,29 @@ export class ChatsService {
         message
       }
     })
+  }
+
+  listDateMessage(dataMessage: Message[]) {
+    let iterTime:any = null
+    let result: any[] = []
+    dataMessage.forEach(val => {
+      let day = DateTime.fromISO(val.createdAt, {zone: "utc"}).toLocal().day
+      if (day != iterTime) {
+        iterTime = day
+        result.push(
+          { 
+            date: val.createdAt,
+            messages: dataMessage
+              .filter(val => {
+                let filterDay = DateTime.fromISO(val.createdAt, {zone: "utc"}).toLocal().day
+                return filterDay == iterTime
+              })
+          } 
+        )
+      }
+      }
+    )
+    return result
   }
   
 }

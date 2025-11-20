@@ -21,38 +21,15 @@ export class ChatWorkspaceMessageWrapperComponent {
 
   chat = input.required<Chat>()
 
-  massage = this.chatservice.activeChatMessage
-  
-  //Сгруппировка сообщений по дате
-  dataTime = computed(() => {
-    //Скрол вниз при прорисовке новых сообщений
+  message = computed(() => {
     setTimeout(() => {
       this.hostelement.nativeElement.scrollTop = this.hostelement.nativeElement.scrollHeight
     }, 100)
-    let iterTime:any = null
-    let result: any[] = []
-    this.massage().forEach(val => {
-      let day = DateTime.fromISO(val.createdAt, {zone: "utc"}).toLocal().day
-      if (day != iterTime) {
-        iterTime = day
-        result.push(
-          { 
-            date: val.createdAt,
-            massages: this.massage()
-              .filter(val => {
-                 let filterDay = DateTime.fromISO(val.createdAt, {zone: "utc"}).toLocal().day
-                return filterDay == iterTime
-          })
-          } 
-        )
-      }
-      }
-    )
-    return result
-  })
-
+    return this.chatservice.activeChatMessage()
+  }) 
 
   constructor() {
+    console.log(this.message())
     timer(0, 100000)
       .pipe(
         takeUntil(this.destroy$)
