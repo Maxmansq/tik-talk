@@ -2,14 +2,15 @@ import { Component, computed, ElementRef, inject, input, Renderer2, Signal, sign
 import { ChatWorkspaceMessageComponent } from '../chat-workspace-message.component';
 import { InputMessageComponent } from '../../../../../common-ul/input-message/input-message.component';
 import { ChatsService } from '../../../../../data/services/chats.service';
-import { Chat, Message } from '../../../../../data/interfaces/chats.interfaces';
+import { Chat, Message, TimeChat } from '../../../../../data/interfaces/chats.interfaces';
 import { debounceTime, firstValueFrom, fromEvent, Subject, takeUntil, timer } from 'rxjs';
 import { DatePipe } from '@angular/common';
 import { DateTime } from 'luxon';
+import { TimeMassagePipe } from '../../../../../helpers/pipes/time-massage.pipe';
 
 @Component({
   selector: 'app-chat-workspace-message-wrapper',
-  imports: [ChatWorkspaceMessageComponent, InputMessageComponent],
+  imports: [ChatWorkspaceMessageComponent, InputMessageComponent, TimeMassagePipe],
   templateUrl: './chat-workspace-message-wrapper.component.html',
   styleUrl: './chat-workspace-message-wrapper.component.scss',
 })
@@ -17,30 +18,33 @@ export class ChatWorkspaceMessageWrapperComponent {
   chatservice = inject(ChatsService)
   private destroy$ = new Subject<void>();
 
-  dateNow = DateTime.now()
 
   chat = input.required<Chat>()
+
+  massage = this.chatservice.activeChatMessage
   
-  today  = computed(() => {
-    const todayMessage = this.chatservice.activeChatMessage().filter(val => {
-            const create = DateTime.fromISO(val.createdAt, { zone: "utc" }).toLocal()
-            return this.dateNow.hasSame(create, 'day')
+  dataTime = computed(() => {
+    let iterTime:any = null
+    let result: any[] = []
+    this.chatservice.activeChatMessage().forEach(val => {
+      let day = DateTime.fromISO(val.createdAt, {zone: "utc"}).toLocal().day
+      if (day != iterTime) {
+        iterTime = day
+        result.push([val.createdAt, this.chatservice.activeChatMessage()
+          .filter(val => {
+            return day == iterTime
           })
-    if (todayMessage.length > 0) return todayMessage
-    return null
-  }) 
-  
-  other = computed(() => {
-    const otherMessage = this.chatservice.activeChatMessage().filter(val => {
-            const create = DateTime.fromISO(val.createdAt, { zone: "utc" }).toLocal()
-            return !this.dateNow.hasSame(create, 'day')
-          })
-    if (otherMessage.length > 0) return otherMessage
-    return null
+        ])
+      }
+      }
+    )
+    return result
   })
+  
 
 
   constructor() {
+
     timer(0, 10000)
       .pipe(
         takeUntil(this.destroy$)

@@ -1,21 +1,13 @@
 <div class="messages-wrapper">
-  @if (other()) {
+  @for (data of dataTime(); track $index) {
     <div class="wrapper-time">
-      <p class="time-messages">Вчера</p>
+      <p class="time-messages">
+        {{ data[0] | timeMassage }}
+      </p>
     </div>
-  @for (message of other(); track message.id) {
-    <app-chat-workspace-message
-      [message]="message">
-    </app-chat-workspace-message>
-    }
-  }
-  @if (today()) {
-    <div class="wrapper-time">
-      <p class="time-messages">Сегодня</p>
-    </div>
-  @for (message of today(); track message.id) {
-    <app-chat-workspace-message
-      [message]="message">
+    @for (massage of data[1]; track massage.id) {
+      <app-chat-workspace-message
+      [message]="massage">
     </app-chat-workspace-message>
     }
   }

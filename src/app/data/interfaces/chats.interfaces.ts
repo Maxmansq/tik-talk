@@ -27,3 +27,8 @@ export interface LastMessage {
   createdAt: string,
   unreadMessages: number
 }
+
+export interface TimeChat {
+  data: string,
+  messages: any[]
+}
