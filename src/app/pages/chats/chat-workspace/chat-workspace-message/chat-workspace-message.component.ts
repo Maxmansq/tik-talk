@@ -2,10 +2,11 @@ import { Component, HostBinding, input } from '@angular/core';
 import { Message } from '../../../../data/interfaces/chats.interfaces';
 import { AvatarCircleComponent } from '../../../../common-ul/avatar-circle/avatar-circle.component';
 import { DatePipe } from '@angular/common';
+import { DataLocalPipe } from '../../../../helpers/pipes/data-local.pipe';
 
 @Component({
   selector: 'app-chat-workspace-message',
-  imports: [AvatarCircleComponent, DatePipe],
+  imports: [AvatarCircleComponent, DataLocalPipe],
   templateUrl: './chat-workspace-message.component.html',
   styleUrl: './chat-workspace-message.component.scss',
 })

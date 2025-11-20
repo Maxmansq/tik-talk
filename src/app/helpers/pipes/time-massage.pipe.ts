@@ -15,7 +15,7 @@ export class TimeMassagePipe implements PipeTransform {
       return "Сегодня"
     }
     //Если сообщение отправленно вчера
-  const yesterday = dateNow.minus({day: 1})
+  const yesterday = dateNow.minus({days: 1})
     if (yesterday.hasSame(createMessage, 'day')) {
       return "Вчера"
     }

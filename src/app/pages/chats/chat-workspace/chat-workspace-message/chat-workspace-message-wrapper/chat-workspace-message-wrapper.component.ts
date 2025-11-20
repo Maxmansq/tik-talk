@@ -23,35 +23,41 @@ export class ChatWorkspaceMessageWrapperComponent {
 
   massage = this.chatservice.activeChatMessage
   
+  //Сгруппировка сообщений по дате
   dataTime = computed(() => {
     let iterTime:any = null
     let result: any[] = []
-    this.chatservice.activeChatMessage().forEach(val => {
+    this.massage().forEach(val => {
       let day = DateTime.fromISO(val.createdAt, {zone: "utc"}).toLocal().day
       if (day != iterTime) {
         iterTime = day
-        result.push([val.createdAt, this.chatservice.activeChatMessage()
-          .filter(val => {
-            return day == iterTime
+        result.push(
+          { 
+            date: val.createdAt,
+            massages: this.massage()
+              .filter(val => {
+                 let filterDay = DateTime.fromISO(val.createdAt, {zone: "utc"}).toLocal().day
+                return filterDay == iterTime
           })
-        ])
+          } 
+        )
       }
       }
     )
+    console.log(result)
     return result
   })
-  
 
 
   constructor() {
-
-    timer(0, 10000)
-      .pipe(
-        takeUntil(this.destroy$)
-      )
-      .subscribe(() => {
-        const chat = firstValueFrom(this.chatservice.getChatId(this.chat().id))
-    })
+    this.hostelement.nativeElement.scrollTop = this.hostelement.nativeElement.scrollHeight
+    // timer(0, 10000)
+    //   .pipe(
+    //     takeUntil(this.destroy$)
+    //   )
+    //   .subscribe(() => {
+    //     const chat = firstValueFrom(this.chatservice.getChatId(this.chat().id))
+    // })
     
   }
   

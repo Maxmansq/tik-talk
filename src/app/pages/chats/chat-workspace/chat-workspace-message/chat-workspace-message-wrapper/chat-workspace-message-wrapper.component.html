@@ -1,11 +1,11 @@
 <div class="messages-wrapper">
-  @for (data of dataTime(); track $index) {
+  @for (timeMessage of dataTime(); track $index) {
     <div class="wrapper-time">
       <p class="time-messages">
-        {{ data[0] | timeMassage }}
+        {{ timeMessage.date | timeMassage }}
       </p>
     </div>
-    @for (massage of data[1]; track massage.id) {
+    @for (massage of timeMessage.massages; track massage.id) {
       <app-chat-workspace-message
       [message]="massage">
     </app-chat-workspace-message>

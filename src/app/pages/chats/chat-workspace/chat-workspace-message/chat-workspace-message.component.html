@@ -7,7 +7,7 @@
 <div class="message-conteiner">
   <div class="heder-wrapper">
     <strong class="mediym-text mb8">{{ message.user?.firstName }} {{ message.user?.lastName }}</strong>
-    <strong class="time-message">{{ message.createdAt | date:'HH:mm' }}</strong>
+    <strong class="time-message">{{ message.createdAt | dataLocal }}</strong>
   </div>
   <div class="message-text mediym-text">
     {{ message.text }}
