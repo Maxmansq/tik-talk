@@ -16,6 +16,8 @@ export class ChatsService {
 
   activeChatMessage = signal<Message[]>([])
 
+  messagesIsNotRead = signal<number>(0)
+
   createChat(userId: number){
     return this.http.post<Chat>(`${this.chatsUrl}${userId}`, {})
   }
@@ -35,8 +37,14 @@ export class ChatsService {
                 isMine: message.userFromId === this.profileServiceMe()!.id
               }
             })
+          const isnotread = chat.messages.map(message => {
+            return chat.messages.filter(val => {
+              return val.userFromId !== this.profileServiceMe()?.id && !val.isRead
+            })
+          })
 
           this.activeChatMessage.set(patchedMessages)
+          this.messagesIsNotRead.set(isnotread.length)
 
           return {
             ...chat,

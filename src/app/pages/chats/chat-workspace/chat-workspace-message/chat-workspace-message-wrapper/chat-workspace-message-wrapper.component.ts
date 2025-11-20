@@ -25,6 +25,10 @@ export class ChatWorkspaceMessageWrapperComponent {
   
   //Сгруппировка сообщений по дате
   dataTime = computed(() => {
+    //Скрол вниз при прорисовке новых сообщений
+    setTimeout(() => {
+      this.hostelement.nativeElement.scrollTop = this.hostelement.nativeElement.scrollHeight
+    }, 100)
     let iterTime:any = null
     let result: any[] = []
     this.massage().forEach(val => {
@@ -44,20 +48,18 @@ export class ChatWorkspaceMessageWrapperComponent {
       }
       }
     )
-    console.log(result)
     return result
   })
 
 
   constructor() {
-    this.hostelement.nativeElement.scrollTop = this.hostelement.nativeElement.scrollHeight
-    // timer(0, 10000)
-    //   .pipe(
-    //     takeUntil(this.destroy$)
-    //   )
-    //   .subscribe(() => {
-    //     const chat = firstValueFrom(this.chatservice.getChatId(this.chat().id))
-    // })
+    timer(0, 100000)
+      .pipe(
+        takeUntil(this.destroy$)
+      )
+      .subscribe(async () => {
+        await this.chatservice.getChatId(this.chat().id)
+    })
     
   }
   
@@ -77,6 +79,7 @@ export class ChatWorkspaceMessageWrapperComponent {
   r2 = inject(Renderer2)
 
   ngAfterViewInit() {
+    
     this.resizeChat()
     fromEvent(window, 'resize')
       .pipe(
