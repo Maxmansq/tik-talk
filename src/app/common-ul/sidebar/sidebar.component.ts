@@ -39,6 +39,12 @@ export class SidebarComponent {
       lable: 'Поиск',
       icon: 'search',
       link: 'search'
+    },
+    {
+      id: 3,
+      lable: 'Полигон',
+      icon: 'poligon',
+      link: 'poligon'
     }
   ]
 

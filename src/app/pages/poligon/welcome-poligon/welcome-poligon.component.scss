@@ -1,0 +1,10 @@
+:host {
+  display: grid;
+  place-content: center;
+  height: 500px;
+}
+
+.welcome {
+  font-size: 40px;
+  color: var(--light-color);
+}

@@ -7,6 +7,11 @@ import { canActivateAuth } from './auth/access.guard';
 import { SettingsPageComponent } from './pages/settings-page/settings-page.component';
 import { InfoProfileBarComponent } from './common-ul/info-profile-bar/info-profile-bar.component';
 import { ChatRoutes } from './pages/chats/chatRoutes';
+import { Component } from '@angular/core';
+import { TestFormComponent } from './pages/test-form/test-form.component';
+import { ReactFormComponent } from './pages/test-form/react-form/react-form.component';
+import { PoligonComponent } from './pages/poligon/poligon.component';
+import { WelcomePoligonComponent } from './pages/poligon/welcome-poligon/welcome-poligon.component';
 
 export const routes: Routes = [
   {
@@ -25,4 +30,9 @@ export const routes: Routes = [
     canActivate: [canActivateAuth]
 },
   {path: 'login', component: LoginPageComponent},
+  {path: 'forms', component: TestFormComponent},
+  {path: 'poligon', component: PoligonComponent, children: [
+    {path: '', component: WelcomePoligonComponent},
+    {path: 'reactform', component: ReactFormComponent}
+  ]}
 ];
