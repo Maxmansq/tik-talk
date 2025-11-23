@@ -1,0 +1,66 @@
+<form
+  #form="ngForm"
+  (ngSubmit)="onSubmit(form)"
+>
+
+  <input 
+  type="text"
+  required
+  class="tt-form-input"
+  name="name"
+  [(ngModel)]="person.name"
+  (ngModelChange)="onChenge($event)"
+  #usernameControl="ngModel"
+  >
+
+@if(
+  usernameControl.hasError('required') &&
+  usernameControl.touched){
+    <span>Это поле обязательно</span>
+}
+ 
+
+  <input 
+  type="text"
+  class="tt-form-input"
+  [(ngModel)]="hobby"
+  [ngModelOptions]="{
+    standalone: true
+  }"
+  >
+  {{ hobby }}
+
+  <input 
+  type="text"
+  class="tt-form-input"
+  name="lastname"
+  noReact
+  [(ngModel)]="person.lastname"
+  (ngModelChange)="onChenge($event)"
+  #lastnameControl="ngModel"
+  >
+
+  @if(lastnameControl.hasError('noReact')){
+    <span> <pre>{{ lastnameControl.getError('noReact').message}}</pre> </span>
+}
+  <div
+    ngModelGroup="address">
+    <input 
+  type="text"
+  class="tt-form-input"
+  name="street"
+  [(ngModel)]="person.address.street"
+  (ngModelChange)="onChenge($event)"
+  >
+  </div>
+
+
+  
+  
+<pre>
+{{ person | json }}
+</pre>
+<button type="submit">Нажми</button>
+
+</form>
+
