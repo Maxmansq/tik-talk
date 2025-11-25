@@ -1,7 +1,11 @@
 {
   "version": "6.0",
   "nxVersion": "22.1.1",
-  "pathMappings": {},
+  "pathMappings": {
+    "@tt/auth": [
+      "libs/auth/src/index.ts"
+    ]
+  },
   "nxJsonPlugins": [],
   "fileMap": {
     "nonProjectFiles": [],
@@ -48,38 +52,6 @@
           "hash": "11740996680748791609",
           "deps": [
             "npm:@angular/core",
-            "npm:@angular/router"
-          ]
-        },
-        {
-          "file": "apps/tik-talk/src/app/auth/access.guard.ts",
-          "hash": "11767981696354445106",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/router"
-          ]
-        },
-        {
-          "file": "apps/tik-talk/src/app/auth/auth.interceptor.ts",
-          "hash": "10199737359977445029",
-          "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core",
-            "npm:rxjs"
-          ]
-        },
-        {
-          "file": "apps/tik-talk/src/app/auth/auth.interface.ts",
-          "hash": "8437810145875717797"
-        },
-        {
-          "file": "apps/tik-talk/src/app/auth/auth.service.ts",
-          "hash": "5645126133064524993",
-          "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core",
-            "npm:rxjs",
-            "npm:ngx-cookie-service",
             "npm:@angular/router"
           ]
         },
@@ -454,11 +426,12 @@
         },
         {
           "file": "apps/tik-talk/src/app/pages/login-page/login-page.component.ts",
-          "hash": "17678935032968755374",
+          "hash": "16947392103766634683",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/forms",
-            "npm:@angular/router"
+            "npm:@angular/router",
+            "auth"
           ]
         },
         {
@@ -781,11 +754,11 @@
         },
         {
           "file": ".gitignore",
-          "hash": "17738933498318317962"
+          "hash": "3179323655491164780"
         },
         {
           "file": ".prettierignore",
-          "hash": "17085498363870782104"
+          "hash": "13591750739247547927"
         },
         {
           "file": ".prettierrc",
@@ -793,7 +766,7 @@
         },
         {
           "file": ".vscode/extensions.json",
-          "hash": "11934160580685414355"
+          "hash": "10315085909558207664"
         },
         {
           "file": ".vscode/launch.json",
@@ -812,44 +785,94 @@
           "hash": "3764586519572297473"
         },
         {
+          "file": "eslint.config.mjs",
+          "hash": "10770449096712831357",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "jest.config.ts",
+          "hash": "6870352021923392442",
+          "deps": [
+            "npm:jest",
+            "npm:@nx/jest"
+          ]
+        },
+        {
+          "file": "jest.preset.js",
+          "hash": "9430166341120122740",
+          "deps": [
+            "npm:@nx/jest"
+          ]
+        },
+        {
           "file": "libs/.gitkeep",
           "hash": "3244421341483603138"
         },
         {
           "file": "nx.json",
-          "hash": "9511926778977120679"
+          "hash": "16217535428345836782"
         },
         {
           "file": "package-lock.json",
-          "hash": "189990407021448639"
+          "hash": "14503734438698997563"
         },
         {
           "file": "package.json",
-          "hash": "11684333134874830576",
+          "hash": "2208028892228368432",
           "deps": [
             "npm:@angular-devkit/core",
             "npm:@angular-devkit/schematics",
             "npm:@angular/build",
             "npm:@angular/cli",
             "npm:@angular/compiler-cli",
+            "npm:@eslint/js",
             "npm:@nx/angular",
+            "npm:@nx/eslint",
+            "npm:@nx/eslint-plugin",
+            "npm:@nx/jest",
+            "npm:@nx/js",
             "npm:@nx/workspace",
             "npm:@schematics/angular",
+            "npm:@swc-node/register",
+            "npm:@swc/core",
+            "npm:@swc/helpers",
             "npm:@types/jasmine",
+            "npm:@types/jest",
             "npm:@types/luxon",
+            "npm:@types/node",
+            "npm:@typescript-eslint/utils",
+            "npm:angular-eslint",
+            "npm:autoprefixer",
+            "npm:eslint",
+            "npm:eslint-config-prettier",
             "npm:jasmine-core",
+            "npm:jest",
+            "npm:jest-environment-jsdom",
+            "npm:jest-preset-angular",
+            "npm:jest-util",
+            "npm:jsonc-eslint-parser",
             "npm:karma",
             "npm:karma-chrome-launcher",
             "npm:karma-coverage",
             "npm:karma-jasmine",
             "npm:karma-jasmine-html-reporter",
+            "npm:ng-packagr",
             "npm:nx",
+            "npm:postcss",
+            "npm:postcss-url",
+            "npm:prettier",
+            "npm:ts-jest",
+            "npm:ts-node",
             "npm:typescript",
+            "npm:typescript-eslint",
             "npm:@angular/common",
             "npm:@angular/compiler",
             "npm:@angular/core",
             "npm:@angular/forms",
             "npm:@angular/platform-browser",
+            "npm:@angular/platform-browser-dynamic",
             "npm:@angular/router",
             "npm:@maskito/angular",
             "npm:@maskito/core",
@@ -1447,7 +1470,7 @@
         },
         {
           "file": "src/app/pages/login-page/login-page.component.ts",
-          "hash": "17678935032968755374",
+          "hash": "18382686017089287093",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/forms",
@@ -1776,7 +1799,7 @@
         },
         {
           "file": "tsconfig.base.json",
-          "hash": "5559509669460104582"
+          "hash": "13626366757234791321"
         },
         {
           "file": "tsconfig.json",
@@ -1786,8 +1809,84 @@
           "file": "tsconfig.spec.json",
           "hash": "15504553596141903120"
         }
+      ],
+      "auth": [
+        {
+          "file": "libs/auth/README.md",
+          "hash": "9370648284768385907"
+        },
+        {
+          "file": "libs/auth/eslint.config.mjs",
+          "hash": "9628975637710176443",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "libs/auth/jest.config.ts",
+          "hash": "2454897979899206125"
+        },
+        {
+          "file": "libs/auth/project.json",
+          "hash": "6314477814464530307"
+        },
+        {
+          "file": "libs/auth/src/index.ts",
+          "hash": "10475039059363082976"
+        },
+        {
+          "file": "libs/auth/src/lib/auth/access.guard.ts",
+          "hash": "11767981696354445106",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "libs/auth/src/lib/auth/auth.interceptor.ts",
+          "hash": "10199737359977445029",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "libs/auth/src/lib/auth/auth.interface.ts",
+          "hash": "8437810145875717797"
+        },
+        {
+          "file": "libs/auth/src/lib/auth/auth.service.ts",
+          "hash": "5645126133064524993",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:rxjs",
+            "npm:ngx-cookie-service",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "libs/auth/src/test-setup.ts",
+          "hash": "1917999429567095215",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/auth/tsconfig.json",
+          "hash": "6802773440203508003"
+        },
+        {
+          "file": "libs/auth/tsconfig.lib.json",
+          "hash": "5209476885361492972"
+        },
+        {
+          "file": "libs/auth/tsconfig.spec.json",
+          "hash": "16817365645434738473"
+        }
       ]
     }
   },
-  "externalNodesHash": "1662593321013666464"
+  "externalNodesHash": "269635326962650929"
 }

@@ -1,0 +1,59 @@
+[33m❯[39m Building...
+[32m✔[39m Building...
+[37m[1mInitial chunk files[22m  [2m | [22m[1mNames[22m        [2m | [22m [1mRaw size[22m[2m | [22m[1mEstimated transfer size[22m[39m
+[37m[32mmain-3BGBISR7.js[39m[37m     [2m | [22m[2mmain[22m         [2m | [22m[36m465.12 kB[39m[37m[2m | [22m              [36m117.36 kB[39m[37m[39m
+[37m[32mpolyfills-5CFQRCPP.js[39m[37m[2m | [22m[2mpolyfills[22m    [2m | [22m [36m34.59 kB[39m[37m[2m | [22m               [36m11.33 kB[39m[37m[39m
+[37m[32mstyles-SSN3U5HZ.css[39m[37m  [2m | [22m[2mstyles[22m       [2m | [22m  [36m2.88 kB[39m[37m[2m | [22m              [36m692 bytes[39m[37m[39m
+[37m[39m
+[37m[1m [22m                    [2m | [22m[1mInitial total[22m[2m | [22m[1m[93m502.58 kB[39m[37m[22m[2m | [22m              [1m129.38 kB[22m[39m
+[37m[39m
+[37mApplication bundle generation complete. [4.913 seconds] - 2025-11-25T14:43:26.139Z[39m
+[37m[39m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8113: AsyncPipe is not used within the template of SearchPageComponent[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m    src/app/pages/search-page/search-page.component.ts:10:59:[39m[22m
+[1m[33m[37m      10 │ ...ports: [ProfileCardComponent, ProfileFiltersComponent, [32mAsyncPipe[37m],[39m[22m
+[1m[33m         ╵                                                           [32m~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m    src/styles.scss:1:8:[39m[22m
+[1m[33m[37m      1 │ @import [32m[37m"fonts";[39m[22m
+[1m[33m        ╵         [32m^[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+[1m[33m  [39m[22m
+[1m[33m  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m  The plugin "angular-sass" was triggered by this import[39m[22m
+[1m[33m[39m[22m
+[1m[33m    angular:styles/global:styles:1:8:[39m[22m
+[1m[33m[37m      1 │ @import [32m'src/styles.scss'[37m;[39m[22m
+[1m[33m        ╵         [32m~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDeprecation[0m [1m[35m[plugin angular-sass][0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m    src/styles.scss:2:8:[39m[22m
+[1m[33m[37m      2 │ @import [32m[37m"margins";[39m[22m
+[1m[33m        ╵         [32m^[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m  Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.[39m[22m
+[1m[33m  [39m[22m
+[1m[33m  More info and automated migrator: [4mhttps://sass-lang.com/d/import[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m  The plugin "angular-sass" was triggered by this import[39m[22m
+[1m[33m[39m[22m
+[1m[33m    angular:styles/global:styles:1:8:[39m[22m
+[1m[33m[37m      1 │ @import [32m'src/styles.scss'[37m;[39m[22m
+[1m[33m        ╵         [32m~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mbundle initial exceeded maximum budget. Budget 500.00 kB was not met by 2.58 kB with a total of 502.58 kB.[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m[37mOutput location: D:\Work\tik-talk\dist\tik-talk[39m
+[37m[39m
+
