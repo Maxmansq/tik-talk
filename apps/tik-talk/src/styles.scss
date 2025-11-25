@@ -1,0 +1,158 @@
+@import "fonts";
+@import "margins";
+
+:root {
+  --dark-color: #000000;
+  --light-color: #FFFFFF;
+  --primary-color: #AE7AFF;
+  --grey-color: #5F646D;
+  --dark-hover-color: #161616;
+  --light-transparent-color: #FFFFFFBF;
+  --red-primary-color: #E99898;
+  --light-border: 1px solid var(--light-color);
+  --message-color: #404040;
+  --dark-acive-color: #161616;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.subtitle {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.h1 {
+  font-weight: 800;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0px;
+}
+
+.h4 {
+  font-weight: 800;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0px;
+
+}
+
+.regular {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0px;
+}
+
+.h6 {
+  font-weight: 800;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0px;
+
+}
+
+body {
+  height: 100dvh;
+  font-family: "JetBrains Mono", sans-serif;
+  background: var(--dark-color);
+  color: var(--light-color);
+  background-image: url(/assets/imags/background_login.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.skill-tag {
+  padding: 0px 8px;
+  border-radius: 4px;
+  border: 1px solid var(--light-color);
+  display: inline;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  height: 24px;
+}
+
+.btn-icon {
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  background: var(--primary-color);
+  color: var(--dark-color);
+  border-radius: 4px;
+  border: 1px solid var(--dark-color);
+
+}
+
+.svg16 {
+  width: 16px;
+  height: 16px;
+}
+
+.btn {
+  border: none;
+  width: 100%;
+  background: var(--primary-color);
+  color: var(--dark-color);
+  padding: 10px 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: none;
+  cursor: pointer;
+  
+}
+
+.medium-text {
+  font-family: "JetBrains Mono", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+
+.tt-form-lable {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tt-form-lable__text {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  color: var(--light-transparent-color);
+}
+
+.tt-form-input {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  border: none;
+  border-bottom: 1px solid var(--light-color);
+  height: 33px;
+  background: none;
+  color: white;
+  border-radius: 4px;
+
+  &:focus-visible {
+    outline: 1px solid var(--primary-color);
+  }
+}
+
+.tt-textarea {
+  height: 84px;
+  // resize: none;
+}
+

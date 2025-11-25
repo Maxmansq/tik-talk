@@ -1,0 +1,16 @@
+@if (profileBar) {
+  <div class="img-wrapper">
+    <h1 class="h1">{{ profileBar.username }}</h1>
+    <div class="img-avatar">
+      <app-avatar-circle
+      [avatarUrl] = "profileBar.avatarUrl">
+    </app-avatar-circle>
+    </div>
+  </div>
+  <div class="data-wrapper">
+    <div>Имя: {{ profileBar.firstName }}</div>
+    <div>Фамилия: {{ profileBar.lastName }}</div>
+    <div>Обо мне: {{ profileBar.description }}</div>
+    <div>Стек: {{ profileBar.stack }}</div>
+  </div>
+}

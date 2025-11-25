@@ -1,0 +1,58 @@
+ :host {
+  display: grid;
+  padding: 16px;
+  background: var(--dark-color);
+  border: 1px solid var(--light-color);
+  grid-template-columns: 32px 1fr 44px;
+  grid-gap: 12px;
+  align-items: center;
+ }
+
+ :host(.no-title) .title {
+  display: none;
+ }
+
+ :host.commentBorder {
+  border: 1px dashed var(--light-color);
+  border-radius: 4px;
+ }
+
+ .hidden-textarea {
+  background: var(--dark-color);
+  resize: none;
+  border: none;
+  color: var(--light-color);
+
+  &:hover,
+  &:focus-visible {
+    outline: 1px solid var(--primary-color);
+  }
+}
+
+.post-input__title {
+  padding: 5px;
+  display: grid;
+  grid-template-rows: auto auto;
+  place-content: center;
+  border-radius: 4px;
+  background: var(--dark-color);
+  border: 1px solid var(--light-color);
+  height: 40px;
+  width: 200px;
+  color: var(--light-color);
+  
+  &:hover,
+  &:focus-visible{
+    border: none;
+    outline: 1px solid var(--primary-color);
+  }
+}
+
+.title {
+  grid-column: 1 / -1;
+}
+
+
+.icon-color {
+  color: var(--dark-color);
+}

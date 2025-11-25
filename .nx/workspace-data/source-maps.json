@@ -1,0 +1,554 @@
+{
+  ".": {
+    "root": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "projectType": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "sourceRoot": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "prefix": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "name": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "generators": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "generators.@schematics/angular:component": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "generators.@schematics/angular:component.type": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "generators.@schematics/angular:component.style": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "generators.@schematics/angular:directive": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "generators.@schematics/angular:directive.type": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "generators.@schematics/angular:service": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "generators.@schematics/angular:service.type": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "generators.@schematics/angular:guard": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "generators.@schematics/angular:guard.typeSeparator": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "generators.@schematics/angular:interceptor": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "generators.@schematics/angular:interceptor.typeSeparator": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "generators.@schematics/angular:module": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "generators.@schematics/angular:module.typeSeparator": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "generators.@schematics/angular:pipe": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "generators.@schematics/angular:pipe.typeSeparator": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "generators.@schematics/angular:resolver": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "generators.@schematics/angular:resolver.typeSeparator": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.build": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.build.executor": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.build.options": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.build.configurations": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.build.defaultConfiguration": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.build.options.browser": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.build.options.polyfills": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.build.options.tsConfig": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.build.options.inlineStyleLanguage": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.build.options.assets": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.build.options.styles": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.build.configurations.production": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.build.configurations.production.budgets": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.build.configurations.production.outputHashing": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.build.configurations.development": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.build.configurations.development.optimization": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.build.configurations.development.extractLicenses": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.build.configurations.development.sourceMap": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.serve": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.serve.executor": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.serve.configurations": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.serve.defaultConfiguration": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.serve.configurations.production": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.serve.configurations.production.buildTarget": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.serve.configurations.development": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.serve.configurations.development.buildTarget": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.extract-i18n": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.extract-i18n.executor": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.test": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.test.executor": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.test.options": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.test.options.polyfills": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.test.options.tsConfig": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.test.options.inlineStyleLanguage": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.test.options.assets": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.test.options.styles": [
+      "angular.json",
+      "nx-angular-json-plugin"
+    ],
+    "targets.build.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ]
+  },
+  "apps/tik-talk": {
+    "root": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "prefix": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "generators": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@schematics/angular:component": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@schematics/angular:component.type": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@schematics/angular:component.style": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@schematics/angular:directive": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@schematics/angular:directive.type": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@schematics/angular:service": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@schematics/angular:service.type": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@schematics/angular:guard": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@schematics/angular:guard.typeSeparator": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@schematics/angular:interceptor": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@schematics/angular:interceptor.typeSeparator": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@schematics/angular:module": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@schematics/angular:module.typeSeparator": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@schematics/angular:pipe": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@schematics/angular:pipe.typeSeparator": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@schematics/angular:resolver": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "generators.@schematics/angular:resolver.typeSeparator": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.defaultConfiguration": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.browser": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.polyfills": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.inlineStyleLanguage": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.assets": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.styles": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.budgets": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.outputHashing": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.optimization": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.extractLicenses": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.sourceMap": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.executor": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.defaultConfiguration": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production.buildTarget": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development.buildTarget": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.extract-i18n": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.extract-i18n.executor": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.executor": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.polyfills": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.tsConfig": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.inlineStyleLanguage": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.assets": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.styles": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ]
+  }
+}

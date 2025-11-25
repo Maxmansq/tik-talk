@@ -1,0 +1,48 @@
+:host {
+  display: grid;
+  padding: 16px 20px;
+  overflow: scroll;
+  
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  
+}
+
+.messages-wrapper {
+  display: grid;
+  grid-gap: 12px;
+  height: max-content;
+  position: relative;
+}
+
+.input-wrapper {
+  position: absolute;
+  bottom: -80px;
+  left: 20px;
+  width: calc(100% - 40px);
+}
+
+.data-message {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+}
+
+.time-messages {
+  display: grid;
+  place-content: center;
+  width: 111px;
+  height: 28px;
+  background: var(--dark-acive-color);
+  size: 12px;
+  font-weight: 700;
+  
+
+}
+
+.wrapper-time {
+  display: grid;
+  place-content: center;
+}

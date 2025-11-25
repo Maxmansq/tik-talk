@@ -1,0 +1,33 @@
+:host {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  background: var(--dark-color);
+  
+}
+
+.item-wrapper {
+  display: flex;
+}
+.header-item {
+  display: grid;
+  place-content: center;
+  height: 100%;
+  width: 150px;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  background: var(--grey-color);
+  color: var(---dark-color);
+  border: 3px solid var(--light-color);
+  border-radius: 10px;
+
+  &.active,
+  &:hover,
+  &:focus-visible{
+    background: var(--primary-color);
+    color: var(--dark-color);
+    border: 4px solid var(--grey-color);
+  }
+}
