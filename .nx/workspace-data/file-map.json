@@ -6,6 +6,774 @@
   "fileMap": {
     "nonProjectFiles": [],
     "projectFileMap": {
+      "tik-talk-app": [
+        {
+          "file": "apps/tik-talk/project.json",
+          "hash": "10372693485408704587"
+        },
+        {
+          "file": "apps/tik-talk/src/app/app.config.ts",
+          "hash": "15601518150500101270",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/app.html",
+          "hash": "13127839036880294027"
+        },
+        {
+          "file": "apps/tik-talk/src/app/app.routes.ts",
+          "hash": "18215048925789686908",
+          "deps": [
+            "npm:@angular/router",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/app.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/tik-talk/src/app/app.spec.ts",
+          "hash": "1736441727276701383",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/app.ts",
+          "hash": "11740996680748791609",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/auth/access.guard.ts",
+          "hash": "11767981696354445106",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/auth/auth.interceptor.ts",
+          "hash": "10199737359977445029",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/auth/auth.interface.ts",
+          "hash": "8437810145875717797"
+        },
+        {
+          "file": "apps/tik-talk/src/app/auth/auth.service.ts",
+          "hash": "5645126133064524993",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:rxjs",
+            "npm:ngx-cookie-service",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/common-ul/avatar-circle/avatar-circle.component.html",
+          "hash": "116309366940703519"
+        },
+        {
+          "file": "apps/tik-talk/src/app/common-ul/avatar-circle/avatar-circle.component.scss",
+          "hash": "9184068086924651756"
+        },
+        {
+          "file": "apps/tik-talk/src/app/common-ul/avatar-circle/avatar-circle.component.ts",
+          "hash": "14433761514588937870",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/common-ul/directives/dnd.directive.ts",
+          "hash": "15574258454702465732",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/common-ul/info-profile-bar/info-profile-bar.component.html",
+          "hash": "14253969132895454110"
+        },
+        {
+          "file": "apps/tik-talk/src/app/common-ul/info-profile-bar/info-profile-bar.component.scss",
+          "hash": "9057580014351398317"
+        },
+        {
+          "file": "apps/tik-talk/src/app/common-ul/info-profile-bar/info-profile-bar.component.ts",
+          "hash": "5038936120901353179",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/common-ul/input-message/input-message.component.html",
+          "hash": "15961988984403689592"
+        },
+        {
+          "file": "apps/tik-talk/src/app/common-ul/input-message/input-message.component.scss",
+          "hash": "4471594849557881594"
+        },
+        {
+          "file": "apps/tik-talk/src/app/common-ul/input-message/input-message.component.ts",
+          "hash": "7935093040304471639",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/common-ul/layout/layout.component.html",
+          "hash": "4458870159876491034"
+        },
+        {
+          "file": "apps/tik-talk/src/app/common-ul/layout/layout.component.scss",
+          "hash": "15889197720542403662"
+        },
+        {
+          "file": "apps/tik-talk/src/app/common-ul/layout/layout.component.ts",
+          "hash": "11791437669014506791",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/common-ul/poligon-header/poligon-header.component.html",
+          "hash": "16672696472611397436"
+        },
+        {
+          "file": "apps/tik-talk/src/app/common-ul/poligon-header/poligon-header.component.scss",
+          "hash": "13661999873944657441"
+        },
+        {
+          "file": "apps/tik-talk/src/app/common-ul/poligon-header/poligon-header.component.ts",
+          "hash": "224368674502497406",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/common-ul/profile-card/profile-card.html",
+          "hash": "13904743305473456805"
+        },
+        {
+          "file": "apps/tik-talk/src/app/common-ul/profile-card/profile-card.scss",
+          "hash": "2529741031764816406"
+        },
+        {
+          "file": "apps/tik-talk/src/app/common-ul/profile-card/profile-card.ts",
+          "hash": "5934030619899605430",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/common-ul/profile-header/profile-header.component.html",
+          "hash": "399679920050119922"
+        },
+        {
+          "file": "apps/tik-talk/src/app/common-ul/profile-header/profile-header.component.scss",
+          "hash": "3155641015093746925"
+        },
+        {
+          "file": "apps/tik-talk/src/app/common-ul/profile-header/profile-header.component.ts",
+          "hash": "17808061231320433612",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/common-ul/sidebar/sidebar.component.html",
+          "hash": "2127078555073995497"
+        },
+        {
+          "file": "apps/tik-talk/src/app/common-ul/sidebar/sidebar.component.scss",
+          "hash": "13656953900767760444"
+        },
+        {
+          "file": "apps/tik-talk/src/app/common-ul/sidebar/sidebar.component.ts",
+          "hash": "7648139621398583102",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:@angular/common",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/common-ul/sidebar/subscriber-card/subscriber-card.component.html",
+          "hash": "11346731920252320625"
+        },
+        {
+          "file": "apps/tik-talk/src/app/common-ul/sidebar/subscriber-card/subscriber-card.component.scss",
+          "hash": "1997711416640267680"
+        },
+        {
+          "file": "apps/tik-talk/src/app/common-ul/sidebar/subscriber-card/subscriber-card.component.ts",
+          "hash": "8961105543226298904",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/common-ul/svg-icon/svg-icon.component.ts",
+          "hash": "17715444156368407307",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/data/interfaces/chats.interfaces.ts",
+          "hash": "3424170889850580368"
+        },
+        {
+          "file": "apps/tik-talk/src/app/data/interfaces/pageble.interfaces.ts",
+          "hash": "6053679419925589823"
+        },
+        {
+          "file": "apps/tik-talk/src/app/data/interfaces/post.interfaces.ts",
+          "hash": "1390290865194718616"
+        },
+        {
+          "file": "apps/tik-talk/src/app/data/interfaces/profile.interfaces.ts",
+          "hash": "3416256116929715823"
+        },
+        {
+          "file": "apps/tik-talk/src/app/data/services/chats.service.ts",
+          "hash": "16607010522755880399",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:rxjs",
+            "npm:luxon"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/data/services/post.service.ts",
+          "hash": "7155598193491690604",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/data/services/profile.ts",
+          "hash": "10957712463173924590",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/helpers/decoration/time-out.decoration.ts",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/tik-talk/src/app/helpers/pipes/data-local.pipe.ts",
+          "hash": "4451868632172764520",
+          "deps": [
+            "npm:@angular/core",
+            "npm:luxon"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/helpers/pipes/img-url.pipe.ts",
+          "hash": "15306650084593632249",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/helpers/pipes/passed-time.pipe.ts",
+          "hash": "7061986793212136571",
+          "deps": [
+            "npm:@angular/core",
+            "npm:luxon"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/helpers/pipes/time-massage.pipe.ts",
+          "hash": "14782681883099692503",
+          "deps": [
+            "npm:@angular/core",
+            "npm:luxon"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/chats/chat-workspace/chat-workspace-header/chat-workspace-header.component.html",
+          "hash": "15212215737774346201"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/chats/chat-workspace/chat-workspace-header/chat-workspace-header.component.scss",
+          "hash": "11782989192469641036"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/chats/chat-workspace/chat-workspace-header/chat-workspace-header.component.ts",
+          "hash": "10553654159770149961",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/chats/chat-workspace/chat-workspace-message/chat-workspace-message-wrapper/chat-workspace-message-wrapper.component.html",
+          "hash": "8256136407506768290"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/chats/chat-workspace/chat-workspace-message/chat-workspace-message-wrapper/chat-workspace-message-wrapper.component.scss",
+          "hash": "13291813176323263924"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/chats/chat-workspace/chat-workspace-message/chat-workspace-message-wrapper/chat-workspace-message-wrapper.component.ts",
+          "hash": "2158182518594169233",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs",
+            "npm:@angular/common",
+            "npm:luxon"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/chats/chat-workspace/chat-workspace-message/chat-workspace-message.component.html",
+          "hash": "15623419423029175114"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/chats/chat-workspace/chat-workspace-message/chat-workspace-message.component.scss",
+          "hash": "12933822615176836422"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/chats/chat-workspace/chat-workspace-message/chat-workspace-message.component.ts",
+          "hash": "17231542074729570916",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/chats/chat-workspace/chat-workspace.component.html",
+          "hash": "3895930420972308495"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/chats/chat-workspace/chat-workspace.component.scss",
+          "hash": "8073340256124439591"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/chats/chat-workspace/chat-workspace.component.ts",
+          "hash": "15920852365397671192",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:rxjs",
+            "npm:@angular/common",
+            "npm:@angular/forms"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/chats/chatRoutes.ts",
+          "hash": "864161645309769328",
+          "deps": [
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/chats/chats-btn/chats-btn.component.html",
+          "hash": "9803963460276982528"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/chats/chats-btn/chats-btn.component.scss",
+          "hash": "8506475961582359675"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/chats/chats-btn/chats-btn.component.ts",
+          "hash": "15171784591872840495",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/chats/chats-list/chats-list.component.html",
+          "hash": "1778449844876080823"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/chats/chats-list/chats-list.component.scss",
+          "hash": "16258332549869959664"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/chats/chats-list/chats-list.component.ts",
+          "hash": "12592969273377168402",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/router",
+            "npm:@angular/forms",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/chats/chats.component.html",
+          "hash": "2147143080255330068"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/chats/chats.component.scss",
+          "hash": "3448937795542450351"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/chats/chats.component.ts",
+          "hash": "10568649227362982273",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/login-page/login-page.component.html",
+          "hash": "18437148347221479617"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/login-page/login-page.component.scss",
+          "hash": "8326516879669064365"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/login-page/login-page.component.ts",
+          "hash": "17678935032968755374",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/poligon/doctor-form/doctor-form.component.html",
+          "hash": "383267979798432498"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/poligon/doctor-form/doctor-form.component.scss",
+          "hash": "16478770535098956941"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/poligon/doctor-form/doctor-form.component.ts",
+          "hash": "3416213249756349499",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:@maskito/angular"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/poligon/mask/onlyTextRu.ts",
+          "hash": "11416542088033603912",
+          "deps": [
+            "npm:@maskito/core"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/poligon/mask/phoneMask.ts",
+          "hash": "14219069500049042247",
+          "deps": [
+            "npm:@maskito/core"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/poligon/poligon-work/poligon-work.component.html",
+          "hash": "1393522493918491933"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/poligon/poligon-work/poligon-work.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/poligon/poligon-work/poligon-work.component.ts",
+          "hash": "1320304050232833929",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/poligon/poligon.component.html",
+          "hash": "16786048120999816282"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/poligon/poligon.component.scss",
+          "hash": "1253766170982224748"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/poligon/poligon.component.ts",
+          "hash": "1804460132691407694",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/poligon/welcome-poligon/welcome-poligon.component.html",
+          "hash": "10059192248348341996"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/poligon/welcome-poligon/welcome-poligon.component.scss",
+          "hash": "4564453929398880553"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/poligon/welcome-poligon/welcome-poligon.component.ts",
+          "hash": "3518637879172971987",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/profile-page/post-feed/post-feed.component.html",
+          "hash": "3343507430272168574"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/profile-page/post-feed/post-feed.component.scss",
+          "hash": "14969790637682883671"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/profile-page/post-feed/post-feed.component.ts",
+          "hash": "7444973448103363165",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/profile-page/post-input/copy.html",
+          "hash": "5417831000307763087"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/profile-page/post-input/post-input.component.html",
+          "hash": "18280801251190699658"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/profile-page/post-input/post-input.component.scss",
+          "hash": "13195070974503989725"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/profile-page/post-input/post-input.component.ts",
+          "hash": "1072617032130264676",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/profile-page/post/comment/comment.component.html",
+          "hash": "7953215492878499318"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/profile-page/post/comment/comment.component.scss",
+          "hash": "1260357028391431904"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/profile-page/post/comment/comment.component.ts",
+          "hash": "9006986751726626901",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/profile-page/post/post.component.html",
+          "hash": "2654324301573964729"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/profile-page/post/post.component.scss",
+          "hash": "7284351146918444596"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/profile-page/post/post.component.ts",
+          "hash": "18098753712429155624",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/profile-page/profile-page.component.html",
+          "hash": "3102610344091251855"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/profile-page/profile-page.component.scss",
+          "hash": "5667632696800380973"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/profile-page/profile-page.component.ts",
+          "hash": "13607798651739710609",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:rxjs",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/search-page/profile-filters/profile-filters.component.html",
+          "hash": "4791611827050476791"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/search-page/profile-filters/profile-filters.component.scss",
+          "hash": "13687915562934194500"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/search-page/profile-filters/profile-filters.component.ts",
+          "hash": "14560517440128697463",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/search-page/search-page.component.html",
+          "hash": "6730772723605705810"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/search-page/search-page.component.scss",
+          "hash": "16383056477122763389"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/search-page/search-page.component.ts",
+          "hash": "12549992572653315340",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/settings-page/avatar-upload/avatar-upload.component.html",
+          "hash": "6000763119906376230"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/settings-page/avatar-upload/avatar-upload.component.scss",
+          "hash": "2799533729615969241"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/settings-page/avatar-upload/avatar-upload.component.ts",
+          "hash": "11568636242697022531",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/settings-page/settings-page.component.html",
+          "hash": "7706782817056534970"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/settings-page/settings-page.component.scss",
+          "hash": "11764526783343567157"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/settings-page/settings-page.component.ts",
+          "hash": "10642673803869745505",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:rxjs",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/test-form/no-react.validators.ts",
+          "hash": "16734974481068895786",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/test-form/react-form/react-form.component.html",
+          "hash": "550502505104504014"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/test-form/react-form/react-form.component.scss",
+          "hash": "12906506817426774866"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/test-form/react-form/react-form.component.ts",
+          "hash": "4359690117228481828",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/test-form/test-form.component.html",
+          "hash": "1600545826495798916"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/test-form/test-form.component.scss",
+          "hash": "271802835716670926"
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/test-form/test-form.component.ts",
+          "hash": "5425431483915676922",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:@angular/forms"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/test-form/test-service/form.service.service.ts",
+          "hash": "6673397155611630908",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/pages/test-form/выавыа.ts",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/tik-talk/src/fonts.scss",
+          "hash": "18388392616442009176"
+        },
+        {
+          "file": "apps/tik-talk/src/index.html",
+          "hash": "15929235682994516289"
+        },
+        {
+          "file": "apps/tik-talk/src/main.ts",
+          "hash": "10405740721546735325",
+          "deps": [
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/margins.scss",
+          "hash": "18445489706707827817"
+        },
+        {
+          "file": "apps/tik-talk/src/styles.scss",
+          "hash": "14175860072640358728"
+        },
+        {
+          "file": "apps/tik-talk/tsconfig.app.json",
+          "hash": "18285814445518357234"
+        }
+      ],
       "tik-talk": [
         {
           "file": ".editorconfig",
@@ -53,17 +821,19 @@
         },
         {
           "file": "package-lock.json",
-          "hash": "5348083386109879971"
+          "hash": "189990407021448639"
         },
         {
           "file": "package.json",
-          "hash": "8956193395516160791",
+          "hash": "11684333134874830576",
           "deps": [
             "npm:@angular-devkit/core",
             "npm:@angular-devkit/schematics",
             "npm:@angular/build",
             "npm:@angular/cli",
             "npm:@angular/compiler-cli",
+            "npm:@nx/angular",
+            "npm:@nx/workspace",
             "npm:@schematics/angular",
             "npm:@types/jasmine",
             "npm:@types/luxon",
@@ -73,6 +843,7 @@
             "npm:karma-coverage",
             "npm:karma-jasmine",
             "npm:karma-jasmine-html-reporter",
+            "npm:nx",
             "npm:typescript",
             "npm:@angular/common",
             "npm:@angular/compiler",
@@ -80,6 +851,8 @@
             "npm:@angular/forms",
             "npm:@angular/platform-browser",
             "npm:@angular/router",
+            "npm:@maskito/angular",
+            "npm:@maskito/core",
             "npm:luxon",
             "npm:ngx-cookie-service",
             "npm:rxjs",
@@ -233,7 +1006,12 @@
         },
         {
           "file": "src/app/app.config.ts",
-          "hash": "15601518150500101270"
+          "hash": "15601518150500101270",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:@angular/common"
+          ]
         },
         {
           "file": "src/app/app.html",
@@ -241,7 +1019,11 @@
         },
         {
           "file": "src/app/app.routes.ts",
-          "hash": "18215048925789686908"
+          "hash": "18215048925789686908",
+          "deps": [
+            "npm:@angular/router",
+            "npm:@angular/core"
+          ]
         },
         {
           "file": "src/app/app.scss",
@@ -249,19 +1031,35 @@
         },
         {
           "file": "src/app/app.spec.ts",
-          "hash": "1736441727276701383"
+          "hash": "1736441727276701383",
+          "deps": [
+            "npm:@angular/core"
+          ]
         },
         {
           "file": "src/app/app.ts",
-          "hash": "11740996680748791609"
+          "hash": "11740996680748791609",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
         },
         {
           "file": "src/app/auth/access.guard.ts",
-          "hash": "11767981696354445106"
+          "hash": "11767981696354445106",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
         },
         {
           "file": "src/app/auth/auth.interceptor.ts",
-          "hash": "10199737359977445029"
+          "hash": "10199737359977445029",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
         },
         {
           "file": "src/app/auth/auth.interface.ts",
@@ -269,7 +1067,14 @@
         },
         {
           "file": "src/app/auth/auth.service.ts",
-          "hash": "5645126133064524993"
+          "hash": "5645126133064524993",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:rxjs",
+            "npm:ngx-cookie-service",
+            "npm:@angular/router"
+          ]
         },
         {
           "file": "src/app/common-ul/avatar-circle/avatar-circle.component.html",
@@ -281,11 +1086,17 @@
         },
         {
           "file": "src/app/common-ul/avatar-circle/avatar-circle.component.ts",
-          "hash": "14433761514588937870"
+          "hash": "14433761514588937870",
+          "deps": [
+            "npm:@angular/core"
+          ]
         },
         {
           "file": "src/app/common-ul/directives/dnd.directive.ts",
-          "hash": "15574258454702465732"
+          "hash": "15574258454702465732",
+          "deps": [
+            "npm:@angular/core"
+          ]
         },
         {
           "file": "src/app/common-ul/info-profile-bar/info-profile-bar.component.html",
@@ -297,7 +1108,10 @@
         },
         {
           "file": "src/app/common-ul/info-profile-bar/info-profile-bar.component.ts",
-          "hash": "5038936120901353179"
+          "hash": "5038936120901353179",
+          "deps": [
+            "npm:@angular/core"
+          ]
         },
         {
           "file": "src/app/common-ul/input-message/input-message.component.html",
@@ -309,7 +1123,11 @@
         },
         {
           "file": "src/app/common-ul/input-message/input-message.component.ts",
-          "hash": "7935093040304471639"
+          "hash": "7935093040304471639",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms"
+          ]
         },
         {
           "file": "src/app/common-ul/layout/layout.component.html",
@@ -321,7 +1139,11 @@
         },
         {
           "file": "src/app/common-ul/layout/layout.component.ts",
-          "hash": "11791437669014506791"
+          "hash": "11791437669014506791",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
         },
         {
           "file": "src/app/common-ul/poligon-header/poligon-header.component.html",
@@ -333,7 +1155,11 @@
         },
         {
           "file": "src/app/common-ul/poligon-header/poligon-header.component.ts",
-          "hash": "224368674502497406"
+          "hash": "224368674502497406",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
         },
         {
           "file": "src/app/common-ul/profile-card/profile-card.html",
@@ -345,7 +1171,10 @@
         },
         {
           "file": "src/app/common-ul/profile-card/profile-card.ts",
-          "hash": "5934030619899605430"
+          "hash": "5934030619899605430",
+          "deps": [
+            "npm:@angular/core"
+          ]
         },
         {
           "file": "src/app/common-ul/profile-header/profile-header.component.html",
@@ -357,7 +1186,10 @@
         },
         {
           "file": "src/app/common-ul/profile-header/profile-header.component.ts",
-          "hash": "17808061231320433612"
+          "hash": "17808061231320433612",
+          "deps": [
+            "npm:@angular/core"
+          ]
         },
         {
           "file": "src/app/common-ul/sidebar/sidebar.component.html",
@@ -369,7 +1201,13 @@
         },
         {
           "file": "src/app/common-ul/sidebar/sidebar.component.ts",
-          "hash": "7648139621398583102"
+          "hash": "7648139621398583102",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:@angular/common",
+            "npm:rxjs"
+          ]
         },
         {
           "file": "src/app/common-ul/sidebar/subscriber-card/subscriber-card.component.html",
@@ -381,11 +1219,17 @@
         },
         {
           "file": "src/app/common-ul/sidebar/subscriber-card/subscriber-card.component.ts",
-          "hash": "8961105543226298904"
+          "hash": "8961105543226298904",
+          "deps": [
+            "npm:@angular/core"
+          ]
         },
         {
           "file": "src/app/common-ul/svg-icon/svg-icon.component.ts",
-          "hash": "17715444156368407307"
+          "hash": "17715444156368407307",
+          "deps": [
+            "npm:@angular/core"
+          ]
         },
         {
           "file": "src/app/data/interfaces/chats.interfaces.ts",
@@ -405,15 +1249,31 @@
         },
         {
           "file": "src/app/data/services/chats.service.ts",
-          "hash": "16607010522755880399"
+          "hash": "16607010522755880399",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:rxjs",
+            "npm:luxon"
+          ]
         },
         {
           "file": "src/app/data/services/post.service.ts",
-          "hash": "7155598193491690604"
+          "hash": "7155598193491690604",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
         },
         {
           "file": "src/app/data/services/profile.ts",
-          "hash": "10957712463173924590"
+          "hash": "10957712463173924590",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
         },
         {
           "file": "src/app/helpers/decoration/time-out.decoration.ts",
@@ -421,19 +1281,34 @@
         },
         {
           "file": "src/app/helpers/pipes/data-local.pipe.ts",
-          "hash": "4451868632172764520"
+          "hash": "4451868632172764520",
+          "deps": [
+            "npm:@angular/core",
+            "npm:luxon"
+          ]
         },
         {
           "file": "src/app/helpers/pipes/img-url.pipe.ts",
-          "hash": "15306650084593632249"
+          "hash": "15306650084593632249",
+          "deps": [
+            "npm:@angular/core"
+          ]
         },
         {
           "file": "src/app/helpers/pipes/passed-time.pipe.ts",
-          "hash": "7061986793212136571"
+          "hash": "7061986793212136571",
+          "deps": [
+            "npm:@angular/core",
+            "npm:luxon"
+          ]
         },
         {
           "file": "src/app/helpers/pipes/time-massage.pipe.ts",
-          "hash": "14782681883099692503"
+          "hash": "14782681883099692503",
+          "deps": [
+            "npm:@angular/core",
+            "npm:luxon"
+          ]
         },
         {
           "file": "src/app/pages/chats/chat-workspace/chat-workspace-header/chat-workspace-header.component.html",
@@ -445,7 +1320,10 @@
         },
         {
           "file": "src/app/pages/chats/chat-workspace/chat-workspace-header/chat-workspace-header.component.ts",
-          "hash": "10553654159770149961"
+          "hash": "10553654159770149961",
+          "deps": [
+            "npm:@angular/core"
+          ]
         },
         {
           "file": "src/app/pages/chats/chat-workspace/chat-workspace-message/chat-workspace-message-wrapper/chat-workspace-message-wrapper.component.html",
@@ -457,7 +1335,13 @@
         },
         {
           "file": "src/app/pages/chats/chat-workspace/chat-workspace-message/chat-workspace-message-wrapper/chat-workspace-message-wrapper.component.ts",
-          "hash": "2158182518594169233"
+          "hash": "2158182518594169233",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs",
+            "npm:@angular/common",
+            "npm:luxon"
+          ]
         },
         {
           "file": "src/app/pages/chats/chat-workspace/chat-workspace-message/chat-workspace-message.component.html",
@@ -469,7 +1353,11 @@
         },
         {
           "file": "src/app/pages/chats/chat-workspace/chat-workspace-message/chat-workspace-message.component.ts",
-          "hash": "17231542074729570916"
+          "hash": "17231542074729570916",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
         },
         {
           "file": "src/app/pages/chats/chat-workspace/chat-workspace.component.html",
@@ -481,11 +1369,21 @@
         },
         {
           "file": "src/app/pages/chats/chat-workspace/chat-workspace.component.ts",
-          "hash": "15920852365397671192"
+          "hash": "15920852365397671192",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:rxjs",
+            "npm:@angular/common",
+            "npm:@angular/forms"
+          ]
         },
         {
           "file": "src/app/pages/chats/chatRoutes.ts",
-          "hash": "864161645309769328"
+          "hash": "864161645309769328",
+          "deps": [
+            "npm:@angular/router"
+          ]
         },
         {
           "file": "src/app/pages/chats/chats-btn/chats-btn.component.html",
@@ -497,7 +1395,11 @@
         },
         {
           "file": "src/app/pages/chats/chats-btn/chats-btn.component.ts",
-          "hash": "15171784591872840495"
+          "hash": "15171784591872840495",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
         },
         {
           "file": "src/app/pages/chats/chats-list/chats-list.component.html",
@@ -509,7 +1411,14 @@
         },
         {
           "file": "src/app/pages/chats/chats-list/chats-list.component.ts",
-          "hash": "12592969273377168402"
+          "hash": "12592969273377168402",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/router",
+            "npm:@angular/forms",
+            "npm:rxjs"
+          ]
         },
         {
           "file": "src/app/pages/chats/chats.component.html",
@@ -521,7 +1430,12 @@
         },
         {
           "file": "src/app/pages/chats/chats.component.ts",
-          "hash": "10568649227362982273"
+          "hash": "10568649227362982273",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:rxjs"
+          ]
         },
         {
           "file": "src/app/pages/login-page/login-page.component.html",
@@ -533,7 +1447,12 @@
         },
         {
           "file": "src/app/pages/login-page/login-page.component.ts",
-          "hash": "17678935032968755374"
+          "hash": "17678935032968755374",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:@angular/router"
+          ]
         },
         {
           "file": "src/app/pages/poligon/doctor-form/doctor-form.component.html",
@@ -545,15 +1464,26 @@
         },
         {
           "file": "src/app/pages/poligon/doctor-form/doctor-form.component.ts",
-          "hash": "3416213249756349499"
+          "hash": "3416213249756349499",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:@maskito/angular"
+          ]
         },
         {
           "file": "src/app/pages/poligon/mask/onlyTextRu.ts",
-          "hash": "11416542088033603912"
+          "hash": "11416542088033603912",
+          "deps": [
+            "npm:@maskito/core"
+          ]
         },
         {
           "file": "src/app/pages/poligon/mask/phoneMask.ts",
-          "hash": "14219069500049042247"
+          "hash": "14219069500049042247",
+          "deps": [
+            "npm:@maskito/core"
+          ]
         },
         {
           "file": "src/app/pages/poligon/poligon-work/poligon-work.component.html",
@@ -565,7 +1495,10 @@
         },
         {
           "file": "src/app/pages/poligon/poligon-work/poligon-work.component.ts",
-          "hash": "1320304050232833929"
+          "hash": "1320304050232833929",
+          "deps": [
+            "npm:@angular/core"
+          ]
         },
         {
           "file": "src/app/pages/poligon/poligon.component.html",
@@ -577,7 +1510,11 @@
         },
         {
           "file": "src/app/pages/poligon/poligon.component.ts",
-          "hash": "1804460132691407694"
+          "hash": "1804460132691407694",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
         },
         {
           "file": "src/app/pages/poligon/welcome-poligon/welcome-poligon.component.html",
@@ -589,7 +1526,10 @@
         },
         {
           "file": "src/app/pages/poligon/welcome-poligon/welcome-poligon.component.ts",
-          "hash": "3518637879172971987"
+          "hash": "3518637879172971987",
+          "deps": [
+            "npm:@angular/core"
+          ]
         },
         {
           "file": "src/app/pages/profile-page/post-feed/post-feed.component.html",
@@ -601,7 +1541,11 @@
         },
         {
           "file": "src/app/pages/profile-page/post-feed/post-feed.component.ts",
-          "hash": "7444973448103363165"
+          "hash": "7444973448103363165",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
         },
         {
           "file": "src/app/pages/profile-page/post-input/copy.html",
@@ -617,7 +1561,11 @@
         },
         {
           "file": "src/app/pages/profile-page/post-input/post-input.component.ts",
-          "hash": "1072617032130264676"
+          "hash": "1072617032130264676",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms"
+          ]
         },
         {
           "file": "src/app/pages/profile-page/post/comment/comment.component.html",
@@ -629,7 +1577,11 @@
         },
         {
           "file": "src/app/pages/profile-page/post/comment/comment.component.ts",
-          "hash": "9006986751726626901"
+          "hash": "9006986751726626901",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
         },
         {
           "file": "src/app/pages/profile-page/post/post.component.html",
@@ -641,7 +1593,12 @@
         },
         {
           "file": "src/app/pages/profile-page/post/post.component.ts",
-          "hash": "18098753712429155624"
+          "hash": "18098753712429155624",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:rxjs"
+          ]
         },
         {
           "file": "src/app/pages/profile-page/profile-page.component.html",
@@ -653,7 +1610,13 @@
         },
         {
           "file": "src/app/pages/profile-page/profile-page.component.ts",
-          "hash": "13607798651739710609"
+          "hash": "13607798651739710609",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:rxjs",
+            "npm:@angular/common"
+          ]
         },
         {
           "file": "src/app/pages/search-page/profile-filters/profile-filters.component.html",
@@ -665,7 +1628,12 @@
         },
         {
           "file": "src/app/pages/search-page/profile-filters/profile-filters.component.ts",
-          "hash": "14560517440128697463"
+          "hash": "14560517440128697463",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:rxjs"
+          ]
         },
         {
           "file": "src/app/pages/search-page/search-page.component.html",
@@ -677,7 +1645,11 @@
         },
         {
           "file": "src/app/pages/search-page/search-page.component.ts",
-          "hash": "12549992572653315340"
+          "hash": "12549992572653315340",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
         },
         {
           "file": "src/app/pages/settings-page/avatar-upload/avatar-upload.component.html",
@@ -689,7 +1661,11 @@
         },
         {
           "file": "src/app/pages/settings-page/avatar-upload/avatar-upload.component.ts",
-          "hash": "11568636242697022531"
+          "hash": "11568636242697022531",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms"
+          ]
         },
         {
           "file": "src/app/pages/settings-page/settings-page.component.html",
@@ -701,11 +1677,21 @@
         },
         {
           "file": "src/app/pages/settings-page/settings-page.component.ts",
-          "hash": "10642673803869745505"
+          "hash": "10642673803869745505",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:rxjs",
+            "npm:@angular/router"
+          ]
         },
         {
           "file": "src/app/pages/test-form/no-react.validators.ts",
-          "hash": "16734974481068895786"
+          "hash": "16734974481068895786",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms"
+          ]
         },
         {
           "file": "src/app/pages/test-form/react-form/react-form.component.html",
@@ -717,7 +1703,12 @@
         },
         {
           "file": "src/app/pages/test-form/react-form/react-form.component.ts",
-          "hash": "4359690117228481828"
+          "hash": "4359690117228481828",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:@angular/common"
+          ]
         },
         {
           "file": "src/app/pages/test-form/test-form.component.html",
@@ -729,11 +1720,20 @@
         },
         {
           "file": "src/app/pages/test-form/test-form.component.ts",
-          "hash": "5425431483915676922"
+          "hash": "5425431483915676922",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:@angular/forms"
+          ]
         },
         {
           "file": "src/app/pages/test-form/test-service/form.service.service.ts",
-          "hash": "6673397155611630908"
+          "hash": "6673397155611630908",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
         },
         {
           "file": "src/app/pages/test-form/выавыа.ts",
@@ -749,7 +1749,10 @@
         },
         {
           "file": "src/main.ts",
-          "hash": "10405740721546735325"
+          "hash": "10405740721546735325",
+          "deps": [
+            "npm:@angular/platform-browser"
+          ]
         },
         {
           "file": "src/margins.scss",
@@ -783,546 +1786,8 @@
           "file": "tsconfig.spec.json",
           "hash": "15504553596141903120"
         }
-      ],
-      "tik-talk-app": [
-        {
-          "file": "apps/tik-talk/project.json",
-          "hash": "10372693485408704587"
-        },
-        {
-          "file": "apps/tik-talk/src/app/app.config.ts",
-          "hash": "15601518150500101270"
-        },
-        {
-          "file": "apps/tik-talk/src/app/app.html",
-          "hash": "13127839036880294027"
-        },
-        {
-          "file": "apps/tik-talk/src/app/app.routes.ts",
-          "hash": "18215048925789686908"
-        },
-        {
-          "file": "apps/tik-talk/src/app/app.scss",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/tik-talk/src/app/app.spec.ts",
-          "hash": "1736441727276701383"
-        },
-        {
-          "file": "apps/tik-talk/src/app/app.ts",
-          "hash": "11740996680748791609"
-        },
-        {
-          "file": "apps/tik-talk/src/app/auth/access.guard.ts",
-          "hash": "11767981696354445106"
-        },
-        {
-          "file": "apps/tik-talk/src/app/auth/auth.interceptor.ts",
-          "hash": "10199737359977445029"
-        },
-        {
-          "file": "apps/tik-talk/src/app/auth/auth.interface.ts",
-          "hash": "8437810145875717797"
-        },
-        {
-          "file": "apps/tik-talk/src/app/auth/auth.service.ts",
-          "hash": "5645126133064524993"
-        },
-        {
-          "file": "apps/tik-talk/src/app/common-ul/avatar-circle/avatar-circle.component.html",
-          "hash": "116309366940703519"
-        },
-        {
-          "file": "apps/tik-talk/src/app/common-ul/avatar-circle/avatar-circle.component.scss",
-          "hash": "9184068086924651756"
-        },
-        {
-          "file": "apps/tik-talk/src/app/common-ul/avatar-circle/avatar-circle.component.ts",
-          "hash": "14433761514588937870"
-        },
-        {
-          "file": "apps/tik-talk/src/app/common-ul/directives/dnd.directive.ts",
-          "hash": "15574258454702465732"
-        },
-        {
-          "file": "apps/tik-talk/src/app/common-ul/info-profile-bar/info-profile-bar.component.html",
-          "hash": "14253969132895454110"
-        },
-        {
-          "file": "apps/tik-talk/src/app/common-ul/info-profile-bar/info-profile-bar.component.scss",
-          "hash": "9057580014351398317"
-        },
-        {
-          "file": "apps/tik-talk/src/app/common-ul/info-profile-bar/info-profile-bar.component.ts",
-          "hash": "5038936120901353179"
-        },
-        {
-          "file": "apps/tik-talk/src/app/common-ul/input-message/input-message.component.html",
-          "hash": "15961988984403689592"
-        },
-        {
-          "file": "apps/tik-talk/src/app/common-ul/input-message/input-message.component.scss",
-          "hash": "4471594849557881594"
-        },
-        {
-          "file": "apps/tik-talk/src/app/common-ul/input-message/input-message.component.ts",
-          "hash": "7935093040304471639"
-        },
-        {
-          "file": "apps/tik-talk/src/app/common-ul/layout/layout.component.html",
-          "hash": "4458870159876491034"
-        },
-        {
-          "file": "apps/tik-talk/src/app/common-ul/layout/layout.component.scss",
-          "hash": "15889197720542403662"
-        },
-        {
-          "file": "apps/tik-talk/src/app/common-ul/layout/layout.component.ts",
-          "hash": "11791437669014506791"
-        },
-        {
-          "file": "apps/tik-talk/src/app/common-ul/poligon-header/poligon-header.component.html",
-          "hash": "16672696472611397436"
-        },
-        {
-          "file": "apps/tik-talk/src/app/common-ul/poligon-header/poligon-header.component.scss",
-          "hash": "13661999873944657441"
-        },
-        {
-          "file": "apps/tik-talk/src/app/common-ul/poligon-header/poligon-header.component.ts",
-          "hash": "224368674502497406"
-        },
-        {
-          "file": "apps/tik-talk/src/app/common-ul/profile-card/profile-card.html",
-          "hash": "13904743305473456805"
-        },
-        {
-          "file": "apps/tik-talk/src/app/common-ul/profile-card/profile-card.scss",
-          "hash": "2529741031764816406"
-        },
-        {
-          "file": "apps/tik-talk/src/app/common-ul/profile-card/profile-card.ts",
-          "hash": "5934030619899605430"
-        },
-        {
-          "file": "apps/tik-talk/src/app/common-ul/profile-header/profile-header.component.html",
-          "hash": "399679920050119922"
-        },
-        {
-          "file": "apps/tik-talk/src/app/common-ul/profile-header/profile-header.component.scss",
-          "hash": "3155641015093746925"
-        },
-        {
-          "file": "apps/tik-talk/src/app/common-ul/profile-header/profile-header.component.ts",
-          "hash": "17808061231320433612"
-        },
-        {
-          "file": "apps/tik-talk/src/app/common-ul/sidebar/sidebar.component.html",
-          "hash": "2127078555073995497"
-        },
-        {
-          "file": "apps/tik-talk/src/app/common-ul/sidebar/sidebar.component.scss",
-          "hash": "13656953900767760444"
-        },
-        {
-          "file": "apps/tik-talk/src/app/common-ul/sidebar/sidebar.component.ts",
-          "hash": "7648139621398583102"
-        },
-        {
-          "file": "apps/tik-talk/src/app/common-ul/sidebar/subscriber-card/subscriber-card.component.html",
-          "hash": "11346731920252320625"
-        },
-        {
-          "file": "apps/tik-talk/src/app/common-ul/sidebar/subscriber-card/subscriber-card.component.scss",
-          "hash": "1997711416640267680"
-        },
-        {
-          "file": "apps/tik-talk/src/app/common-ul/sidebar/subscriber-card/subscriber-card.component.ts",
-          "hash": "8961105543226298904"
-        },
-        {
-          "file": "apps/tik-talk/src/app/common-ul/svg-icon/svg-icon.component.ts",
-          "hash": "17715444156368407307"
-        },
-        {
-          "file": "apps/tik-talk/src/app/data/interfaces/chats.interfaces.ts",
-          "hash": "3424170889850580368"
-        },
-        {
-          "file": "apps/tik-talk/src/app/data/interfaces/pageble.interfaces.ts",
-          "hash": "6053679419925589823"
-        },
-        {
-          "file": "apps/tik-talk/src/app/data/interfaces/post.interfaces.ts",
-          "hash": "1390290865194718616"
-        },
-        {
-          "file": "apps/tik-talk/src/app/data/interfaces/profile.interfaces.ts",
-          "hash": "3416256116929715823"
-        },
-        {
-          "file": "apps/tik-talk/src/app/data/services/chats.service.ts",
-          "hash": "16607010522755880399"
-        },
-        {
-          "file": "apps/tik-talk/src/app/data/services/post.service.ts",
-          "hash": "7155598193491690604"
-        },
-        {
-          "file": "apps/tik-talk/src/app/data/services/profile.ts",
-          "hash": "10957712463173924590"
-        },
-        {
-          "file": "apps/tik-talk/src/app/helpers/decoration/time-out.decoration.ts",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/tik-talk/src/app/helpers/pipes/data-local.pipe.ts",
-          "hash": "4451868632172764520"
-        },
-        {
-          "file": "apps/tik-talk/src/app/helpers/pipes/img-url.pipe.ts",
-          "hash": "15306650084593632249"
-        },
-        {
-          "file": "apps/tik-talk/src/app/helpers/pipes/passed-time.pipe.ts",
-          "hash": "7061986793212136571"
-        },
-        {
-          "file": "apps/tik-talk/src/app/helpers/pipes/time-massage.pipe.ts",
-          "hash": "14782681883099692503"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/chats/chat-workspace/chat-workspace-header/chat-workspace-header.component.html",
-          "hash": "15212215737774346201"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/chats/chat-workspace/chat-workspace-header/chat-workspace-header.component.scss",
-          "hash": "11782989192469641036"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/chats/chat-workspace/chat-workspace-header/chat-workspace-header.component.ts",
-          "hash": "10553654159770149961"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/chats/chat-workspace/chat-workspace-message/chat-workspace-message-wrapper/chat-workspace-message-wrapper.component.html",
-          "hash": "8256136407506768290"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/chats/chat-workspace/chat-workspace-message/chat-workspace-message-wrapper/chat-workspace-message-wrapper.component.scss",
-          "hash": "13291813176323263924"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/chats/chat-workspace/chat-workspace-message/chat-workspace-message-wrapper/chat-workspace-message-wrapper.component.ts",
-          "hash": "2158182518594169233"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/chats/chat-workspace/chat-workspace-message/chat-workspace-message.component.html",
-          "hash": "15623419423029175114"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/chats/chat-workspace/chat-workspace-message/chat-workspace-message.component.scss",
-          "hash": "12933822615176836422"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/chats/chat-workspace/chat-workspace-message/chat-workspace-message.component.ts",
-          "hash": "17231542074729570916"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/chats/chat-workspace/chat-workspace.component.html",
-          "hash": "3895930420972308495"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/chats/chat-workspace/chat-workspace.component.scss",
-          "hash": "8073340256124439591"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/chats/chat-workspace/chat-workspace.component.ts",
-          "hash": "15920852365397671192"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/chats/chatRoutes.ts",
-          "hash": "864161645309769328"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/chats/chats-btn/chats-btn.component.html",
-          "hash": "9803963460276982528"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/chats/chats-btn/chats-btn.component.scss",
-          "hash": "8506475961582359675"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/chats/chats-btn/chats-btn.component.ts",
-          "hash": "15171784591872840495"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/chats/chats-list/chats-list.component.html",
-          "hash": "1778449844876080823"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/chats/chats-list/chats-list.component.scss",
-          "hash": "16258332549869959664"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/chats/chats-list/chats-list.component.ts",
-          "hash": "12592969273377168402"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/chats/chats.component.html",
-          "hash": "2147143080255330068"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/chats/chats.component.scss",
-          "hash": "3448937795542450351"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/chats/chats.component.ts",
-          "hash": "10568649227362982273"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/login-page/login-page.component.html",
-          "hash": "18437148347221479617"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/login-page/login-page.component.scss",
-          "hash": "8326516879669064365"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/login-page/login-page.component.ts",
-          "hash": "17678935032968755374"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/poligon/doctor-form/doctor-form.component.html",
-          "hash": "383267979798432498"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/poligon/doctor-form/doctor-form.component.scss",
-          "hash": "16478770535098956941"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/poligon/doctor-form/doctor-form.component.ts",
-          "hash": "3416213249756349499"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/poligon/mask/onlyTextRu.ts",
-          "hash": "11416542088033603912"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/poligon/mask/phoneMask.ts",
-          "hash": "14219069500049042247"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/poligon/poligon-work/poligon-work.component.html",
-          "hash": "1393522493918491933"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/poligon/poligon-work/poligon-work.component.scss",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/poligon/poligon-work/poligon-work.component.ts",
-          "hash": "1320304050232833929"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/poligon/poligon.component.html",
-          "hash": "16786048120999816282"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/poligon/poligon.component.scss",
-          "hash": "1253766170982224748"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/poligon/poligon.component.ts",
-          "hash": "1804460132691407694"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/poligon/welcome-poligon/welcome-poligon.component.html",
-          "hash": "10059192248348341996"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/poligon/welcome-poligon/welcome-poligon.component.scss",
-          "hash": "4564453929398880553"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/poligon/welcome-poligon/welcome-poligon.component.ts",
-          "hash": "3518637879172971987"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/profile-page/post-feed/post-feed.component.html",
-          "hash": "3343507430272168574"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/profile-page/post-feed/post-feed.component.scss",
-          "hash": "14969790637682883671"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/profile-page/post-feed/post-feed.component.ts",
-          "hash": "7444973448103363165"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/profile-page/post-input/copy.html",
-          "hash": "5417831000307763087"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/profile-page/post-input/post-input.component.html",
-          "hash": "18280801251190699658"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/profile-page/post-input/post-input.component.scss",
-          "hash": "13195070974503989725"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/profile-page/post-input/post-input.component.ts",
-          "hash": "1072617032130264676"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/profile-page/post/comment/comment.component.html",
-          "hash": "7953215492878499318"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/profile-page/post/comment/comment.component.scss",
-          "hash": "1260357028391431904"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/profile-page/post/comment/comment.component.ts",
-          "hash": "9006986751726626901"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/profile-page/post/post.component.html",
-          "hash": "2654324301573964729"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/profile-page/post/post.component.scss",
-          "hash": "7284351146918444596"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/profile-page/post/post.component.ts",
-          "hash": "18098753712429155624"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/profile-page/profile-page.component.html",
-          "hash": "3102610344091251855"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/profile-page/profile-page.component.scss",
-          "hash": "5667632696800380973"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/profile-page/profile-page.component.ts",
-          "hash": "13607798651739710609"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/search-page/profile-filters/profile-filters.component.html",
-          "hash": "4791611827050476791"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/search-page/profile-filters/profile-filters.component.scss",
-          "hash": "13687915562934194500"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/search-page/profile-filters/profile-filters.component.ts",
-          "hash": "14560517440128697463"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/search-page/search-page.component.html",
-          "hash": "6730772723605705810"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/search-page/search-page.component.scss",
-          "hash": "16383056477122763389"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/search-page/search-page.component.ts",
-          "hash": "12549992572653315340"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/settings-page/avatar-upload/avatar-upload.component.html",
-          "hash": "6000763119906376230"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/settings-page/avatar-upload/avatar-upload.component.scss",
-          "hash": "2799533729615969241"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/settings-page/avatar-upload/avatar-upload.component.ts",
-          "hash": "11568636242697022531"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/settings-page/settings-page.component.html",
-          "hash": "7706782817056534970"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/settings-page/settings-page.component.scss",
-          "hash": "11764526783343567157"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/settings-page/settings-page.component.ts",
-          "hash": "10642673803869745505"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/test-form/no-react.validators.ts",
-          "hash": "16734974481068895786"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/test-form/react-form/react-form.component.html",
-          "hash": "550502505104504014"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/test-form/react-form/react-form.component.scss",
-          "hash": "12906506817426774866"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/test-form/react-form/react-form.component.ts",
-          "hash": "4359690117228481828"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/test-form/test-form.component.html",
-          "hash": "1600545826495798916"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/test-form/test-form.component.scss",
-          "hash": "271802835716670926"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/test-form/test-form.component.ts",
-          "hash": "5425431483915676922"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/test-form/test-service/form.service.service.ts",
-          "hash": "6673397155611630908"
-        },
-        {
-          "file": "apps/tik-talk/src/app/pages/test-form/выавыа.ts",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/tik-talk/src/fonts.scss",
-          "hash": "18388392616442009176"
-        },
-        {
-          "file": "apps/tik-talk/src/index.html",
-          "hash": "15929235682994516289"
-        },
-        {
-          "file": "apps/tik-talk/src/main.ts",
-          "hash": "10405740721546735325"
-        },
-        {
-          "file": "apps/tik-talk/src/margins.scss",
-          "hash": "18445489706707827817"
-        },
-        {
-          "file": "apps/tik-talk/src/styles.scss",
-          "hash": "14175860072640358728"
-        },
-        {
-          "file": "apps/tik-talk/tsconfig.app.json",
-          "hash": "18285814445518357234"
-        }
       ]
     }
   },
-  "externalNodesHash": "3157501905731867083"
+  "externalNodesHash": "1662593321013666464"
 }
