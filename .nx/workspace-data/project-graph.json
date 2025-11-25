@@ -5779,6 +5779,16 @@
     "tik-talk": [
       {
         "source": "tik-talk",
+        "target": "npm:@angular-devkit/core",
+        "type": "static"
+      },
+      {
+        "source": "tik-talk",
+        "target": "npm:@angular-devkit/schematics",
+        "type": "static"
+      },
+      {
+        "source": "tik-talk",
         "target": "npm:@angular/build",
         "type": "static"
       },
@@ -5790,6 +5800,11 @@
       {
         "source": "tik-talk",
         "target": "npm:@angular/compiler-cli",
+        "type": "static"
+      },
+      {
+        "source": "tik-talk",
+        "target": "npm:@schematics/angular",
         "type": "static"
       },
       {
@@ -11897,5 +11912,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1764060133211
+  "computedAt": 1764068358274
 }

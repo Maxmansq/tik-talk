@@ -17,11 +17,11 @@
         },
         {
           "file": ".prettierignore",
-          "hash": "14688272390704683536"
+          "hash": "17085498363870782104"
         },
         {
           "file": ".prettierrc",
-          "hash": "16267754514737964994"
+          "hash": "6820402234827505055"
         },
         {
           "file": ".vscode/extensions.json",
@@ -49,7 +49,7 @@
         },
         {
           "file": "nx.json",
-          "hash": "5868636331891182409"
+          "hash": "9511926778977120679"
         },
         {
           "file": "package-lock.json",
@@ -57,11 +57,14 @@
         },
         {
           "file": "package.json",
-          "hash": "17409690518263058354",
+          "hash": "8956193395516160791",
           "deps": [
+            "npm:@angular-devkit/core",
+            "npm:@angular-devkit/schematics",
             "npm:@angular/build",
             "npm:@angular/cli",
             "npm:@angular/compiler-cli",
+            "npm:@schematics/angular",
             "npm:@types/jasmine",
             "npm:@types/luxon",
             "npm:jasmine-core",
@@ -762,7 +765,7 @@
         },
         {
           "file": "tools/tsconfig.tools.json",
-          "hash": "16088922570277978783"
+          "hash": "11810713488198132402"
         },
         {
           "file": "tsconfig.app.json",
@@ -770,7 +773,7 @@
         },
         {
           "file": "tsconfig.base.json",
-          "hash": "8273836806063262647"
+          "hash": "5559509669460104582"
         },
         {
           "file": "tsconfig.json",
@@ -784,7 +787,7 @@
       "tik-talk-app": [
         {
           "file": "apps/tik-talk/project.json",
-          "hash": "7222365849404392171"
+          "hash": "10372693485408704587"
         },
         {
           "file": "apps/tik-talk/src/app/app.config.ts",
@@ -1316,7 +1319,7 @@
         },
         {
           "file": "apps/tik-talk/tsconfig.app.json",
-          "hash": "12736393931152500804"
+          "hash": "18285814445518357234"
         }
       ]
     }
