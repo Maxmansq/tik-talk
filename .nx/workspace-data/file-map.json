@@ -17,11 +17,12 @@
         },
         {
           "file": "apps/tik-talk/src/app/app.config.ts",
-          "hash": "15601518150500101270",
+          "hash": "4231850435651781084",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/router",
-            "npm:@angular/common"
+            "npm:@angular/common",
+            "auth"
           ]
         },
         {
@@ -30,10 +31,10 @@
         },
         {
           "file": "apps/tik-talk/src/app/app.routes.ts",
-          "hash": "18215048925789686908",
+          "hash": "12022849623449017769",
           "deps": [
             "npm:@angular/router",
-            "npm:@angular/core"
+            "auth"
           ]
         },
         {
@@ -744,7 +745,83 @@
         },
         {
           "file": "apps/tik-talk/tsconfig.app.json",
-          "hash": "18285814445518357234"
+          "hash": "5641499982429519154"
+        }
+      ],
+      "auth": [
+        {
+          "file": "libs/auth/README.md",
+          "hash": "9370648284768385907"
+        },
+        {
+          "file": "libs/auth/eslint.config.mjs",
+          "hash": "9628975637710176443",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "libs/auth/jest.config.ts",
+          "hash": "2454897979899206125"
+        },
+        {
+          "file": "libs/auth/project.json",
+          "hash": "6314477814464530307"
+        },
+        {
+          "file": "libs/auth/src/index.ts",
+          "hash": "10475039059363082976"
+        },
+        {
+          "file": "libs/auth/src/lib/auth/access.guard.ts",
+          "hash": "11767981696354445106",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "libs/auth/src/lib/auth/auth.interceptor.ts",
+          "hash": "10199737359977445029",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "libs/auth/src/lib/auth/auth.interface.ts",
+          "hash": "8437810145875717797"
+        },
+        {
+          "file": "libs/auth/src/lib/auth/auth.service.ts",
+          "hash": "5645126133064524993",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:rxjs",
+            "npm:ngx-cookie-service",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "libs/auth/src/test-setup.ts",
+          "hash": "1917999429567095215",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/auth/tsconfig.json",
+          "hash": "6802773440203508003"
+        },
+        {
+          "file": "libs/auth/tsconfig.lib.json",
+          "hash": "5209476885361492972"
+        },
+        {
+          "file": "libs/auth/tsconfig.spec.json",
+          "hash": "16817365645434738473"
         }
       ],
       "tik-talk": [
@@ -1470,7 +1547,7 @@
         },
         {
           "file": "src/app/pages/login-page/login-page.component.ts",
-          "hash": "18382686017089287093",
+          "hash": "9316849845999979287",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/forms",
@@ -1807,83 +1884,7 @@
         },
         {
           "file": "tsconfig.spec.json",
-          "hash": "15504553596141903120"
-        }
-      ],
-      "auth": [
-        {
-          "file": "libs/auth/README.md",
-          "hash": "9370648284768385907"
-        },
-        {
-          "file": "libs/auth/eslint.config.mjs",
-          "hash": "9628975637710176443",
-          "deps": [
-            "npm:@nx/eslint-plugin"
-          ]
-        },
-        {
-          "file": "libs/auth/jest.config.ts",
-          "hash": "2454897979899206125"
-        },
-        {
-          "file": "libs/auth/project.json",
-          "hash": "6314477814464530307"
-        },
-        {
-          "file": "libs/auth/src/index.ts",
-          "hash": "10475039059363082976"
-        },
-        {
-          "file": "libs/auth/src/lib/auth/access.guard.ts",
-          "hash": "11767981696354445106",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/router"
-          ]
-        },
-        {
-          "file": "libs/auth/src/lib/auth/auth.interceptor.ts",
-          "hash": "10199737359977445029",
-          "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core",
-            "npm:rxjs"
-          ]
-        },
-        {
-          "file": "libs/auth/src/lib/auth/auth.interface.ts",
-          "hash": "8437810145875717797"
-        },
-        {
-          "file": "libs/auth/src/lib/auth/auth.service.ts",
-          "hash": "5645126133064524993",
-          "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core",
-            "npm:rxjs",
-            "npm:ngx-cookie-service",
-            "npm:@angular/router"
-          ]
-        },
-        {
-          "file": "libs/auth/src/test-setup.ts",
-          "hash": "1917999429567095215",
-          "deps": [
-            "npm:jest-preset-angular"
-          ]
-        },
-        {
-          "file": "libs/auth/tsconfig.json",
-          "hash": "6802773440203508003"
-        },
-        {
-          "file": "libs/auth/tsconfig.lib.json",
-          "hash": "5209476885361492972"
-        },
-        {
-          "file": "libs/auth/tsconfig.spec.json",
-          "hash": "16817365645434738473"
+          "hash": "14676995366164585453"
         }
       ]
     }

@@ -14981,6 +14981,11 @@
       },
       {
         "source": "tik-talk-app",
+        "target": "auth",
+        "type": "static"
+      },
+      {
+        "source": "tik-talk-app",
         "target": "npm:@angular/forms",
         "type": "static"
       },
@@ -14992,11 +14997,6 @@
       {
         "source": "tik-talk-app",
         "target": "npm:luxon",
-        "type": "static"
-      },
-      {
-        "source": "tik-talk-app",
-        "target": "auth",
         "type": "static"
       },
       {
@@ -36353,5 +36353,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1764084286412
+  "computedAt": 1764139757396
 }
