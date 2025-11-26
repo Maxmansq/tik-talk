@@ -21,14 +21,15 @@ export class LoginPageComponent {
     password: new FormControl(null, Validators.required)
   })
 
-
+  
   onSubmit(event: Event) {
 
     if (this.form.valid) {
+      console.log(event)
 
-      //@ts-ignore
+      // @ts-expect-error
       this.authService.login(this.form.value)
-      .subscribe(res => {
+      .subscribe(() => {
         this.router.navigate([''])
       })
     }

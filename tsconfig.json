@@ -1,7 +1,5 @@
-/* To learn more about Typescript configuration file: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html. */
-/* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
 {
-  "compileOnSave": false,
+  "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "strict": true,
     "noImplicitOverride": true,
@@ -12,23 +10,13 @@
     "isolatedModules": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "target": "ES2022",
-    "module": "preserve"
-  },
-  "angularCompilerOptions": {
-    "enableI18nLegacyMessageIdFormat": false,
-    "strictInjectionParameters": true,
-    "strictInputAccessModifiers": true,
-    "typeCheckHostBindings": true,
-    "strictTemplates": true
-  },
-  "files": [],
-  "references": [
-    {
-      "path": "./tsconfig.app.json"
+    "paths": {
+      "@tt/auth": ["libs/auth/src/index.ts"]
     },
-    {
-      "path": "./tsconfig.spec.json"
-    }
+    "baseUrl": "./"
+  },
+  "include": [
+    "apps/**/*",
+    "libs/**/*"
   ]
 }
