@@ -1,5 +1,164 @@
 {
   "nodes": {
+    "data-access": {
+      "name": "data-access",
+      "type": "lib",
+      "data": {
+        "root": "libs/data-access",
+        "name": "data-access",
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/data-access/src",
+        "prefix": "lib",
+        "projectType": "library",
+        "tags": [],
+        "targets": {
+          "test": {
+            "executor": "@nx/jest:jest",
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "jestConfig": "libs/data-access/jest.config.ts",
+              "tsConfig": "libs/data-access/tsconfig.spec.json",
+              "passWithNoTests": true
+            },
+            "configurations": {
+              "ci": {
+                "ci": true,
+                "codeCoverage": true
+              }
+            },
+            "parallelism": true,
+            "cache": true,
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}/jest.preset.js"
+            ]
+          },
+          "lint": {
+            "executor": "@nx/eslint:lint",
+            "configurations": {},
+            "options": {},
+            "parallelism": true,
+            "cache": true,
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore",
+              "{workspaceRoot}/eslint.config.mjs"
+            ]
+          }
+        },
+        "implicitDependencies": []
+      }
+    },
+    "interfaces": {
+      "name": "interfaces",
+      "type": "lib",
+      "data": {
+        "root": "libs/interfaces",
+        "name": "interfaces",
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/interfaces/src",
+        "prefix": "lib",
+        "projectType": "library",
+        "tags": [],
+        "targets": {
+          "test": {
+            "executor": "@nx/jest:jest",
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "jestConfig": "libs/interfaces/jest.config.ts",
+              "tsConfig": "libs/interfaces/tsconfig.spec.json",
+              "passWithNoTests": true
+            },
+            "configurations": {
+              "ci": {
+                "ci": true,
+                "codeCoverage": true
+              }
+            },
+            "parallelism": true,
+            "cache": true,
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}/jest.preset.js"
+            ]
+          },
+          "lint": {
+            "executor": "@nx/eslint:lint",
+            "configurations": {},
+            "options": {},
+            "parallelism": true,
+            "cache": true,
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore",
+              "{workspaceRoot}/eslint.config.mjs"
+            ]
+          }
+        },
+        "implicitDependencies": []
+      }
+    },
+    "common-ui": {
+      "name": "common-ui",
+      "type": "lib",
+      "data": {
+        "root": "libs/common-ui",
+        "name": "common-ui",
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/common-ui/src",
+        "prefix": "lib",
+        "projectType": "library",
+        "tags": [],
+        "targets": {
+          "test": {
+            "executor": "@nx/jest:jest",
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "jestConfig": "libs/common-ui/jest.config.ts",
+              "tsConfig": "libs/common-ui/tsconfig.spec.json",
+              "passWithNoTests": true
+            },
+            "configurations": {
+              "ci": {
+                "ci": true,
+                "codeCoverage": true
+              }
+            },
+            "parallelism": true,
+            "cache": true,
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}/jest.preset.js"
+            ]
+          },
+          "lint": {
+            "executor": "@nx/eslint:lint",
+            "configurations": {},
+            "options": {},
+            "parallelism": true,
+            "cache": true,
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore",
+              "{workspaceRoot}/eslint.config.mjs"
+            ]
+          }
+        },
+        "implicitDependencies": []
+      }
+    },
     "tik-talk-app": {
       "name": "tik-talk-app",
       "type": "app",
@@ -146,6 +305,271 @@
         },
         "implicitDependencies": [],
         "tags": []
+      }
+    },
+    "polygon": {
+      "name": "polygon",
+      "type": "lib",
+      "data": {
+        "root": "libs/polygon",
+        "name": "polygon",
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/polygon/src",
+        "prefix": "lib",
+        "projectType": "library",
+        "tags": [],
+        "targets": {
+          "test": {
+            "executor": "@nx/jest:jest",
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "jestConfig": "libs/polygon/jest.config.ts",
+              "tsConfig": "libs/polygon/tsconfig.spec.json",
+              "passWithNoTests": true
+            },
+            "configurations": {
+              "ci": {
+                "ci": true,
+                "codeCoverage": true
+              }
+            },
+            "parallelism": true,
+            "cache": true,
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}/jest.preset.js"
+            ]
+          },
+          "lint": {
+            "executor": "@nx/eslint:lint",
+            "configurations": {},
+            "options": {},
+            "parallelism": true,
+            "cache": true,
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore",
+              "{workspaceRoot}/eslint.config.mjs"
+            ]
+          }
+        },
+        "implicitDependencies": []
+      }
+    },
+    "profile": {
+      "name": "profile",
+      "type": "lib",
+      "data": {
+        "root": "libs/profile",
+        "name": "profile",
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/profile/src",
+        "prefix": "lib",
+        "projectType": "library",
+        "tags": [],
+        "targets": {
+          "test": {
+            "executor": "@nx/jest:jest",
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "jestConfig": "libs/profile/jest.config.ts",
+              "tsConfig": "libs/profile/tsconfig.spec.json",
+              "passWithNoTests": true
+            },
+            "configurations": {
+              "ci": {
+                "ci": true,
+                "codeCoverage": true
+              }
+            },
+            "parallelism": true,
+            "cache": true,
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}/jest.preset.js"
+            ]
+          },
+          "lint": {
+            "executor": "@nx/eslint:lint",
+            "configurations": {},
+            "options": {},
+            "parallelism": true,
+            "cache": true,
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore",
+              "{workspaceRoot}/eslint.config.mjs"
+            ]
+          }
+        },
+        "implicitDependencies": []
+      }
+    },
+    "layout": {
+      "name": "layout",
+      "type": "lib",
+      "data": {
+        "root": "libs/layout",
+        "name": "layout",
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/layout/src",
+        "prefix": "lib",
+        "projectType": "library",
+        "tags": [],
+        "targets": {
+          "test": {
+            "executor": "@nx/jest:jest",
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "jestConfig": "libs/layout/jest.config.ts",
+              "tsConfig": "libs/layout/tsconfig.spec.json",
+              "passWithNoTests": true
+            },
+            "configurations": {
+              "ci": {
+                "ci": true,
+                "codeCoverage": true
+              }
+            },
+            "parallelism": true,
+            "cache": true,
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}/jest.preset.js"
+            ]
+          },
+          "lint": {
+            "executor": "@nx/eslint:lint",
+            "configurations": {},
+            "options": {},
+            "parallelism": true,
+            "cache": true,
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore",
+              "{workspaceRoot}/eslint.config.mjs"
+            ]
+          }
+        },
+        "implicitDependencies": []
+      }
+    },
+    "shared": {
+      "name": "shared",
+      "type": "lib",
+      "data": {
+        "root": "libs/shared",
+        "name": "shared",
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/shared/src",
+        "prefix": "lib",
+        "projectType": "library",
+        "tags": [],
+        "targets": {
+          "test": {
+            "executor": "@nx/jest:jest",
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "jestConfig": "libs/shared/jest.config.ts",
+              "tsConfig": "libs/shared/tsconfig.spec.json",
+              "passWithNoTests": true
+            },
+            "configurations": {
+              "ci": {
+                "ci": true,
+                "codeCoverage": true
+              }
+            },
+            "parallelism": true,
+            "cache": true,
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}/jest.preset.js"
+            ]
+          },
+          "lint": {
+            "executor": "@nx/eslint:lint",
+            "configurations": {},
+            "options": {},
+            "parallelism": true,
+            "cache": true,
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore",
+              "{workspaceRoot}/eslint.config.mjs"
+            ]
+          }
+        },
+        "implicitDependencies": []
+      }
+    },
+    "chats": {
+      "name": "chats",
+      "type": "lib",
+      "data": {
+        "root": "libs/chats",
+        "name": "chats",
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/chats/src",
+        "prefix": "lib",
+        "projectType": "library",
+        "tags": [],
+        "targets": {
+          "test": {
+            "executor": "@nx/jest:jest",
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "jestConfig": "libs/chats/jest.config.ts",
+              "tsConfig": "libs/chats/tsconfig.spec.json",
+              "passWithNoTests": true
+            },
+            "configurations": {
+              "ci": {
+                "ci": true,
+                "codeCoverage": true
+              }
+            },
+            "parallelism": true,
+            "cache": true,
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}/jest.preset.js"
+            ]
+          },
+          "lint": {
+            "executor": "@nx/eslint:lint",
+            "configurations": {},
+            "options": {},
+            "parallelism": true,
+            "cache": true,
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore",
+              "{workspaceRoot}/eslint.config.mjs"
+            ]
+          }
+        },
+        "implicitDependencies": []
       }
     },
     "posts": {
@@ -15016,6 +15440,57 @@
     }
   },
   "dependencies": {
+    "data-access": [
+      {
+        "source": "data-access",
+        "target": "npm:@nx/eslint-plugin",
+        "type": "static"
+      },
+      {
+        "source": "data-access",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "data-access",
+        "target": "npm:jest-preset-angular",
+        "type": "static"
+      }
+    ],
+    "interfaces": [
+      {
+        "source": "interfaces",
+        "target": "npm:@nx/eslint-plugin",
+        "type": "static"
+      },
+      {
+        "source": "interfaces",
+        "target": "npm:jest-preset-angular",
+        "type": "static"
+      }
+    ],
+    "common-ui": [
+      {
+        "source": "common-ui",
+        "target": "npm:@nx/eslint-plugin",
+        "type": "static"
+      },
+      {
+        "source": "common-ui",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "common-ui",
+        "target": "npm:luxon",
+        "type": "static"
+      },
+      {
+        "source": "common-ui",
+        "target": "npm:jest-preset-angular",
+        "type": "static"
+      }
+    ],
     "tik-talk-app": [
       {
         "source": "tik-talk-app",
@@ -15039,32 +15514,257 @@
       },
       {
         "source": "tik-talk-app",
-        "target": "npm:@angular/forms",
+        "target": "profile",
         "type": "static"
       },
       {
         "source": "tik-talk-app",
-        "target": "npm:rxjs",
+        "target": "layout",
         "type": "static"
       },
       {
         "source": "tik-talk-app",
-        "target": "npm:luxon",
+        "target": "chats",
         "type": "static"
       },
       {
         "source": "tik-talk-app",
-        "target": "npm:@maskito/angular",
-        "type": "static"
-      },
-      {
-        "source": "tik-talk-app",
-        "target": "npm:@maskito/core",
+        "target": "polygon",
         "type": "static"
       },
       {
         "source": "tik-talk-app",
         "target": "npm:@angular/platform-browser",
+        "type": "static"
+      }
+    ],
+    "polygon": [
+      {
+        "source": "polygon",
+        "target": "npm:@nx/eslint-plugin",
+        "type": "static"
+      },
+      {
+        "source": "polygon",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "polygon",
+        "target": "npm:rxjs",
+        "type": "static"
+      },
+      {
+        "source": "polygon",
+        "target": "npm:@angular/router",
+        "type": "static"
+      },
+      {
+        "source": "polygon",
+        "target": "npm:@angular/forms",
+        "type": "static"
+      },
+      {
+        "source": "polygon",
+        "target": "npm:@maskito/angular",
+        "type": "static"
+      },
+      {
+        "source": "polygon",
+        "target": "common-ui",
+        "type": "static"
+      },
+      {
+        "source": "polygon",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "polygon",
+        "target": "npm:jest-preset-angular",
+        "type": "static"
+      }
+    ],
+    "profile": [
+      {
+        "source": "profile",
+        "target": "npm:@nx/eslint-plugin",
+        "type": "static"
+      },
+      {
+        "source": "profile",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "profile",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "profile",
+        "target": "interfaces",
+        "type": "static"
+      },
+      {
+        "source": "profile",
+        "target": "shared",
+        "type": "static"
+      },
+      {
+        "source": "profile",
+        "target": "npm:rxjs",
+        "type": "static"
+      },
+      {
+        "source": "profile",
+        "target": "npm:@angular/forms",
+        "type": "static"
+      },
+      {
+        "source": "profile",
+        "target": "npm:@angular/router",
+        "type": "static"
+      },
+      {
+        "source": "profile",
+        "target": "common-ui",
+        "type": "static"
+      },
+      {
+        "source": "profile",
+        "target": "posts",
+        "type": "static"
+      },
+      {
+        "source": "profile",
+        "target": "npm:jest-preset-angular",
+        "type": "static"
+      }
+    ],
+    "layout": [
+      {
+        "source": "layout",
+        "target": "npm:@nx/eslint-plugin",
+        "type": "static"
+      },
+      {
+        "source": "layout",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "layout",
+        "target": "npm:@angular/router",
+        "type": "static"
+      },
+      {
+        "source": "layout",
+        "target": "common-ui",
+        "type": "static"
+      },
+      {
+        "source": "layout",
+        "target": "profile",
+        "type": "static"
+      },
+      {
+        "source": "layout",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "layout",
+        "target": "npm:rxjs",
+        "type": "static"
+      },
+      {
+        "source": "layout",
+        "target": "interfaces",
+        "type": "static"
+      },
+      {
+        "source": "layout",
+        "target": "npm:jest-preset-angular",
+        "type": "static"
+      }
+    ],
+    "shared": [
+      {
+        "source": "shared",
+        "target": "npm:@nx/eslint-plugin",
+        "type": "static"
+      },
+      {
+        "source": "shared",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "shared",
+        "target": "interfaces",
+        "type": "static"
+      },
+      {
+        "source": "shared",
+        "target": "npm:jest-preset-angular",
+        "type": "static"
+      }
+    ],
+    "chats": [
+      {
+        "source": "chats",
+        "target": "npm:@nx/eslint-plugin",
+        "type": "static"
+      },
+      {
+        "source": "chats",
+        "target": "interfaces",
+        "type": "static"
+      },
+      {
+        "source": "chats",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "chats",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "chats",
+        "target": "profile",
+        "type": "static"
+      },
+      {
+        "source": "chats",
+        "target": "npm:rxjs",
+        "type": "static"
+      },
+      {
+        "source": "chats",
+        "target": "npm:luxon",
+        "type": "static"
+      },
+      {
+        "source": "chats",
+        "target": "common-ui",
+        "type": "static"
+      },
+      {
+        "source": "chats",
+        "target": "npm:@angular/router",
+        "type": "static"
+      },
+      {
+        "source": "chats",
+        "target": "npm:@angular/forms",
+        "type": "static"
+      },
+      {
+        "source": "chats",
+        "target": "npm:jest-preset-angular",
         "type": "static"
       }
     ],
@@ -15076,7 +15776,37 @@
       },
       {
         "source": "posts",
+        "target": "interfaces",
+        "type": "static"
+      },
+      {
+        "source": "posts",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "posts",
         "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "posts",
+        "target": "npm:rxjs",
+        "type": "static"
+      },
+      {
+        "source": "posts",
+        "target": "common-ui",
+        "type": "static"
+      },
+      {
+        "source": "posts",
+        "target": "npm:@angular/forms",
+        "type": "static"
+      },
+      {
+        "source": "posts",
+        "target": "shared",
         "type": "static"
       },
       {
@@ -15114,6 +15844,11 @@
       {
         "source": "auth",
         "target": "npm:ngx-cookie-service",
+        "type": "static"
+      },
+      {
+        "source": "auth",
+        "target": "npm:@angular/forms",
         "type": "static"
       },
       {
@@ -36423,5 +37158,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1764144057951
+  "computedAt": 1764320760987
 }

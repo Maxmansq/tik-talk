@@ -1,1 +1,1 @@
-export * from './lib/posts/posts';
+export * from './lib/feature-posts-wall'

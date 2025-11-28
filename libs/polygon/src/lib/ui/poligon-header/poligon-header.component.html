@@ -1,0 +1,31 @@
+<div class="item-wrapper">
+  @if(inWork()) {
+  @for (item of headerWork; track item.id) {
+  <a 
+    class="header-item medium-text"
+    [routerLink]="[item.link]"
+    (click)="onSubmit()">
+    {{ item.name }}
+  </a>
+  }
+} @else {
+  <a 
+    class="header-item medium-text"
+    [routerLink]="['/poligon']"
+    (click)="onOut()">
+    Назад
+  </a>
+}
+</div>
+<div>
+  <a 
+    class="header-item medium-text"
+    [routerLink]="['']"
+    (click)="onOut()"
+    >
+    На главную
+  </a>
+</div>
+
+
+
