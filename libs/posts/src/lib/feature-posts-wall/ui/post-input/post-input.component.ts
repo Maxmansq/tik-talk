@@ -2,7 +2,7 @@ import { Component, EventEmitter, HostBinding, inject, input, Output, Renderer2 
 import { FormsModule } from '@angular/forms';
 import { PostCreateDto, PostService } from '@tt/data-access';
 import { AvatarCircleComponent, SvgIconComponent } from '@tt/common-ui'
-import { GlobalStoreService }  from '@tt/shared'
+import { GlobalStoreService }  from '@tt/data-access'
 
 @Component({
   selector: 'app-post-input',

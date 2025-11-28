@@ -8,7 +8,7 @@ import { AsyncPipe } from '@angular/common';
 import { SvgIconComponent } from "@tt/common-ui";
 import { ImgUrlPipe } from '@tt/common-ui';
 import { PostFeedComponent } from '@tt/posts';
-import { Profile } from '@tt/interfaces/profile';
+import { Profile } from '@tt/data-access';
 
 
 @Component({

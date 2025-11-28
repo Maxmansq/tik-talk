@@ -1,7 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable, signal } from '@angular/core';
-import { Profile } from '@tt/interfaces/profile';
-import { GlobalStoreService, Pageble } from '@tt/shared';
+import { Profile } from './../interfaces/profile.interfaces';
+import { GlobalStoreService } from './../../global-store';
+import { Pageble } from './../../pagination'
 import { map, tap } from 'rxjs';
 
 @Injectable({
