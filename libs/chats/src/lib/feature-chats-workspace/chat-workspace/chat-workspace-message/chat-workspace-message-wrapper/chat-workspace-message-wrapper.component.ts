@@ -3,8 +3,8 @@ import { ChatWorkspaceMessageComponent } from '../chat-workspace-message.compone
 import { debounceTime, firstValueFrom, fromEvent, Subject, takeUntil, timer } from 'rxjs';
 import { InputMessageComponent } from './../../../../ui';
 import { TimeMassagePipe } from '@tt/common-ui';
-import { ChatsService } from './../../../../data';
-import { Chat } from './../../../../data';
+import { ChatsService } from '@tt/data-access';
+import { Chat } from '@tt/data-access';
 
 
 @Component({

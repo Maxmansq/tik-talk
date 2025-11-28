@@ -111,7 +111,7 @@
         },
         {
           "file": "libs/profile/src/index.ts",
-          "hash": "13048271261866023434"
+          "hash": "7762178838555003099"
         },
         {
           "file": "libs/profile/src/lib/data/index.ts",
@@ -142,10 +142,11 @@
         },
         {
           "file": "libs/profile/src/lib/feachure-profile-settings/settings-page/settings-page.component.ts",
-          "hash": "13528961249472592737",
+          "hash": "8143244377178315917",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/forms",
+            "data-access",
             "npm:rxjs",
             "npm:@angular/router",
             "common-ui"
@@ -165,10 +166,11 @@
         },
         {
           "file": "libs/profile/src/lib/feature-profile-list/profile-filters/profile-filters.component.ts",
-          "hash": "2387996072781749185",
+          "hash": "5238636408634828109",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/forms",
+            "data-access",
             "npm:rxjs"
           ]
         },
@@ -182,9 +184,10 @@
         },
         {
           "file": "libs/profile/src/lib/feature-profile-list/search-page/search-page.component.ts",
-          "hash": "894861956888017783",
+          "hash": "2664822914423193325",
           "deps": [
-            "npm:@angular/core"
+            "npm:@angular/core",
+            "data-access"
           ]
         },
         {
@@ -201,9 +204,10 @@
         },
         {
           "file": "libs/profile/src/lib/feature-profile-page/profile-pages/profile-page.component.ts",
-          "hash": "7191047765264567158",
+          "hash": "15298224082996435161",
           "deps": [
             "npm:@angular/core",
+            "data-access",
             "npm:@angular/router",
             "npm:rxjs",
             "npm:@angular/common",
@@ -598,7 +602,21 @@
         },
         {
           "file": "libs/data-access/src/index.ts",
-          "hash": "16136561172345169738"
+          "hash": "14448546252178547728"
+        },
+        {
+          "file": "libs/data-access/src/lib/chats/index.ts",
+          "hash": "16440285013542451778"
+        },
+        {
+          "file": "libs/data-access/src/lib/chats/services/chats.service.ts",
+          "hash": "17495742748986833936",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:rxjs",
+            "npm:luxon"
+          ]
         },
         {
           "file": "libs/data-access/src/lib/data-access/data-access.html",
@@ -614,6 +632,14 @@
           "deps": [
             "npm:@angular/core"
           ]
+        },
+        {
+          "file": "libs/data-access/src/lib/polygon/index.ts",
+          "hash": "15026127508808573369"
+        },
+        {
+          "file": "libs/data-access/src/lib/posts/index.ts",
+          "hash": "7318518311075544348"
         },
         {
           "file": "libs/data-access/src/test-setup.ts",
@@ -657,11 +683,7 @@
         },
         {
           "file": "libs/chats/src/index.ts",
-          "hash": "10299182576732391739"
-        },
-        {
-          "file": "libs/chats/src/lib/data/index.ts",
-          "hash": "5718355709359003994"
+          "hash": "18232509949467026122"
         },
         {
           "file": "libs/chats/src/lib/data/interfaces/chats.interfaces.ts",
@@ -708,11 +730,12 @@
         },
         {
           "file": "libs/chats/src/lib/feature-chats-workspace/chat-workspace/chat-workspace-message/chat-workspace-message-wrapper/chat-workspace-message-wrapper.component.ts",
-          "hash": "7985433210235143014",
+          "hash": "18154709778571783484",
           "deps": [
             "npm:@angular/core",
             "npm:rxjs",
-            "common-ui"
+            "common-ui",
+            "data-access"
           ]
         },
         {
@@ -725,10 +748,11 @@
         },
         {
           "file": "libs/chats/src/lib/feature-chats-workspace/chat-workspace/chat-workspace-message/chat-workspace-message.component.ts",
-          "hash": "9434511091659597276",
+          "hash": "7285743885679470115",
           "deps": [
             "npm:@angular/core",
-            "common-ui"
+            "common-ui",
+            "data-access"
           ]
         },
         {
@@ -741,10 +765,11 @@
         },
         {
           "file": "libs/chats/src/lib/feature-chats-workspace/chat-workspace/chat-workspace.component.ts",
-          "hash": "9523067778840108047",
+          "hash": "4316883413168638061",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/router",
+            "data-access",
             "npm:rxjs",
             "npm:@angular/common",
             "npm:@angular/forms"
@@ -760,10 +785,11 @@
         },
         {
           "file": "libs/chats/src/lib/feature-chats-workspace/chats-btn/chats-btn.component.ts",
-          "hash": "10319850720652618522",
+          "hash": "8813424828572259965",
           "deps": [
             "npm:@angular/core",
             "common-ui",
+            "data-access",
             "npm:@angular/common"
           ]
         },
@@ -777,9 +803,10 @@
         },
         {
           "file": "libs/chats/src/lib/feature-chats-workspace/chats-list/chats-list.component.ts",
-          "hash": "17197591755018205340",
+          "hash": "15120126306570008185",
           "deps": [
             "npm:@angular/core",
+            "data-access",
             "npm:@angular/common",
             "npm:@angular/router",
             "npm:@angular/forms",
@@ -824,10 +851,10 @@
         },
         {
           "file": "libs/chats/src/lib/ui/input-message/input-message.component.ts",
-          "hash": "15062370186340635647",
+          "hash": "3056127500268455333",
           "deps": [
             "npm:@angular/core",
-            "profile",
+            "data-access",
             "common-ui",
             "npm:@angular/forms"
           ]
@@ -877,10 +904,6 @@
           "hash": "17090198071321845825"
         },
         {
-          "file": "libs/posts/src/lib/data/index.ts",
-          "hash": "7318518311075544348"
-        },
-        {
           "file": "libs/posts/src/lib/data/interfaces/post.interfaces.ts",
           "hash": "9341084599226055596",
           "deps": [
@@ -910,10 +933,11 @@
         },
         {
           "file": "libs/posts/src/lib/feature-posts-wall/post-feed/post-feed.component.ts",
-          "hash": "16204773688224995913",
+          "hash": "18379037564052313520",
           "deps": [
             "npm:@angular/core",
-            "npm:rxjs"
+            "npm:rxjs",
+            "data-access"
           ]
         },
         {
@@ -926,11 +950,12 @@
         },
         {
           "file": "libs/posts/src/lib/feature-posts-wall/post/post.component.ts",
-          "hash": "9840296283233140385",
+          "hash": "16960033127244041917",
           "deps": [
             "npm:@angular/core",
             "common-ui",
-            "npm:rxjs"
+            "npm:rxjs",
+            "data-access"
           ]
         },
         {
@@ -943,10 +968,11 @@
         },
         {
           "file": "libs/posts/src/lib/feature-posts-wall/ui/comment/comment.component.ts",
-          "hash": "14346162739413663408",
+          "hash": "6609660627176371725",
           "deps": [
             "npm:@angular/core",
-            "common-ui"
+            "common-ui",
+            "data-access"
           ]
         },
         {
@@ -967,10 +993,11 @@
         },
         {
           "file": "libs/posts/src/lib/feature-posts-wall/ui/post-input/post-input.component.ts",
-          "hash": "7115289984239894398",
+          "hash": "18323804033651204798",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/forms",
+            "data-access",
             "common-ui",
             "shared"
           ]
@@ -1235,12 +1262,12 @@
         },
         {
           "file": "libs/layout/src/lib/sidebar/sidebar.component.ts",
-          "hash": "8065864660511747441",
+          "hash": "2762877021147991659",
           "deps": [
             "npm:@angular/core",
             "common-ui",
             "npm:@angular/router",
-            "profile",
+            "data-access",
             "npm:@angular/common",
             "npm:rxjs"
           ]
@@ -1505,10 +1532,6 @@
           "hash": "5046301885527691449"
         },
         {
-          "file": "libs/polygon/src/lib/data/index.ts",
-          "hash": "15026127508808573369"
-        },
-        {
           "file": "libs/polygon/src/lib/data/services/form.service.ts",
           "hash": "6673397155611630908",
           "deps": [
@@ -1605,10 +1628,11 @@
         },
         {
           "file": "libs/polygon/src/lib/polygon-projects/react-form/react-form.component.ts",
-          "hash": "1578410501436482242",
+          "hash": "12938096863824563031",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/forms",
+            "data-access",
             "npm:@angular/common"
           ]
         },

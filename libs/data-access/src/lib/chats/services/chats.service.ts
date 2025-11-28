@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable, signal } from '@angular/core';
 import { Chat, GroupMessages, LastMessage, Message } from '../interfaces/chats.interfaces';
-import { ProfileService } from '@tt/profile';
+import { ProfileService } from './../../profile';
 import { map } from 'rxjs';
 import { DateTime } from 'luxon';
 

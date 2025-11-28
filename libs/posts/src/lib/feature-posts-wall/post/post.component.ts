@@ -3,7 +3,7 @@ import { AvatarCircleComponent } from "@tt/common-ui";
 import { SvgIconComponent } from "@tt/common-ui";
 import { debounceTime, firstValueFrom } from 'rxjs';
 import { PassedTimePipe } from '@tt/common-ui';
-import { Comment, Post, PostService } from '../../data';
+import { Comment, Post, PostService } from '@tt/data-access';
 import { CommentComponent, PostInputComponent } from '../ui';
 
 @Component({

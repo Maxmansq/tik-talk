@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { FormArray, FormControl, FormGroup, FormRecord, ReactiveFormsModule, Validators, ɵInternalFormsSharedModule } from '@angular/forms';
-import { FormServiceService } from './../../data'
+import { FormServiceService } from '@tt/data-access'
 import { KeyValuePipe } from '@angular/common';
 
 

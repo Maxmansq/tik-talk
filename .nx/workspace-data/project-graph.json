@@ -15448,7 +15448,22 @@
       },
       {
         "source": "data-access",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "data-access",
         "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "data-access",
+        "target": "npm:rxjs",
+        "type": "static"
+      },
+      {
+        "source": "data-access",
+        "target": "npm:luxon",
         "type": "static"
       },
       {
@@ -15576,6 +15591,11 @@
       },
       {
         "source": "polygon",
+        "target": "data-access",
+        "type": "static"
+      },
+      {
+        "source": "polygon",
         "target": "npm:@angular/common",
         "type": "static"
       },
@@ -15623,6 +15643,11 @@
       },
       {
         "source": "profile",
+        "target": "data-access",
+        "type": "static"
+      },
+      {
+        "source": "profile",
         "target": "npm:@angular/router",
         "type": "static"
       },
@@ -15665,7 +15690,7 @@
       },
       {
         "source": "layout",
-        "target": "profile",
+        "target": "data-access",
         "type": "static"
       },
       {
@@ -15754,6 +15779,11 @@
       },
       {
         "source": "chats",
+        "target": "data-access",
+        "type": "static"
+      },
+      {
+        "source": "chats",
         "target": "npm:@angular/router",
         "type": "static"
       },
@@ -15792,6 +15822,11 @@
       {
         "source": "posts",
         "target": "npm:rxjs",
+        "type": "static"
+      },
+      {
+        "source": "posts",
+        "target": "data-access",
         "type": "static"
       },
       {
@@ -37158,5 +37193,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1764320760987
+  "computedAt": 1764324364028
 }

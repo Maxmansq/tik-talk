@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { ChatsBtnComponent } from '../chats-btn/chats-btn.component';
-import { ChatsService } from './../../data';
+import { ChatsService } from '@tt/data-access';
 import { AsyncPipe } from '@angular/common';
 import { RouterLink, RouterLinkActive } from "@angular/router";
 import { FormControl, ReactiveFormsModule } from '@angular/forms';

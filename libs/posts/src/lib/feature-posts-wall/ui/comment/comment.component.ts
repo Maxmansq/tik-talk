@@ -1,7 +1,7 @@
 import { Component, input } from '@angular/core';
 import { AvatarCircleComponent } from '@tt/common-ui';
 import { PassedTimePipe } from '@tt/common-ui';
-import { Comment } from '../../../data';
+import { Comment } from '@tt/data-access';
 
 @Component({
   selector: 'app-comment',

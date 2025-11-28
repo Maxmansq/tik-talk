@@ -1,6 +1,6 @@
 import { Component, EventEmitter, HostBinding, inject, input, Output, Renderer2 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { PostCreateDto, PostService } from '../../../data';
+import { PostCreateDto, PostService } from '@tt/data-access';
 import { AvatarCircleComponent, SvgIconComponent } from '@tt/common-ui'
 import { GlobalStoreService }  from '@tt/shared'
 

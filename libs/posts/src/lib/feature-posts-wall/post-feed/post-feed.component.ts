@@ -1,6 +1,6 @@
 import { Component, ElementRef, inject, input, Renderer2 } from '@angular/core';
 import { debounceTime, firstValueFrom, fromEvent, Subject, takeUntil } from 'rxjs';
-import { PostService } from '../../data';
+import { PostService } from '@tt/data-access';
 import { PostInputComponent } from '../ui';
 import { PostComponent } from '../post/post.component';
 
