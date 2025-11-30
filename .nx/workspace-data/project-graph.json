@@ -4919,6 +4919,24 @@
         "hash": "sha512-9zESzOO5aDByvhIAsOy9TbpZ0Ur2AJbUI7UT73kcUTS2mxAMHOBaa1st/jAymNoCtvrit99kkzT1FZuXVcgfIQ=="
       }
     },
+    "npm:@ngrx/effects": {
+      "type": "npm",
+      "name": "npm:@ngrx/effects",
+      "data": {
+        "version": "20.1.0",
+        "packageName": "@ngrx/effects",
+        "hash": "sha512-wkIu0QnTarBd1zUswk643H5SILO9Be1OeswMe7g4tXlkNLFRPkyu0BUzXT80PsUPP5p0VrdFz3akrn3HHjjTjA=="
+      }
+    },
+    "npm:@ngrx/store": {
+      "type": "npm",
+      "name": "npm:@ngrx/store",
+      "data": {
+        "version": "20.1.0",
+        "packageName": "@ngrx/store",
+        "hash": "sha512-o8j3CGAGedm+BIb+QDhNXrVaU//n9uF0wH0HZWtXHmW1mjRBaQiUA+ZPMUkDwAeN8KuOcoIEC+2QUXxXGVI7ow=="
+      }
+    },
     "npm:@nodelib/fs.scandir": {
       "type": "npm",
       "name": "npm:@nodelib/fs.scandir",
@@ -15362,6 +15380,16 @@
       },
       {
         "source": "data-access",
+        "target": "npm:@ngrx/store",
+        "type": "static"
+      },
+      {
+        "source": "data-access",
+        "target": "npm:@ngrx/effects",
+        "type": "static"
+      },
+      {
+        "source": "data-access",
         "target": "npm:jest-preset-angular",
         "type": "static"
       }
@@ -15416,6 +15444,16 @@
       },
       {
         "source": "tik-talk-app",
+        "target": "npm:@ngrx/store",
+        "type": "static"
+      },
+      {
+        "source": "tik-talk-app",
+        "target": "npm:@ngrx/effects",
+        "type": "static"
+      },
+      {
+        "source": "tik-talk-app",
         "target": "profile",
         "type": "static"
       },
@@ -15432,6 +15470,11 @@
       {
         "source": "tik-talk-app",
         "target": "polygon",
+        "type": "static"
+      },
+      {
+        "source": "tik-talk-app",
+        "target": "data-access",
         "type": "static"
       },
       {
@@ -15521,6 +15564,11 @@
       {
         "source": "profile",
         "target": "common-ui",
+        "type": "static"
+      },
+      {
+        "source": "profile",
+        "target": "npm:@ngrx/store",
         "type": "static"
       },
       {
@@ -15976,6 +16024,16 @@
       {
         "source": "tik-talk",
         "target": "npm:@maskito/core",
+        "type": "static"
+      },
+      {
+        "source": "tik-talk",
+        "target": "npm:@ngrx/effects",
+        "type": "static"
+      },
+      {
+        "source": "tik-talk",
+        "target": "npm:@ngrx/store",
         "type": "static"
       },
       {
@@ -22715,6 +22773,45 @@
       {
         "source": "npm:@napi-rs/wasm-runtime",
         "target": "npm:@tybys/wasm-util",
+        "type": "static"
+      }
+    ],
+    "npm:@ngrx/effects": [
+      {
+        "source": "npm:@ngrx/effects",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "npm:@ngrx/effects",
+        "target": "npm:@ngrx/store",
+        "type": "static"
+      },
+      {
+        "source": "npm:@ngrx/effects",
+        "target": "npm:rxjs",
+        "type": "static"
+      },
+      {
+        "source": "npm:@ngrx/effects",
+        "target": "npm:tslib",
+        "type": "static"
+      }
+    ],
+    "npm:@ngrx/store": [
+      {
+        "source": "npm:@ngrx/store",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "npm:@ngrx/store",
+        "target": "npm:rxjs",
+        "type": "static"
+      },
+      {
+        "source": "npm:@ngrx/store",
+        "target": "npm:tslib",
         "type": "static"
       }
     ],
@@ -37008,5 +37105,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1764491382448
+  "computedAt": 1764519838223
 }

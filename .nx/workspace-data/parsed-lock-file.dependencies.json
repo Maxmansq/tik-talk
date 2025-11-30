@@ -7005,6 +7005,41 @@
     "type": "static"
   },
   {
+    "source": "npm:@ngrx/effects",
+    "target": "npm:@angular/core",
+    "type": "static"
+  },
+  {
+    "source": "npm:@ngrx/effects",
+    "target": "npm:@ngrx/store",
+    "type": "static"
+  },
+  {
+    "source": "npm:@ngrx/effects",
+    "target": "npm:rxjs",
+    "type": "static"
+  },
+  {
+    "source": "npm:@ngrx/effects",
+    "target": "npm:tslib",
+    "type": "static"
+  },
+  {
+    "source": "npm:@ngrx/store",
+    "target": "npm:@angular/core",
+    "type": "static"
+  },
+  {
+    "source": "npm:@ngrx/store",
+    "target": "npm:rxjs",
+    "type": "static"
+  },
+  {
+    "source": "npm:@ngrx/store",
+    "target": "npm:tslib",
+    "type": "static"
+  },
+  {
     "source": "npm:@nodelib/fs.scandir",
     "target": "npm:@nodelib/fs.stat",
     "type": "static"

@@ -4203,6 +4203,24 @@
         "hash": "sha512-9zESzOO5aDByvhIAsOy9TbpZ0Ur2AJbUI7UT73kcUTS2mxAMHOBaa1st/jAymNoCtvrit99kkzT1FZuXVcgfIQ=="
       }
     },
+    "npm:@ngrx/effects": {
+      "type": "npm",
+      "name": "npm:@ngrx/effects",
+      "data": {
+        "version": "20.1.0",
+        "packageName": "@ngrx/effects",
+        "hash": "sha512-wkIu0QnTarBd1zUswk643H5SILO9Be1OeswMe7g4tXlkNLFRPkyu0BUzXT80PsUPP5p0VrdFz3akrn3HHjjTjA=="
+      }
+    },
+    "npm:@ngrx/store": {
+      "type": "npm",
+      "name": "npm:@ngrx/store",
+      "data": {
+        "version": "20.1.0",
+        "packageName": "@ngrx/store",
+        "hash": "sha512-o8j3CGAGedm+BIb+QDhNXrVaU//n9uF0wH0HZWtXHmW1mjRBaQiUA+ZPMUkDwAeN8KuOcoIEC+2QUXxXGVI7ow=="
+      }
+    },
     "npm:@nodelib/fs.scandir": {
       "type": "npm",
       "name": "npm:@nodelib/fs.scandir",
@@ -15081,6 +15099,8 @@
     "node_modules/@napi-rs/nice-win32-ia32-msvc": "npm:@napi-rs/nice-win32-ia32-msvc",
     "node_modules/@napi-rs/nice-win32-x64-msvc": "npm:@napi-rs/nice-win32-x64-msvc",
     "node_modules/@napi-rs/wasm-runtime": "npm:@napi-rs/wasm-runtime",
+    "node_modules/@ngrx/effects": "npm:@ngrx/effects",
+    "node_modules/@ngrx/store": "npm:@ngrx/store",
     "node_modules/@nodelib/fs.scandir": "npm:@nodelib/fs.scandir",
     "node_modules/@nodelib/fs.stat": "npm:@nodelib/fs.stat",
     "node_modules/@nodelib/fs.walk": "npm:@nodelib/fs.walk",
