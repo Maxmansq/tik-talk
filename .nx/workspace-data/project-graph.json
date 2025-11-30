@@ -15379,6 +15379,11 @@
       },
       {
         "source": "common-ui",
+        "target": "npm:@maskito/core",
+        "type": "static"
+      },
+      {
+        "source": "common-ui",
         "target": "npm:luxon",
         "type": "static"
       },
@@ -37003,5 +37008,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1764326035173
+  "computedAt": 1764491183146
 }
