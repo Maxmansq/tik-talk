@@ -17308,3 +17308,68 @@ Time for 'build typescript dependencies' 0.024900004267692566
 [NX v22.1.1 Daemon Server] - 2025-11-28T10:33:55.193Z - Done responding to the client handleContextFileData
 [NX v22.1.1 Daemon Server] - 2025-11-28T10:33:55.193Z - Handled json message GET_CONTEXT_FILE_DATA. Handling time: 0. Response time: 1.
 [NX v22.1.1 Daemon Server] - 2025-11-28T10:33:55.193Z - Closed a connection. Number of open connections: 4
+[NX v22.1.1 Daemon Server] - 2025-11-30T08:29:41.700Z - Started listening on: \\.\pipe\nx\C:\Users\makcm\AppData\Local\Temp\e59b6642124e2cad0e74\d.sock
+[NX v22.1.1 Daemon Server] - 2025-11-30T08:29:41.703Z - [WATCHER]: Subscribed to changes within: d:\Work\tik-talk (native)
+[NX v22.1.1 Daemon Server] - 2025-11-30T08:29:41.706Z - Established a connection. Number of open connections: 1
+[NX v22.1.1 Daemon Server] - 2025-11-30T08:29:41.708Z - Closed a connection. Number of open connections: 0
+[NX v22.1.1 Daemon Server] - 2025-11-30T08:29:41.726Z - Established a connection. Number of open connections: 1
+[NX v22.1.1 Daemon Server] - 2025-11-30T08:29:41.726Z - Closed a connection. Number of open connections: 0
+[NX v22.1.1 Daemon Server] - 2025-11-30T08:29:41.726Z - Established a connection. Number of open connections: 1
+[NX v22.1.1 Daemon Server] - 2025-11-30T08:29:41.734Z - Received raw message of length 32
+[NX v22.1.1 Daemon Server] - 2025-11-30T08:29:41.735Z - Received json message of type REQUEST_PROJECT_GRAPH
+[NX v22.1.1 Daemon Server] - 2025-11-30T08:29:41.735Z - [REQUEST]: Client Request for Project Graph Received
+[NX v22.1.1 Daemon Server] - 2025-11-30T08:29:41.759Z - Time taken for 'loadSpecifiedNxPlugins' 18.336000000000013ms
+Time for 'plugin worker 8452 code loading' 6.167099999999998
+Time for 'plugin worker 3500 code loading' 6.8216
+Time for 'plugin worker 17772 code loading' 7.795300000000001
+Time for 'plugin worker 19400 code loading' 7.341899999999999
+[NX v22.1.1 Daemon Server] - 2025-11-30T08:29:42.225Z - Time taken for 'Load Nx Plugin: d:\Work\tik-talk\node_modules\nx\src\plugins\js' 488.0315ms
+[NX v22.1.1 Daemon Server] - 2025-11-30T08:29:42.226Z - Time taken for 'Load Nx Plugin: d:\Work\tik-talk\node_modules\nx\src\adapter\angular-json' 487.67370000000005ms
+[NX v22.1.1 Daemon Server] - 2025-11-30T08:29:42.227Z - Time taken for 'Load Nx Plugin: d:\Work\tik-talk\node_modules\nx\src\plugins\project-json\build-nodes\project-json' 487.3704ms
+[NX v22.1.1 Daemon Server] - 2025-11-30T08:29:42.232Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.1.1 Daemon Server] - 2025-11-30T08:29:42.232Z - [REQUEST]: 
+[NX v22.1.1 Daemon Server] - 2025-11-30T08:29:42.232Z - [REQUEST]: 
+[NX v22.1.1 Daemon Server] - 2025-11-30T08:29:42.234Z - No files changed, but no in-memory cached project graph found. Recomputing it...
+Time for 'nx-angular-json-plugin:createNodes' 0.5328999999999837
+[NX v22.1.1 Daemon Server] - 2025-11-30T08:29:42.238Z - Time taken for 'loadDefaultNxPlugins' 496.21829999999994ms
+Time for 'nx/core/package-json:createNodes' 1.0108999999999924
+Time for 'nx/core/project-json:createNodes' 1.7699999999999818
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 11.063999999999965
+Error reading 'd:\Work\tik-talk\.nx\workspace-data\file-map.json'. Continue the process without the cache.
+Error: InvalidSymbol in d:\Work\tik-talk\.nx\workspace-data\file-map.json at 218:1
+  216 |         },
+  217 |         {
+> 218 | <<<<<<< HEAD
+      | ^^^^^^^
+  219 | =======
+  220 |           "file": "libs/data-access/src/lib/profile/+state/profile.action.ts",
+  221 |           "hash": "3244421341483603138"
+
+    at parseJson (d:\Work\tik-talk\node_modules\nx\src\utils\json.js:29:15)
+    at readJsonFile (d:\Work\tik-talk\node_modules\nx\src\utils\fileutils.js:32:37)
+    at readFileMapCache (d:\Work\tik-talk\node_modules\nx\src\project-graph\nx-deps-cache.js:52:49)
+    at createAndSerializeProjectGraph (d:\Work\tik-talk\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:264:274)
+    at processFilesAndCreateAndSerializeProjectGraph (d:\Work\tik-talk\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:193:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getCachedSerializedProjectGraphPromise (d:\Work\tik-talk\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:58:24)
+    at async handleRequestProjectGraph (d:\Work\tik-talk\node_modules\nx\src\daemon\server\handle-request-project-graph.js:12:24)
+    at async handleResult (d:\Work\tik-talk\node_modules\nx\src\daemon\server\server.js:206:14)
+    at async handleMessage (d:\Work\tik-talk\node_modules\nx\src\daemon\server\server.js:124:9)
+[NX v22.1.1 Daemon Server] - 2025-11-30T08:29:42.285Z - Time taken for 'build-project-configs' 27.95569999999998ms
+Time for 'build typescript dependencies' 138.87630000000001
+[NX v22.1.1 Daemon Server] - 2025-11-30T08:29:42.446Z - [SYNC]: collect registered sync generators
+[NX v22.1.1 Daemon Server] - 2025-11-30T08:29:42.455Z - Wrote project graph cache to d:\Work\tik-talk\.nx\workspace-data\project-graph.json
+[NX v22.1.1 Daemon Server] - 2025-11-30T08:29:42.456Z - Serializing response for REQUEST_PROJECT_GRAPH message in json mode
+[NX v22.1.1 Daemon Server] - 2025-11-30T08:29:42.456Z - Responding to REQUEST_PROJECT_GRAPH message
+[NX v22.1.1 Daemon Server] - 2025-11-30T08:29:42.456Z - [REQUEST]: Responding to the client. project-graph
+[NX v22.1.1 Daemon Server] - 2025-11-30T08:29:42.457Z - Time taken for 'total for creating and serializing project graph' 720.7394999999999ms
+[NX v22.1.1 Daemon Server] - 2025-11-30T08:29:42.457Z - Done responding to the client project-graph
+[NX v22.1.1 Daemon Server] - 2025-11-30T08:29:42.457Z - Handled json message REQUEST_PROJECT_GRAPH. Handling time: 721. Response time: 1.
+[NX v22.1.1 Daemon Server] - 2025-11-30T08:29:42.462Z - Received raw message of length 32
+[NX v22.1.1 Daemon Server] - 2025-11-30T08:29:42.462Z - Received json message of type GET_CONTEXT_FILE_DATA
+[NX v22.1.1 Daemon Server] - 2025-11-30T08:29:42.462Z - Serializing response for GET_CONTEXT_FILE_DATA message in json mode
+[NX v22.1.1 Daemon Server] - 2025-11-30T08:29:42.462Z - Responding to GET_CONTEXT_FILE_DATA message
+[NX v22.1.1 Daemon Server] - 2025-11-30T08:29:42.462Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX v22.1.1 Daemon Server] - 2025-11-30T08:29:42.462Z - Done responding to the client handleContextFileData
+[NX v22.1.1 Daemon Server] - 2025-11-30T08:29:42.462Z - Handled json message GET_CONTEXT_FILE_DATA. Handling time: 0. Response time: 0.
+[NX v22.1.1 Daemon Server] - 2025-11-30T08:29:42.463Z - Closed a connection. Number of open connections: 0
