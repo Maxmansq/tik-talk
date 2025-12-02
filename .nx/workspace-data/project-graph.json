@@ -15699,6 +15699,11 @@
       },
       {
         "source": "posts",
+        "target": "npm:@ngrx/store",
+        "type": "static"
+      },
+      {
+        "source": "posts",
         "target": "common-ui",
         "type": "static"
       },
@@ -37105,5 +37110,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1764662758737
+  "computedAt": 1764672021490
 }

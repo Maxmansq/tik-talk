@@ -22,10 +22,10 @@ export class PostService {
   }
   
   fetchPost() {
-    return this.#http.get<Post[]>(`${this.baseApiUrl}post/`).
-      pipe(
-      tap(res => this.posts.set(res)) 
-      )
+    return this.#http.get<Post[]>(`${this.baseApiUrl}post/`)
+      // pipe(
+      // tap(res => this.posts.set(res)) 
+      // )
   }
 
   createComment(payload: CommentCreateDto) {

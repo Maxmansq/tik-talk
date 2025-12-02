@@ -1,8 +1,9 @@
 import { Component, ElementRef, inject, input, Renderer2 } from '@angular/core';
 import { debounceTime, firstValueFrom, fromEvent, Subject, takeUntil } from 'rxjs';
-import { PostService } from '@tt/data-access';
+import { postAction, PostService, selectPosts } from '@tt/data-access';
 import { PostInputComponent } from '../ui';
 import { PostComponent } from '../post/post.component';
+import { Store } from '@ngrx/store';
 
 
 @Component({
@@ -14,7 +15,8 @@ import { PostComponent } from '../post/post.component';
 export class PostFeedComponent {
   private destroy$ = new Subject<void>();
   postService = inject(PostService)
-  feed = inject(PostService).posts
+  store = inject(Store)
+  feed = this.store.selectSignal(selectPosts)
   inputcontent = input()
 
 
@@ -39,7 +41,8 @@ export class PostFeedComponent {
   r2 = inject(Renderer2)
 
   constructor() {
-    firstValueFrom(this.postService.fetchPost()) 
+    // firstValueFrom(this.postService.fetchPost())
+    this.store.dispatch(postAction.getPost())
   }
 
   resizeFeed() {
@@ -59,7 +62,10 @@ export class PostFeedComponent {
         title: val.title,
         content: val.content,
         authorId: val.authorId
-      }))
+      })).then(() => {
+        this.store.dispatch(postAction.getPost())
+      })
+      
       }
       else {
         firstValueFrom(this.postService.createComment({

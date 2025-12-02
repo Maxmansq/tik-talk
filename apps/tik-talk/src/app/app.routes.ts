@@ -8,13 +8,23 @@ import { SettingsPageComponent } from '@tt/profile';
 import { ChatRoutes } from '@tt/chats';
 import { PolygonRouts } from '@tt/polygon'
 import { provideState } from '@ngrx/store';
-import { ProfileEffects, profileFeature } from '@tt/data-access';
+import { PostEffects, postFeature, ProfileEffects, profileFeature } from '@tt/data-access';
 import { provideEffects } from '@ngrx/effects';
 
 export const routes: Routes = [
   {
-    path: '', component: LayoutComponent, children: [
-      {path: '', redirectTo: 'profile/me', pathMatch: 'full'},
+    path: '',
+    component: LayoutComponent,
+    providers: [
+      provideState(postFeature),
+      provideEffects(PostEffects)
+    ],
+    children: [
+      {
+        path: '',
+        redirectTo: 'profile/me',
+        pathMatch: 'full',
+      },
       {path: 'profile/:id', component: ProfilePageComponent},
       {path: 'settings', component: SettingsPageComponent},
       {

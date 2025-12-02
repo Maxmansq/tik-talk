@@ -471,11 +471,12 @@
         },
         {
           "file": "libs/posts/src/lib/feature-posts-wall/post-feed/post-feed.component.ts",
-          "hash": "18379037564052313520",
+          "hash": "4765881502466894043",
           "deps": [
             "npm:@angular/core",
             "npm:rxjs",
-            "data-access"
+            "data-access",
+            "npm:@ngrx/store"
           ]
         },
         {
@@ -842,27 +843,41 @@
         },
         {
           "file": "libs/data-access/src/lib/posts/+state/index.ts",
-          "hash": "1373549191615697025"
+          "hash": "12894058955581091713"
         },
         {
-          "file": "libs/data-access/src/lib/posts/+state/profile.action.ts",
-          "hash": "3244421341483603138"
+          "file": "libs/data-access/src/lib/posts/+state/post.action.ts",
+          "hash": "11109915438827896836",
+          "deps": [
+            "npm:@ngrx/store"
+          ]
         },
         {
-          "file": "libs/data-access/src/lib/posts/+state/profile.effect.ts",
-          "hash": "3244421341483603138"
+          "file": "libs/data-access/src/lib/posts/+state/post.effect.ts",
+          "hash": "5052407650408137284",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@ngrx/effects",
+            "npm:rxjs"
+          ]
         },
         {
-          "file": "libs/data-access/src/lib/posts/+state/profile.reducer.ts",
-          "hash": "3244421341483603138"
+          "file": "libs/data-access/src/lib/posts/+state/post.reducer.ts",
+          "hash": "4838215620237173336",
+          "deps": [
+            "npm:@ngrx/store"
+          ]
         },
         {
-          "file": "libs/data-access/src/lib/posts/+state/profile.selector.ts",
-          "hash": "3244421341483603138"
+          "file": "libs/data-access/src/lib/posts/+state/post.selector.ts",
+          "hash": "7081770081157095780",
+          "deps": [
+            "npm:@ngrx/store"
+          ]
         },
         {
           "file": "libs/data-access/src/lib/posts/index.ts",
-          "hash": "7318518311075544348"
+          "hash": "17498812374917025134"
         },
         {
           "file": "libs/data-access/src/lib/posts/interfaces/post.interfaces.ts",
@@ -870,7 +885,7 @@
         },
         {
           "file": "libs/data-access/src/lib/posts/services/post.service.ts",
-          "hash": "7155598193491690604",
+          "hash": "9217959062207870571",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -1559,7 +1574,7 @@
         },
         {
           "file": "apps/tik-talk/src/app/app.routes.ts",
-          "hash": "11686628533377553887",
+          "hash": "4222106293038521148",
           "deps": [
             "npm:@angular/router",
             "auth",
