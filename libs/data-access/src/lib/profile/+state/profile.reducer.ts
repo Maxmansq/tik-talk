@@ -19,7 +19,7 @@ export const profileFeature = createFeature({
     on(profileAction.profileLoaded, (state, payload) => {
       return {
         ...state,
-        profiles: payload.profiles
+        profiles: payload.profiles,
       }
     })
   )

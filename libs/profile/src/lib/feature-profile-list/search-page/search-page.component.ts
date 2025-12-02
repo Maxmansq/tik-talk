@@ -12,5 +12,6 @@ import { Store } from '@ngrx/store';
 })
 export class SearchPageComponent {
   store = inject(Store)
+
   profiles = this.store.selectSignal(selectFilteredProfiles)
 }
