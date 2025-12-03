@@ -8,7 +8,7 @@ import { SettingsPageComponent } from '@tt/profile';
 import { ChatRoutes } from '@tt/chats';
 import { PolygonRouts } from '@tt/polygon'
 import { provideState } from '@ngrx/store';
-import { PostEffects, postFeature, ProfileEffects, profileFeature } from '@tt/data-access';
+import { createNewPostFeature, inputCommentFeature, inputPostFeature, PostEffects, postFeature, ProfileEffects, profileFeature, profileSaveFilterFeature } from '@tt/data-access';
 import { provideEffects } from '@ngrx/effects';
 
 export const routes: Routes = [
@@ -17,6 +17,9 @@ export const routes: Routes = [
     component: LayoutComponent,
     providers: [
       provideState(postFeature),
+      provideState(createNewPostFeature),
+      provideState(inputPostFeature),
+      provideState(inputCommentFeature),
       provideEffects(PostEffects)
     ],
     children: [
@@ -32,7 +35,8 @@ export const routes: Routes = [
         component: SearchPageComponent,
         providers: [
           provideState(profileFeature),
-          provideEffects(ProfileEffects)
+          provideEffects(ProfileEffects),
+          provideState(profileSaveFilterFeature),
         ]
       },
       {

@@ -1,6 +1,6 @@
 import { Component, ElementRef, inject, input, Renderer2 } from '@angular/core';
 import { debounceTime, firstValueFrom, fromEvent, Subject, takeUntil } from 'rxjs';
-import { postAction, PostService, selectPosts } from '@tt/data-access';
+import { postAction, PostService, selectInputComment, selectInputPost, selectPosts } from '@tt/data-access';
 import { PostInputComponent } from '../ui';
 import { PostComponent } from '../post/post.component';
 import { Store } from '@ngrx/store';
@@ -14,10 +14,10 @@ import { Store } from '@ngrx/store';
 })
 export class PostFeedComponent {
   private destroy$ = new Subject<void>();
-  postService = inject(PostService)
   store = inject(Store)
   feed = this.store.selectSignal(selectPosts)
-  inputcontent = input()
+  newInputPost = this.store.select(selectInputPost)
+  newInputComment = this.store.select(selectInputComment)
 
 
   ngAfterViewInit() {
@@ -54,27 +54,19 @@ export class PostFeedComponent {
 
   //Ловим данные инпут из потока
   ngOnInit() {
-    this.postService.$dataPotok.subscribe(val => {
-      console.log(val)
-      if (!val.content) return
-      if (val.title) {
-        firstValueFrom(this.postService.createPost({
-        title: val.title,
-        content: val.content,
-        authorId: val.authorId
-      })).then(() => {
-        this.store.dispatch(postAction.getPost())
-      })
-      
-      }
-      else {
-        firstValueFrom(this.postService.createComment({
-        text: val.content,
-        postId: val.postId,
-        authorId: val.authorId,
-    }))
-    }
+    this.newInputPost.subscribe(res => {
+      if (res.title === '' || res.content === '') return
+      this.store.dispatch(postAction.createPost({
+        newPost: res 
+      }))
     })
-  }
+    this.newInputComment.subscribe(res => {
+      if (res.text === '') return
+      this.store.dispatch(postAction.createComment({
+        newComment: res
+      }))
+    })
+      }
 }
+
     

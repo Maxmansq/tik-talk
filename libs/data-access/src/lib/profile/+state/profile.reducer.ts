@@ -12,6 +12,20 @@ export const initialState: ProfileState = {
   profileFilters: {}
 }
 
+
+export const profileSaveFilterFeature = createFeature({
+  name: 'profileSaveFilterFeature',
+  reducer: createReducer(
+    initialState,
+    on(profileAction.filterEvents, (state, payload) => {
+      return {
+        ...state,
+        profileFilters: payload.filters,
+      }
+    })
+  )
+})
+
 export const profileFeature = createFeature({
   name: 'profileFeature',
   reducer: createReducer(

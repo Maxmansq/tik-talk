@@ -69,7 +69,4 @@ export class DoctorformComponent {
     console.log(this.form.controls.service.value)
   }
 
-  constructor() {
-    
-  }
 }

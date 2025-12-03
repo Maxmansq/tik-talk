@@ -1,8 +1,9 @@
 import { Component, EventEmitter, HostBinding, inject, input, Output, Renderer2 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { PostCreateDto, PostService } from '@tt/data-access';
+import { postAction, PostCreateDto, PostService } from '@tt/data-access';
 import { AvatarCircleComponent, SvgIconComponent } from '@tt/common-ui'
 import { GlobalStoreService }  from '@tt/data-access'
+import { Store } from '@ngrx/store';
 
 @Component({
   selector: 'app-post-input',
@@ -16,8 +17,8 @@ export class PostInputComponent {
   titlePost = ''
   postText = ''
   r2 = inject(Renderer2)
-  postService = inject(PostService)
   profile = inject(GlobalStoreService).me
+  store = inject(Store)
 
   @Output() inputText = new EventEmitter<PostCreateDto>();
 
@@ -36,14 +37,26 @@ export class PostInputComponent {
 
   //Отправка данных инпута в поток
   onCreateMassage() {
-    this.postService.sendDataMessage({
-      title: this.titlePost,
-      content: this.postText,
-      authorId: this.profile()!.id,
-      postId: this.postId()
-    })
+    if (this.postId() === 0) {
+      this.store.dispatch(postAction.inputNewPost(
+      {inputPost: {
+        title: this.titlePost,
+        content: this.postText,
+        authorId: this.profile()!.id,
+      }}
+    ))
+    } else {
+      this.store.dispatch(postAction.inputNewComment(
+        {inputComment: {
+          text: this.postText,
+          authorId: this.profile()!.id,
+          postId: this.postId()
+        }}
+      ))
+    }
     this.postText = ''
     this.titlePost = ''
+    
   }
     
 }
