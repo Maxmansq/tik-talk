@@ -31,140 +31,6 @@
   "fileMap": {
     "nonProjectFiles": [],
     "projectFileMap": {
-      "common-ui": [
-        {
-          "file": "libs/common-ui/README.md",
-          "hash": "14136358609489564048"
-        },
-        {
-          "file": "libs/common-ui/eslint.config.mjs",
-          "hash": "18087596490542984526",
-          "deps": [
-            "npm:@nx/eslint-plugin"
-          ]
-        },
-        {
-          "file": "libs/common-ui/jest.config.ts",
-          "hash": "7845728308554711757"
-        },
-        {
-          "file": "libs/common-ui/project.json",
-          "hash": "5711496818562426426"
-        },
-        {
-          "file": "libs/common-ui/src/index.ts",
-          "hash": "11834069703031133482"
-        },
-        {
-          "file": "libs/common-ui/src/lib/components/avatar-circle/avatar-circle.component.html",
-          "hash": "116309366940703519"
-        },
-        {
-          "file": "libs/common-ui/src/lib/components/avatar-circle/avatar-circle.component.scss",
-          "hash": "9184068086924651756"
-        },
-        {
-          "file": "libs/common-ui/src/lib/components/avatar-circle/avatar-circle.component.ts",
-          "hash": "17855639009588238571",
-          "deps": [
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "libs/common-ui/src/lib/components/index.ts",
-          "hash": "284847273553942871"
-        },
-        {
-          "file": "libs/common-ui/src/lib/components/svg-icon/svg-icon.component.ts",
-          "hash": "17715444156368407307",
-          "deps": [
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "libs/common-ui/src/lib/directives/dnd.directive.ts",
-          "hash": "15574258454702465732",
-          "deps": [
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "libs/common-ui/src/lib/directives/index.ts",
-          "hash": "13996158903110175555"
-        },
-        {
-          "file": "libs/common-ui/src/lib/mask/index.ts",
-          "hash": "15114196003007648466"
-        },
-        {
-          "file": "libs/common-ui/src/lib/mask/onlyTextRu.ts",
-          "hash": "11416542088033603912",
-          "deps": [
-            "npm:@maskito/core"
-          ]
-        },
-        {
-          "file": "libs/common-ui/src/lib/mask/phoneMask.ts",
-          "hash": "14219069500049042247",
-          "deps": [
-            "npm:@maskito/core"
-          ]
-        },
-        {
-          "file": "libs/common-ui/src/lib/pipes/data-local.pipe.ts",
-          "hash": "4451868632172764520",
-          "deps": [
-            "npm:@angular/core",
-            "npm:luxon"
-          ]
-        },
-        {
-          "file": "libs/common-ui/src/lib/pipes/img-url.pipe.ts",
-          "hash": "15306650084593632249",
-          "deps": [
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "libs/common-ui/src/lib/pipes/index.ts",
-          "hash": "17149879855080398219"
-        },
-        {
-          "file": "libs/common-ui/src/lib/pipes/passed-time.pipe.ts",
-          "hash": "4020294907646324076",
-          "deps": [
-            "npm:@angular/core",
-            "npm:luxon"
-          ]
-        },
-        {
-          "file": "libs/common-ui/src/lib/pipes/time-massage.pipe.ts",
-          "hash": "14782681883099692503",
-          "deps": [
-            "npm:@angular/core",
-            "npm:luxon"
-          ]
-        },
-        {
-          "file": "libs/common-ui/src/test-setup.ts",
-          "hash": "10311052578323244902",
-          "deps": [
-            "npm:jest-preset-angular"
-          ]
-        },
-        {
-          "file": "libs/common-ui/tsconfig.json",
-          "hash": "6285972941286170869"
-        },
-        {
-          "file": "libs/common-ui/tsconfig.lib.json",
-          "hash": "1998132411444579690"
-        },
-        {
-          "file": "libs/common-ui/tsconfig.spec.json",
-          "hash": "1134536510301531269"
-        }
-      ],
       "data-access": [
         {
           "file": "libs/data-access/README.md",
@@ -360,979 +226,6 @@
           "hash": "1134536510301531269"
         }
       ],
-      "layout": [
-        {
-          "file": "libs/layout/README.md",
-          "hash": "13230947109284574595"
-        },
-        {
-          "file": "libs/layout/eslint.config.mjs",
-          "hash": "18087596490542984526",
-          "deps": [
-            "npm:@nx/eslint-plugin"
-          ]
-        },
-        {
-          "file": "libs/layout/jest.config.ts",
-          "hash": "9047175562258929869"
-        },
-        {
-          "file": "libs/layout/project.json",
-          "hash": "16753385785493001373"
-        },
-        {
-          "file": "libs/layout/src/index.ts",
-          "hash": "3363414418942632992"
-        },
-        {
-          "file": "libs/layout/src/lib/layout/index.ts",
-          "hash": "477935298978097272"
-        },
-        {
-          "file": "libs/layout/src/lib/layout/layout.component.html",
-          "hash": "4458870159876491034"
-        },
-        {
-          "file": "libs/layout/src/lib/layout/layout.component.scss",
-          "hash": "15889197720542403662"
-        },
-        {
-          "file": "libs/layout/src/lib/layout/layout.component.ts",
-          "hash": "9414795066176524290",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/router"
-          ]
-        },
-        {
-          "file": "libs/layout/src/lib/sidebar/sidebar.component.html",
-          "hash": "2127078555073995497"
-        },
-        {
-          "file": "libs/layout/src/lib/sidebar/sidebar.component.scss",
-          "hash": "13656953900767760444"
-        },
-        {
-          "file": "libs/layout/src/lib/sidebar/sidebar.component.ts",
-          "hash": "2762877021147991659",
-          "deps": [
-            "npm:@angular/core",
-            "common-ui",
-            "npm:@angular/router",
-            "data-access",
-            "npm:@angular/common",
-            "npm:rxjs"
-          ]
-        },
-        {
-          "file": "libs/layout/src/lib/sidebar/subscriber-card/subscriber-card.component.html",
-          "hash": "11346731920252320625"
-        },
-        {
-          "file": "libs/layout/src/lib/sidebar/subscriber-card/subscriber-card.component.scss",
-          "hash": "1997711416640267680"
-        },
-        {
-          "file": "libs/layout/src/lib/sidebar/subscriber-card/subscriber-card.component.ts",
-          "hash": "9883775758995340932",
-          "deps": [
-            "npm:@angular/core",
-            "data-access",
-            "common-ui"
-          ]
-        },
-        {
-          "file": "libs/layout/src/test-setup.ts",
-          "hash": "10311052578323244902",
-          "deps": [
-            "npm:jest-preset-angular"
-          ]
-        },
-        {
-          "file": "libs/layout/tsconfig.json",
-          "hash": "6285972941286170869"
-        },
-        {
-          "file": "libs/layout/tsconfig.lib.json",
-          "hash": "1998132411444579690"
-        },
-        {
-          "file": "libs/layout/tsconfig.spec.json",
-          "hash": "1134536510301531269"
-        }
-      ],
-      "chats": [
-        {
-          "file": "libs/chats/README.md",
-          "hash": "11546533884232263156"
-        },
-        {
-          "file": "libs/chats/eslint.config.mjs",
-          "hash": "18087596490542984526",
-          "deps": [
-            "npm:@nx/eslint-plugin"
-          ]
-        },
-        {
-          "file": "libs/chats/jest.config.ts",
-          "hash": "1823063190552872424"
-        },
-        {
-          "file": "libs/chats/project.json",
-          "hash": "5853814557199924509"
-        },
-        {
-          "file": "libs/chats/src/index.ts",
-          "hash": "18232509949467026122"
-        },
-        {
-          "file": "libs/chats/src/lib/feature-chats-workspace/chat-workspace/chat-workspace-header/chat-workspace-header.component.html",
-          "hash": "15212215737774346201"
-        },
-        {
-          "file": "libs/chats/src/lib/feature-chats-workspace/chat-workspace/chat-workspace-header/chat-workspace-header.component.scss",
-          "hash": "11782989192469641036"
-        },
-        {
-          "file": "libs/chats/src/lib/feature-chats-workspace/chat-workspace/chat-workspace-header/chat-workspace-header.component.ts",
-          "hash": "311975668530441217",
-          "deps": [
-            "npm:@angular/core",
-            "common-ui",
-            "data-access"
-          ]
-        },
-        {
-          "file": "libs/chats/src/lib/feature-chats-workspace/chat-workspace/chat-workspace-message/chat-workspace-message-wrapper/chat-workspace-message-wrapper.component.html",
-          "hash": "8256136407506768290"
-        },
-        {
-          "file": "libs/chats/src/lib/feature-chats-workspace/chat-workspace/chat-workspace-message/chat-workspace-message-wrapper/chat-workspace-message-wrapper.component.scss",
-          "hash": "13291813176323263924"
-        },
-        {
-          "file": "libs/chats/src/lib/feature-chats-workspace/chat-workspace/chat-workspace-message/chat-workspace-message-wrapper/chat-workspace-message-wrapper.component.ts",
-          "hash": "18154709778571783484",
-          "deps": [
-            "npm:@angular/core",
-            "npm:rxjs",
-            "common-ui",
-            "data-access"
-          ]
-        },
-        {
-          "file": "libs/chats/src/lib/feature-chats-workspace/chat-workspace/chat-workspace-message/chat-workspace-message.component.html",
-          "hash": "15623419423029175114"
-        },
-        {
-          "file": "libs/chats/src/lib/feature-chats-workspace/chat-workspace/chat-workspace-message/chat-workspace-message.component.scss",
-          "hash": "12933822615176836422"
-        },
-        {
-          "file": "libs/chats/src/lib/feature-chats-workspace/chat-workspace/chat-workspace-message/chat-workspace-message.component.ts",
-          "hash": "7285743885679470115",
-          "deps": [
-            "npm:@angular/core",
-            "common-ui",
-            "data-access"
-          ]
-        },
-        {
-          "file": "libs/chats/src/lib/feature-chats-workspace/chat-workspace/chat-workspace.component.html",
-          "hash": "3895930420972308495"
-        },
-        {
-          "file": "libs/chats/src/lib/feature-chats-workspace/chat-workspace/chat-workspace.component.scss",
-          "hash": "8073340256124439591"
-        },
-        {
-          "file": "libs/chats/src/lib/feature-chats-workspace/chat-workspace/chat-workspace.component.ts",
-          "hash": "4316883413168638061",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/router",
-            "data-access",
-            "npm:rxjs",
-            "npm:@angular/common",
-            "npm:@angular/forms"
-          ]
-        },
-        {
-          "file": "libs/chats/src/lib/feature-chats-workspace/chats-btn/chats-btn.component.html",
-          "hash": "9803963460276982528"
-        },
-        {
-          "file": "libs/chats/src/lib/feature-chats-workspace/chats-btn/chats-btn.component.scss",
-          "hash": "8506475961582359675"
-        },
-        {
-          "file": "libs/chats/src/lib/feature-chats-workspace/chats-btn/chats-btn.component.ts",
-          "hash": "8813424828572259965",
-          "deps": [
-            "npm:@angular/core",
-            "common-ui",
-            "data-access",
-            "npm:@angular/common"
-          ]
-        },
-        {
-          "file": "libs/chats/src/lib/feature-chats-workspace/chats-list/chats-list.component.html",
-          "hash": "1778449844876080823"
-        },
-        {
-          "file": "libs/chats/src/lib/feature-chats-workspace/chats-list/chats-list.component.scss",
-          "hash": "16258332549869959664"
-        },
-        {
-          "file": "libs/chats/src/lib/feature-chats-workspace/chats-list/chats-list.component.ts",
-          "hash": "15120126306570008185",
-          "deps": [
-            "npm:@angular/core",
-            "data-access",
-            "npm:@angular/common",
-            "npm:@angular/router",
-            "npm:@angular/forms",
-            "npm:rxjs"
-          ]
-        },
-        {
-          "file": "libs/chats/src/lib/feature-chats-workspace/chats/chatRoutes.ts",
-          "hash": "13354164649763293815",
-          "deps": [
-            "npm:@angular/router"
-          ]
-        },
-        {
-          "file": "libs/chats/src/lib/feature-chats-workspace/chats/chats.component.html",
-          "hash": "2147143080255330068"
-        },
-        {
-          "file": "libs/chats/src/lib/feature-chats-workspace/chats/chats.component.scss",
-          "hash": "3448937795542450351"
-        },
-        {
-          "file": "libs/chats/src/lib/feature-chats-workspace/chats/chats.component.ts",
-          "hash": "5798184053087867169",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/router",
-            "npm:rxjs"
-          ]
-        },
-        {
-          "file": "libs/chats/src/lib/feature-chats-workspace/chats/index.ts",
-          "hash": "16477057044098482848"
-        },
-        {
-          "file": "libs/chats/src/lib/feature-chats-workspace/index.ts",
-          "hash": "1714125568979100741"
-        },
-        {
-          "file": "libs/chats/src/lib/ui/index.ts",
-          "hash": "11243807825635287563"
-        },
-        {
-          "file": "libs/chats/src/lib/ui/input-message/input-message.component.html",
-          "hash": "15961988984403689592"
-        },
-        {
-          "file": "libs/chats/src/lib/ui/input-message/input-message.component.scss",
-          "hash": "4471594849557881594"
-        },
-        {
-          "file": "libs/chats/src/lib/ui/input-message/input-message.component.ts",
-          "hash": "3056127500268455333",
-          "deps": [
-            "npm:@angular/core",
-            "data-access",
-            "common-ui",
-            "npm:@angular/forms"
-          ]
-        },
-        {
-          "file": "libs/chats/src/test-setup.ts",
-          "hash": "10311052578323244902",
-          "deps": [
-            "npm:jest-preset-angular"
-          ]
-        },
-        {
-          "file": "libs/chats/tsconfig.json",
-          "hash": "6285972941286170869"
-        },
-        {
-          "file": "libs/chats/tsconfig.lib.json",
-          "hash": "1998132411444579690"
-        },
-        {
-          "file": "libs/chats/tsconfig.spec.json",
-          "hash": "1134536510301531269"
-        }
-      ],
-      "polygon": [
-        {
-          "file": "libs/polygon/README.md",
-          "hash": "2940273272578105470"
-        },
-        {
-          "file": "libs/polygon/eslint.config.mjs",
-          "hash": "18087596490542984526",
-          "deps": [
-            "npm:@nx/eslint-plugin"
-          ]
-        },
-        {
-          "file": "libs/polygon/jest.config.ts",
-          "hash": "13879322694349196547"
-        },
-        {
-          "file": "libs/polygon/project.json",
-          "hash": "2947002270787368955"
-        },
-        {
-          "file": "libs/polygon/src/index.ts",
-          "hash": "12512739650628984300"
-        },
-        {
-          "file": "libs/polygon/src/lib/polygon-mein/index.ts",
-          "hash": "15975658596012259386"
-        },
-        {
-          "file": "libs/polygon/src/lib/polygon-mein/poligon.component.html",
-          "hash": "16786048120999816282"
-        },
-        {
-          "file": "libs/polygon/src/lib/polygon-mein/poligon.component.scss",
-          "hash": "1253766170982224748"
-        },
-        {
-          "file": "libs/polygon/src/lib/polygon-mein/poligon.component.ts",
-          "hash": "124567209030707987",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/router"
-          ]
-        },
-        {
-          "file": "libs/polygon/src/lib/polygon-mein/polygon-routs.ts",
-          "hash": "7380824425852191088",
-          "deps": [
-            "npm:@angular/router"
-          ]
-        },
-        {
-          "file": "libs/polygon/src/lib/polygon-mein/welcome-poligon/welcome-poligon.component.html",
-          "hash": "10059192248348341996"
-        },
-        {
-          "file": "libs/polygon/src/lib/polygon-mein/welcome-poligon/welcome-poligon.component.scss",
-          "hash": "4564453929398880553"
-        },
-        {
-          "file": "libs/polygon/src/lib/polygon-mein/welcome-poligon/welcome-poligon.component.ts",
-          "hash": "3518637879172971987",
-          "deps": [
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "libs/polygon/src/lib/polygon-projects/doctor-form/doctor-form.component.html",
-          "hash": "383267979798432498"
-        },
-        {
-          "file": "libs/polygon/src/lib/polygon-projects/doctor-form/doctor-form.component.scss",
-          "hash": "16478770535098956941"
-        },
-        {
-          "file": "libs/polygon/src/lib/polygon-projects/doctor-form/doctor-form.component.ts",
-          "hash": "1278668561366552269",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/forms",
-            "npm:@maskito/angular",
-            "common-ui"
-          ]
-        },
-        {
-          "file": "libs/polygon/src/lib/polygon-projects/index.ts",
-          "hash": "3514506766623495590"
-        },
-        {
-          "file": "libs/polygon/src/lib/polygon-projects/react-form/react-form.component.html",
-          "hash": "550502505104504014"
-        },
-        {
-          "file": "libs/polygon/src/lib/polygon-projects/react-form/react-form.component.scss",
-          "hash": "12906506817426774866"
-        },
-        {
-          "file": "libs/polygon/src/lib/polygon-projects/react-form/react-form.component.ts",
-          "hash": "12938096863824563031",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/forms",
-            "data-access",
-            "npm:@angular/common"
-          ]
-        },
-        {
-          "file": "libs/polygon/src/lib/polygon-projects/template-form/test-form.component.html",
-          "hash": "1600545826495798916"
-        },
-        {
-          "file": "libs/polygon/src/lib/polygon-projects/template-form/test-form.component.scss",
-          "hash": "15795258866613551803"
-        },
-        {
-          "file": "libs/polygon/src/lib/polygon-projects/template-form/test-form.component.ts",
-          "hash": "7064593309583089370",
-          "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core",
-            "npm:@angular/forms"
-          ]
-        },
-        {
-          "file": "libs/polygon/src/lib/ui/index.ts",
-          "hash": "8607956100008599895"
-        },
-        {
-          "file": "libs/polygon/src/lib/ui/poligon-header/poligon-header.component.html",
-          "hash": "15483569124947717141"
-        },
-        {
-          "file": "libs/polygon/src/lib/ui/poligon-header/poligon-header.component.scss",
-          "hash": "13661999873944657441"
-        },
-        {
-          "file": "libs/polygon/src/lib/ui/poligon-header/poligon-header.component.ts",
-          "hash": "5568340421788536210",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/router"
-          ]
-        },
-        {
-          "file": "libs/polygon/src/lib/validators/index.ts",
-          "hash": "1114138039733337547"
-        },
-        {
-          "file": "libs/polygon/src/lib/validators/template-form-validators/no-react.validators.ts",
-          "hash": "16734974481068895786",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/forms"
-          ]
-        },
-        {
-          "file": "libs/polygon/src/test-setup.ts",
-          "hash": "10311052578323244902",
-          "deps": [
-            "npm:jest-preset-angular"
-          ]
-        },
-        {
-          "file": "libs/polygon/tsconfig.json",
-          "hash": "6285972941286170869"
-        },
-        {
-          "file": "libs/polygon/tsconfig.lib.json",
-          "hash": "1998132411444579690"
-        },
-        {
-          "file": "libs/polygon/tsconfig.spec.json",
-          "hash": "1134536510301531269"
-        }
-      ],
-      "auth": [
-        {
-          "file": "libs/auth/README.md",
-          "hash": "13813340934239156039"
-        },
-        {
-          "file": "libs/auth/eslint.config.mjs",
-          "hash": "18087596490542984526",
-          "deps": [
-            "npm:@nx/eslint-plugin"
-          ]
-        },
-        {
-          "file": "libs/auth/jest.config.ts",
-          "hash": "1270906863536328634"
-        },
-        {
-          "file": "libs/auth/project.json",
-          "hash": "5290109991690591652"
-        },
-        {
-          "file": "libs/auth/src/index.ts",
-          "hash": "375204705692268412"
-        },
-        {
-          "file": "libs/auth/src/lib/auth/access.guard.ts",
-          "hash": "11767981696354445106",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/router"
-          ]
-        },
-        {
-          "file": "libs/auth/src/lib/auth/auth.interceptor.ts",
-          "hash": "10199737359977445029",
-          "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core",
-            "npm:rxjs"
-          ]
-        },
-        {
-          "file": "libs/auth/src/lib/auth/auth.interface.ts",
-          "hash": "8437810145875717797"
-        },
-        {
-          "file": "libs/auth/src/lib/auth/auth.service.ts",
-          "hash": "5645126133064524993",
-          "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core",
-            "npm:rxjs",
-            "npm:ngx-cookie-service",
-            "npm:@angular/router"
-          ]
-        },
-        {
-          "file": "libs/auth/src/lib/feature-login/login-page/login-page.component.html",
-          "hash": "18437148347221479617"
-        },
-        {
-          "file": "libs/auth/src/lib/feature-login/login-page/login-page.component.scss",
-          "hash": "8326516879669064365"
-        },
-        {
-          "file": "libs/auth/src/lib/feature-login/login-page/login-page.component.ts",
-          "hash": "226792799219356283",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/forms",
-            "npm:@angular/router"
-          ]
-        },
-        {
-          "file": "libs/auth/src/test-setup.ts",
-          "hash": "10311052578323244902",
-          "deps": [
-            "npm:jest-preset-angular"
-          ]
-        },
-        {
-          "file": "libs/auth/tsconfig.json",
-          "hash": "6285972941286170869"
-        },
-        {
-          "file": "libs/auth/tsconfig.lib.json",
-          "hash": "1998132411444579690"
-        },
-        {
-          "file": "libs/auth/tsconfig.spec.json",
-          "hash": "1134536510301531269"
-        }
-      ],
-      "posts": [
-        {
-          "file": "libs/posts/README.md",
-          "hash": "6941936218220284077"
-        },
-        {
-          "file": "libs/posts/eslint.config.mjs",
-          "hash": "18087596490542984526",
-          "deps": [
-            "npm:@nx/eslint-plugin"
-          ]
-        },
-        {
-          "file": "libs/posts/jest.config.ts",
-          "hash": "16367774451659240001"
-        },
-        {
-          "file": "libs/posts/project.json",
-          "hash": "11122837330932754800"
-        },
-        {
-          "file": "libs/posts/src/index.ts",
-          "hash": "11799902050680503846"
-        },
-        {
-          "file": "libs/posts/src/lib/feature-posts-wall/index.ts",
-          "hash": "11105420843298429349"
-        },
-        {
-          "file": "libs/posts/src/lib/feature-posts-wall/post-feed/post-feed.component.html",
-          "hash": "3343507430272168574"
-        },
-        {
-          "file": "libs/posts/src/lib/feature-posts-wall/post-feed/post-feed.component.scss",
-          "hash": "14969790637682883671"
-        },
-        {
-          "file": "libs/posts/src/lib/feature-posts-wall/post-feed/post-feed.component.ts",
-          "hash": "11230860203863463098",
-          "deps": [
-            "npm:@angular/core",
-            "npm:rxjs",
-            "data-access",
-            "npm:@ngrx/store"
-          ]
-        },
-        {
-          "file": "libs/posts/src/lib/feature-posts-wall/post/post.component.html",
-          "hash": "17005305907891013761"
-        },
-        {
-          "file": "libs/posts/src/lib/feature-posts-wall/post/post.component.scss",
-          "hash": "7284351146918444596"
-        },
-        {
-          "file": "libs/posts/src/lib/feature-posts-wall/post/post.component.ts",
-          "hash": "7208577638030033251",
-          "deps": [
-            "npm:@angular/core",
-            "common-ui",
-            "npm:rxjs",
-            "data-access",
-            "npm:@ngrx/store"
-          ]
-        },
-        {
-          "file": "libs/posts/src/lib/feature-posts-wall/ui/comment/comment.component.html",
-          "hash": "7953215492878499318"
-        },
-        {
-          "file": "libs/posts/src/lib/feature-posts-wall/ui/comment/comment.component.scss",
-          "hash": "1260357028391431904"
-        },
-        {
-          "file": "libs/posts/src/lib/feature-posts-wall/ui/comment/comment.component.ts",
-          "hash": "6609660627176371725",
-          "deps": [
-            "npm:@angular/core",
-            "common-ui",
-            "data-access"
-          ]
-        },
-        {
-          "file": "libs/posts/src/lib/feature-posts-wall/ui/index.ts",
-          "hash": "11168827680937476670"
-        },
-        {
-          "file": "libs/posts/src/lib/feature-posts-wall/ui/post-input/post-input.component.html",
-          "hash": "18280801251190699658"
-        },
-        {
-          "file": "libs/posts/src/lib/feature-posts-wall/ui/post-input/post-input.component.scss",
-          "hash": "13195070974503989725"
-        },
-        {
-          "file": "libs/posts/src/lib/feature-posts-wall/ui/post-input/post-input.component.ts",
-          "hash": "12187329817976450231",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/forms",
-            "data-access",
-            "common-ui",
-            "npm:@ngrx/store"
-          ]
-        },
-        {
-          "file": "libs/posts/src/test-setup.ts",
-          "hash": "10311052578323244902",
-          "deps": [
-            "npm:jest-preset-angular"
-          ]
-        },
-        {
-          "file": "libs/posts/tsconfig.json",
-          "hash": "6285972941286170869"
-        },
-        {
-          "file": "libs/posts/tsconfig.lib.json",
-          "hash": "1998132411444579690"
-        },
-        {
-          "file": "libs/posts/tsconfig.spec.json",
-          "hash": "1134536510301531269"
-        }
-      ],
-      "tik-talk-app": [
-        {
-          "file": "apps/tik-talk/project.json",
-          "hash": "10372693485408704587"
-        },
-        {
-          "file": "apps/tik-talk/src/app/app.config.ts",
-          "hash": "3879908331609595071",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/router",
-            "npm:@angular/common",
-            "auth",
-            "npm:@ngrx/store",
-            "npm:@ngrx/effects"
-          ]
-        },
-        {
-          "file": "apps/tik-talk/src/app/app.html",
-          "hash": "13127839036880294027"
-        },
-        {
-          "file": "apps/tik-talk/src/app/app.routes.ts",
-          "hash": "16681605930491704857",
-          "deps": [
-            "npm:@angular/router",
-            "auth",
-            "profile",
-            "layout",
-            "chats",
-            "polygon",
-            "npm:@ngrx/store",
-            "data-access",
-            "npm:@ngrx/effects"
-          ]
-        },
-        {
-          "file": "apps/tik-talk/src/app/app.scss",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/tik-talk/src/app/app.spec.ts",
-          "hash": "1736441727276701383",
-          "deps": [
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "apps/tik-talk/src/app/app.ts",
-          "hash": "11740996680748791609",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/router"
-          ]
-        },
-        {
-          "file": "apps/tik-talk/src/fonts.scss",
-          "hash": "18388392616442009176"
-        },
-        {
-          "file": "apps/tik-talk/src/index.html",
-          "hash": "15929235682994516289"
-        },
-        {
-          "file": "apps/tik-talk/src/main.ts",
-          "hash": "10405740721546735325",
-          "deps": [
-            "npm:@angular/platform-browser"
-          ]
-        },
-        {
-          "file": "apps/tik-talk/src/margins.scss",
-          "hash": "18445489706707827817"
-        },
-        {
-          "file": "apps/tik-talk/src/styles.scss",
-          "hash": "14175860072640358728"
-        },
-        {
-          "file": "apps/tik-talk/tsconfig.app.json",
-          "hash": "5641499982429519154"
-        }
-      ],
-      "profile": [
-        {
-          "file": "libs/profile/README.md",
-          "hash": "15672010671092110844"
-        },
-        {
-          "file": "libs/profile/eslint.config.mjs",
-          "hash": "18087596490542984526",
-          "deps": [
-            "npm:@nx/eslint-plugin"
-          ]
-        },
-        {
-          "file": "libs/profile/jest.config.ts",
-          "hash": "13167623121875993424"
-        },
-        {
-          "file": "libs/profile/project.json",
-          "hash": "8025786521276637982"
-        },
-        {
-          "file": "libs/profile/src/index.ts",
-          "hash": "4319069228515994790"
-        },
-        {
-          "file": "libs/profile/src/lib/feachure-profile-settings/index.ts",
-          "hash": "13107545795990863801"
-        },
-        {
-          "file": "libs/profile/src/lib/feachure-profile-settings/settings-page/settings-page.component.html",
-          "hash": "7706782817056534970"
-        },
-        {
-          "file": "libs/profile/src/lib/feachure-profile-settings/settings-page/settings-page.component.scss",
-          "hash": "11764526783343567157"
-        },
-        {
-          "file": "libs/profile/src/lib/feachure-profile-settings/settings-page/settings-page.component.ts",
-          "hash": "8143244377178315917",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/forms",
-            "data-access",
-            "npm:rxjs",
-            "npm:@angular/router",
-            "common-ui"
-          ]
-        },
-        {
-          "file": "libs/profile/src/lib/feature-profile-list/index.ts",
-          "hash": "5164509544907124153"
-        },
-        {
-          "file": "libs/profile/src/lib/feature-profile-list/profile-filters/profile-filters.component.html",
-          "hash": "4791611827050476791"
-        },
-        {
-          "file": "libs/profile/src/lib/feature-profile-list/profile-filters/profile-filters.component.scss",
-          "hash": "13687915562934194500"
-        },
-        {
-          "file": "libs/profile/src/lib/feature-profile-list/profile-filters/profile-filters.component.ts",
-          "hash": "13056373061529777688",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/forms",
-            "data-access",
-            "npm:rxjs",
-            "npm:@ngrx/store"
-          ]
-        },
-        {
-          "file": "libs/profile/src/lib/feature-profile-list/search-page/search-page.component.html",
-          "hash": "6730772723605705810"
-        },
-        {
-          "file": "libs/profile/src/lib/feature-profile-list/search-page/search-page.component.scss",
-          "hash": "16383056477122763389"
-        },
-        {
-          "file": "libs/profile/src/lib/feature-profile-list/search-page/search-page.component.ts",
-          "hash": "76818706347396405",
-          "deps": [
-            "npm:@angular/core",
-            "data-access",
-            "npm:@ngrx/store"
-          ]
-        },
-        {
-          "file": "libs/profile/src/lib/feature-profile-page/index.ts",
-          "hash": "12235175932862183734"
-        },
-        {
-          "file": "libs/profile/src/lib/feature-profile-page/profile-pages/profile-page.component.html",
-          "hash": "9141045495793292485"
-        },
-        {
-          "file": "libs/profile/src/lib/feature-profile-page/profile-pages/profile-page.component.scss",
-          "hash": "5667632696800380973"
-        },
-        {
-          "file": "libs/profile/src/lib/feature-profile-page/profile-pages/profile-page.component.ts",
-          "hash": "1456707760726233118",
-          "deps": [
-            "npm:@angular/core",
-            "data-access",
-            "npm:@angular/router",
-            "npm:rxjs",
-            "npm:@angular/common",
-            "common-ui",
-            "posts"
-          ]
-        },
-        {
-          "file": "libs/profile/src/lib/ui/avatar-upload/avatar-upload.component.html",
-          "hash": "6000763119906376230"
-        },
-        {
-          "file": "libs/profile/src/lib/ui/avatar-upload/avatar-upload.component.scss",
-          "hash": "2799533729615969241"
-        },
-        {
-          "file": "libs/profile/src/lib/ui/avatar-upload/avatar-upload.component.ts",
-          "hash": "12826576781942282896",
-          "deps": [
-            "npm:@angular/core",
-            "common-ui",
-            "npm:@angular/forms"
-          ]
-        },
-        {
-          "file": "libs/profile/src/lib/ui/index.ts",
-          "hash": "13282057804414634716"
-        },
-        {
-          "file": "libs/profile/src/lib/ui/profile-card/profile-card.html",
-          "hash": "13904743305473456805"
-        },
-        {
-          "file": "libs/profile/src/lib/ui/profile-card/profile-card.scss",
-          "hash": "2529741031764816406"
-        },
-        {
-          "file": "libs/profile/src/lib/ui/profile-card/profile-card.ts",
-          "hash": "7809236121065298678",
-          "deps": [
-            "npm:@angular/core",
-            "data-access",
-            "common-ui"
-          ]
-        },
-        {
-          "file": "libs/profile/src/lib/ui/profile-header/profile-header.component.html",
-          "hash": "399679920050119922"
-        },
-        {
-          "file": "libs/profile/src/lib/ui/profile-header/profile-header.component.scss",
-          "hash": "3155641015093746925"
-        },
-        {
-          "file": "libs/profile/src/lib/ui/profile-header/profile-header.component.ts",
-          "hash": "15461061370460101733",
-          "deps": [
-            "npm:@angular/core",
-            "data-access",
-            "common-ui"
-          ]
-        },
-        {
-          "file": "libs/profile/src/test-setup.ts",
-          "hash": "10311052578323244902",
-          "deps": [
-            "npm:jest-preset-angular"
-          ]
-        },
-        {
-          "file": "libs/profile/tsconfig.json",
-          "hash": "6285972941286170869"
-        },
-        {
-          "file": "libs/profile/tsconfig.lib.json",
-          "hash": "1998132411444579690"
-        },
-        {
-          "file": "libs/profile/tsconfig.spec.json",
-          "hash": "1134536510301531269"
-        }
-      ],
       "tik-talk": [
         {
           "file": ".editorconfig",
@@ -1376,6 +269,10 @@
           "deps": [
             "npm:@nx/eslint-plugin"
           ]
+        },
+        {
+          "file": "extensions.txt",
+          "hash": "8132305049268251935"
         },
         {
           "file": "jest.config.ts",
@@ -1630,6 +527,1113 @@
         {
           "file": "tsconfig.json",
           "hash": "6995868177969553607"
+        }
+      ],
+      "posts": [
+        {
+          "file": "libs/posts/README.md",
+          "hash": "6941936218220284077"
+        },
+        {
+          "file": "libs/posts/eslint.config.mjs",
+          "hash": "18087596490542984526",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "libs/posts/jest.config.ts",
+          "hash": "16367774451659240001"
+        },
+        {
+          "file": "libs/posts/project.json",
+          "hash": "11122837330932754800"
+        },
+        {
+          "file": "libs/posts/src/index.ts",
+          "hash": "11799902050680503846"
+        },
+        {
+          "file": "libs/posts/src/lib/feature-posts-wall/index.ts",
+          "hash": "11105420843298429349"
+        },
+        {
+          "file": "libs/posts/src/lib/feature-posts-wall/post-feed/post-feed.component.html",
+          "hash": "3343507430272168574"
+        },
+        {
+          "file": "libs/posts/src/lib/feature-posts-wall/post-feed/post-feed.component.scss",
+          "hash": "14969790637682883671"
+        },
+        {
+          "file": "libs/posts/src/lib/feature-posts-wall/post-feed/post-feed.component.ts",
+          "hash": "11230860203863463098",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs",
+            "data-access",
+            "npm:@ngrx/store"
+          ]
+        },
+        {
+          "file": "libs/posts/src/lib/feature-posts-wall/post/post.component.html",
+          "hash": "17005305907891013761"
+        },
+        {
+          "file": "libs/posts/src/lib/feature-posts-wall/post/post.component.scss",
+          "hash": "7284351146918444596"
+        },
+        {
+          "file": "libs/posts/src/lib/feature-posts-wall/post/post.component.ts",
+          "hash": "7208577638030033251",
+          "deps": [
+            "npm:@angular/core",
+            "common-ui",
+            "npm:rxjs",
+            "data-access",
+            "npm:@ngrx/store"
+          ]
+        },
+        {
+          "file": "libs/posts/src/lib/feature-posts-wall/ui/comment/comment.component.html",
+          "hash": "7953215492878499318"
+        },
+        {
+          "file": "libs/posts/src/lib/feature-posts-wall/ui/comment/comment.component.scss",
+          "hash": "1260357028391431904"
+        },
+        {
+          "file": "libs/posts/src/lib/feature-posts-wall/ui/comment/comment.component.ts",
+          "hash": "6609660627176371725",
+          "deps": [
+            "npm:@angular/core",
+            "common-ui",
+            "data-access"
+          ]
+        },
+        {
+          "file": "libs/posts/src/lib/feature-posts-wall/ui/index.ts",
+          "hash": "11168827680937476670"
+        },
+        {
+          "file": "libs/posts/src/lib/feature-posts-wall/ui/post-input/post-input.component.html",
+          "hash": "18280801251190699658"
+        },
+        {
+          "file": "libs/posts/src/lib/feature-posts-wall/ui/post-input/post-input.component.scss",
+          "hash": "13195070974503989725"
+        },
+        {
+          "file": "libs/posts/src/lib/feature-posts-wall/ui/post-input/post-input.component.ts",
+          "hash": "12187329817976450231",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "data-access",
+            "common-ui",
+            "npm:@ngrx/store"
+          ]
+        },
+        {
+          "file": "libs/posts/src/test-setup.ts",
+          "hash": "10311052578323244902",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/posts/tsconfig.json",
+          "hash": "6285972941286170869"
+        },
+        {
+          "file": "libs/posts/tsconfig.lib.json",
+          "hash": "1998132411444579690"
+        },
+        {
+          "file": "libs/posts/tsconfig.spec.json",
+          "hash": "1134536510301531269"
+        }
+      ],
+      "chats": [
+        {
+          "file": "libs/chats/README.md",
+          "hash": "11546533884232263156"
+        },
+        {
+          "file": "libs/chats/eslint.config.mjs",
+          "hash": "18087596490542984526",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "libs/chats/jest.config.ts",
+          "hash": "1823063190552872424"
+        },
+        {
+          "file": "libs/chats/project.json",
+          "hash": "5853814557199924509"
+        },
+        {
+          "file": "libs/chats/src/index.ts",
+          "hash": "18232509949467026122"
+        },
+        {
+          "file": "libs/chats/src/lib/feature-chats-workspace/chat-workspace/chat-workspace-header/chat-workspace-header.component.html",
+          "hash": "15212215737774346201"
+        },
+        {
+          "file": "libs/chats/src/lib/feature-chats-workspace/chat-workspace/chat-workspace-header/chat-workspace-header.component.scss",
+          "hash": "11782989192469641036"
+        },
+        {
+          "file": "libs/chats/src/lib/feature-chats-workspace/chat-workspace/chat-workspace-header/chat-workspace-header.component.ts",
+          "hash": "311975668530441217",
+          "deps": [
+            "npm:@angular/core",
+            "common-ui",
+            "data-access"
+          ]
+        },
+        {
+          "file": "libs/chats/src/lib/feature-chats-workspace/chat-workspace/chat-workspace-message/chat-workspace-message-wrapper/chat-workspace-message-wrapper.component.html",
+          "hash": "8256136407506768290"
+        },
+        {
+          "file": "libs/chats/src/lib/feature-chats-workspace/chat-workspace/chat-workspace-message/chat-workspace-message-wrapper/chat-workspace-message-wrapper.component.scss",
+          "hash": "13291813176323263924"
+        },
+        {
+          "file": "libs/chats/src/lib/feature-chats-workspace/chat-workspace/chat-workspace-message/chat-workspace-message-wrapper/chat-workspace-message-wrapper.component.ts",
+          "hash": "18154709778571783484",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs",
+            "common-ui",
+            "data-access"
+          ]
+        },
+        {
+          "file": "libs/chats/src/lib/feature-chats-workspace/chat-workspace/chat-workspace-message/chat-workspace-message.component.html",
+          "hash": "15623419423029175114"
+        },
+        {
+          "file": "libs/chats/src/lib/feature-chats-workspace/chat-workspace/chat-workspace-message/chat-workspace-message.component.scss",
+          "hash": "12933822615176836422"
+        },
+        {
+          "file": "libs/chats/src/lib/feature-chats-workspace/chat-workspace/chat-workspace-message/chat-workspace-message.component.ts",
+          "hash": "7285743885679470115",
+          "deps": [
+            "npm:@angular/core",
+            "common-ui",
+            "data-access"
+          ]
+        },
+        {
+          "file": "libs/chats/src/lib/feature-chats-workspace/chat-workspace/chat-workspace.component.html",
+          "hash": "3895930420972308495"
+        },
+        {
+          "file": "libs/chats/src/lib/feature-chats-workspace/chat-workspace/chat-workspace.component.scss",
+          "hash": "8073340256124439591"
+        },
+        {
+          "file": "libs/chats/src/lib/feature-chats-workspace/chat-workspace/chat-workspace.component.ts",
+          "hash": "4316883413168638061",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "data-access",
+            "npm:rxjs",
+            "npm:@angular/common",
+            "npm:@angular/forms"
+          ]
+        },
+        {
+          "file": "libs/chats/src/lib/feature-chats-workspace/chats-btn/chats-btn.component.html",
+          "hash": "9803963460276982528"
+        },
+        {
+          "file": "libs/chats/src/lib/feature-chats-workspace/chats-btn/chats-btn.component.scss",
+          "hash": "8506475961582359675"
+        },
+        {
+          "file": "libs/chats/src/lib/feature-chats-workspace/chats-btn/chats-btn.component.ts",
+          "hash": "8813424828572259965",
+          "deps": [
+            "npm:@angular/core",
+            "common-ui",
+            "data-access",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "libs/chats/src/lib/feature-chats-workspace/chats-list/chats-list.component.html",
+          "hash": "1778449844876080823"
+        },
+        {
+          "file": "libs/chats/src/lib/feature-chats-workspace/chats-list/chats-list.component.scss",
+          "hash": "16258332549869959664"
+        },
+        {
+          "file": "libs/chats/src/lib/feature-chats-workspace/chats-list/chats-list.component.ts",
+          "hash": "15120126306570008185",
+          "deps": [
+            "npm:@angular/core",
+            "data-access",
+            "npm:@angular/common",
+            "npm:@angular/router",
+            "npm:@angular/forms",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "libs/chats/src/lib/feature-chats-workspace/chats/chatRoutes.ts",
+          "hash": "13354164649763293815",
+          "deps": [
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "libs/chats/src/lib/feature-chats-workspace/chats/chats.component.html",
+          "hash": "2147143080255330068"
+        },
+        {
+          "file": "libs/chats/src/lib/feature-chats-workspace/chats/chats.component.scss",
+          "hash": "3448937795542450351"
+        },
+        {
+          "file": "libs/chats/src/lib/feature-chats-workspace/chats/chats.component.ts",
+          "hash": "5798184053087867169",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "libs/chats/src/lib/feature-chats-workspace/chats/index.ts",
+          "hash": "16477057044098482848"
+        },
+        {
+          "file": "libs/chats/src/lib/feature-chats-workspace/index.ts",
+          "hash": "1714125568979100741"
+        },
+        {
+          "file": "libs/chats/src/lib/ui/index.ts",
+          "hash": "11243807825635287563"
+        },
+        {
+          "file": "libs/chats/src/lib/ui/input-message/input-message.component.html",
+          "hash": "15961988984403689592"
+        },
+        {
+          "file": "libs/chats/src/lib/ui/input-message/input-message.component.scss",
+          "hash": "4471594849557881594"
+        },
+        {
+          "file": "libs/chats/src/lib/ui/input-message/input-message.component.ts",
+          "hash": "3056127500268455333",
+          "deps": [
+            "npm:@angular/core",
+            "data-access",
+            "common-ui",
+            "npm:@angular/forms"
+          ]
+        },
+        {
+          "file": "libs/chats/src/test-setup.ts",
+          "hash": "10311052578323244902",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/chats/tsconfig.json",
+          "hash": "6285972941286170869"
+        },
+        {
+          "file": "libs/chats/tsconfig.lib.json",
+          "hash": "1998132411444579690"
+        },
+        {
+          "file": "libs/chats/tsconfig.spec.json",
+          "hash": "1134536510301531269"
+        }
+      ],
+      "common-ui": [
+        {
+          "file": "libs/common-ui/README.md",
+          "hash": "14136358609489564048"
+        },
+        {
+          "file": "libs/common-ui/eslint.config.mjs",
+          "hash": "18087596490542984526",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "libs/common-ui/jest.config.ts",
+          "hash": "7845728308554711757"
+        },
+        {
+          "file": "libs/common-ui/project.json",
+          "hash": "5711496818562426426"
+        },
+        {
+          "file": "libs/common-ui/src/index.ts",
+          "hash": "11834069703031133482"
+        },
+        {
+          "file": "libs/common-ui/src/lib/components/avatar-circle/avatar-circle.component.html",
+          "hash": "116309366940703519"
+        },
+        {
+          "file": "libs/common-ui/src/lib/components/avatar-circle/avatar-circle.component.scss",
+          "hash": "9184068086924651756"
+        },
+        {
+          "file": "libs/common-ui/src/lib/components/avatar-circle/avatar-circle.component.ts",
+          "hash": "17855639009588238571",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/common-ui/src/lib/components/index.ts",
+          "hash": "284847273553942871"
+        },
+        {
+          "file": "libs/common-ui/src/lib/components/svg-icon/svg-icon.component.ts",
+          "hash": "17715444156368407307",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/common-ui/src/lib/directives/dnd.directive.ts",
+          "hash": "15574258454702465732",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/common-ui/src/lib/directives/index.ts",
+          "hash": "13996158903110175555"
+        },
+        {
+          "file": "libs/common-ui/src/lib/mask/index.ts",
+          "hash": "15114196003007648466"
+        },
+        {
+          "file": "libs/common-ui/src/lib/mask/onlyTextRu.ts",
+          "hash": "11416542088033603912",
+          "deps": [
+            "npm:@maskito/core"
+          ]
+        },
+        {
+          "file": "libs/common-ui/src/lib/mask/phoneMask.ts",
+          "hash": "14219069500049042247",
+          "deps": [
+            "npm:@maskito/core"
+          ]
+        },
+        {
+          "file": "libs/common-ui/src/lib/pipes/data-local.pipe.ts",
+          "hash": "4451868632172764520",
+          "deps": [
+            "npm:@angular/core",
+            "npm:luxon"
+          ]
+        },
+        {
+          "file": "libs/common-ui/src/lib/pipes/img-url.pipe.ts",
+          "hash": "15306650084593632249",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/common-ui/src/lib/pipes/index.ts",
+          "hash": "17149879855080398219"
+        },
+        {
+          "file": "libs/common-ui/src/lib/pipes/passed-time.pipe.ts",
+          "hash": "4020294907646324076",
+          "deps": [
+            "npm:@angular/core",
+            "npm:luxon"
+          ]
+        },
+        {
+          "file": "libs/common-ui/src/lib/pipes/time-massage.pipe.ts",
+          "hash": "14782681883099692503",
+          "deps": [
+            "npm:@angular/core",
+            "npm:luxon"
+          ]
+        },
+        {
+          "file": "libs/common-ui/src/test-setup.ts",
+          "hash": "10311052578323244902",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/common-ui/tsconfig.json",
+          "hash": "6285972941286170869"
+        },
+        {
+          "file": "libs/common-ui/tsconfig.lib.json",
+          "hash": "1998132411444579690"
+        },
+        {
+          "file": "libs/common-ui/tsconfig.spec.json",
+          "hash": "1134536510301531269"
+        }
+      ],
+      "polygon": [
+        {
+          "file": "libs/polygon/README.md",
+          "hash": "2940273272578105470"
+        },
+        {
+          "file": "libs/polygon/eslint.config.mjs",
+          "hash": "18087596490542984526",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "libs/polygon/jest.config.ts",
+          "hash": "13879322694349196547"
+        },
+        {
+          "file": "libs/polygon/project.json",
+          "hash": "2947002270787368955"
+        },
+        {
+          "file": "libs/polygon/src/index.ts",
+          "hash": "12512739650628984300"
+        },
+        {
+          "file": "libs/polygon/src/lib/polygon-mein/index.ts",
+          "hash": "15975658596012259386"
+        },
+        {
+          "file": "libs/polygon/src/lib/polygon-mein/poligon.component.html",
+          "hash": "16786048120999816282"
+        },
+        {
+          "file": "libs/polygon/src/lib/polygon-mein/poligon.component.scss",
+          "hash": "1253766170982224748"
+        },
+        {
+          "file": "libs/polygon/src/lib/polygon-mein/poligon.component.ts",
+          "hash": "124567209030707987",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "libs/polygon/src/lib/polygon-mein/polygon-routs.ts",
+          "hash": "7380824425852191088",
+          "deps": [
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "libs/polygon/src/lib/polygon-mein/welcome-poligon/welcome-poligon.component.html",
+          "hash": "10059192248348341996"
+        },
+        {
+          "file": "libs/polygon/src/lib/polygon-mein/welcome-poligon/welcome-poligon.component.scss",
+          "hash": "4564453929398880553"
+        },
+        {
+          "file": "libs/polygon/src/lib/polygon-mein/welcome-poligon/welcome-poligon.component.ts",
+          "hash": "3518637879172971987",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/polygon/src/lib/polygon-projects/doctor-form/doctor-form.component.html",
+          "hash": "383267979798432498"
+        },
+        {
+          "file": "libs/polygon/src/lib/polygon-projects/doctor-form/doctor-form.component.scss",
+          "hash": "16478770535098956941"
+        },
+        {
+          "file": "libs/polygon/src/lib/polygon-projects/doctor-form/doctor-form.component.ts",
+          "hash": "1278668561366552269",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:@maskito/angular",
+            "common-ui"
+          ]
+        },
+        {
+          "file": "libs/polygon/src/lib/polygon-projects/index.ts",
+          "hash": "3514506766623495590"
+        },
+        {
+          "file": "libs/polygon/src/lib/polygon-projects/react-form/react-form.component.html",
+          "hash": "550502505104504014"
+        },
+        {
+          "file": "libs/polygon/src/lib/polygon-projects/react-form/react-form.component.scss",
+          "hash": "12906506817426774866"
+        },
+        {
+          "file": "libs/polygon/src/lib/polygon-projects/react-form/react-form.component.ts",
+          "hash": "12938096863824563031",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "data-access",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "libs/polygon/src/lib/polygon-projects/template-form/test-form.component.html",
+          "hash": "1600545826495798916"
+        },
+        {
+          "file": "libs/polygon/src/lib/polygon-projects/template-form/test-form.component.scss",
+          "hash": "15795258866613551803"
+        },
+        {
+          "file": "libs/polygon/src/lib/polygon-projects/template-form/test-form.component.ts",
+          "hash": "7064593309583089370",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:@angular/forms"
+          ]
+        },
+        {
+          "file": "libs/polygon/src/lib/ui/index.ts",
+          "hash": "8607956100008599895"
+        },
+        {
+          "file": "libs/polygon/src/lib/ui/poligon-header/poligon-header.component.html",
+          "hash": "15483569124947717141"
+        },
+        {
+          "file": "libs/polygon/src/lib/ui/poligon-header/poligon-header.component.scss",
+          "hash": "13661999873944657441"
+        },
+        {
+          "file": "libs/polygon/src/lib/ui/poligon-header/poligon-header.component.ts",
+          "hash": "5568340421788536210",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "libs/polygon/src/lib/validators/index.ts",
+          "hash": "1114138039733337547"
+        },
+        {
+          "file": "libs/polygon/src/lib/validators/template-form-validators/no-react.validators.ts",
+          "hash": "16734974481068895786",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms"
+          ]
+        },
+        {
+          "file": "libs/polygon/src/test-setup.ts",
+          "hash": "10311052578323244902",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/polygon/tsconfig.json",
+          "hash": "6285972941286170869"
+        },
+        {
+          "file": "libs/polygon/tsconfig.lib.json",
+          "hash": "1998132411444579690"
+        },
+        {
+          "file": "libs/polygon/tsconfig.spec.json",
+          "hash": "1134536510301531269"
+        }
+      ],
+      "profile": [
+        {
+          "file": "libs/profile/README.md",
+          "hash": "15672010671092110844"
+        },
+        {
+          "file": "libs/profile/eslint.config.mjs",
+          "hash": "18087596490542984526",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "libs/profile/jest.config.ts",
+          "hash": "13167623121875993424"
+        },
+        {
+          "file": "libs/profile/project.json",
+          "hash": "8025786521276637982"
+        },
+        {
+          "file": "libs/profile/src/index.ts",
+          "hash": "4319069228515994790"
+        },
+        {
+          "file": "libs/profile/src/lib/feachure-profile-settings/index.ts",
+          "hash": "13107545795990863801"
+        },
+        {
+          "file": "libs/profile/src/lib/feachure-profile-settings/settings-page/settings-page.component.html",
+          "hash": "7706782817056534970"
+        },
+        {
+          "file": "libs/profile/src/lib/feachure-profile-settings/settings-page/settings-page.component.scss",
+          "hash": "11764526783343567157"
+        },
+        {
+          "file": "libs/profile/src/lib/feachure-profile-settings/settings-page/settings-page.component.ts",
+          "hash": "8143244377178315917",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "data-access",
+            "npm:rxjs",
+            "npm:@angular/router",
+            "common-ui"
+          ]
+        },
+        {
+          "file": "libs/profile/src/lib/feature-profile-list/index.ts",
+          "hash": "5164509544907124153"
+        },
+        {
+          "file": "libs/profile/src/lib/feature-profile-list/profile-filters/profile-filters.component.html",
+          "hash": "4791611827050476791"
+        },
+        {
+          "file": "libs/profile/src/lib/feature-profile-list/profile-filters/profile-filters.component.scss",
+          "hash": "13687915562934194500"
+        },
+        {
+          "file": "libs/profile/src/lib/feature-profile-list/profile-filters/profile-filters.component.ts",
+          "hash": "13056373061529777688",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "data-access",
+            "npm:rxjs",
+            "npm:@ngrx/store"
+          ]
+        },
+        {
+          "file": "libs/profile/src/lib/feature-profile-list/search-page/search-page.component.html",
+          "hash": "6730772723605705810"
+        },
+        {
+          "file": "libs/profile/src/lib/feature-profile-list/search-page/search-page.component.scss",
+          "hash": "16383056477122763389"
+        },
+        {
+          "file": "libs/profile/src/lib/feature-profile-list/search-page/search-page.component.ts",
+          "hash": "76818706347396405",
+          "deps": [
+            "npm:@angular/core",
+            "data-access",
+            "npm:@ngrx/store"
+          ]
+        },
+        {
+          "file": "libs/profile/src/lib/feature-profile-page/index.ts",
+          "hash": "12235175932862183734"
+        },
+        {
+          "file": "libs/profile/src/lib/feature-profile-page/profile-pages/profile-page.component.html",
+          "hash": "9141045495793292485"
+        },
+        {
+          "file": "libs/profile/src/lib/feature-profile-page/profile-pages/profile-page.component.scss",
+          "hash": "5667632696800380973"
+        },
+        {
+          "file": "libs/profile/src/lib/feature-profile-page/profile-pages/profile-page.component.ts",
+          "hash": "1456707760726233118",
+          "deps": [
+            "npm:@angular/core",
+            "data-access",
+            "npm:@angular/router",
+            "npm:rxjs",
+            "npm:@angular/common",
+            "common-ui",
+            "posts"
+          ]
+        },
+        {
+          "file": "libs/profile/src/lib/ui/avatar-upload/avatar-upload.component.html",
+          "hash": "6000763119906376230"
+        },
+        {
+          "file": "libs/profile/src/lib/ui/avatar-upload/avatar-upload.component.scss",
+          "hash": "2799533729615969241"
+        },
+        {
+          "file": "libs/profile/src/lib/ui/avatar-upload/avatar-upload.component.ts",
+          "hash": "12826576781942282896",
+          "deps": [
+            "npm:@angular/core",
+            "common-ui",
+            "npm:@angular/forms"
+          ]
+        },
+        {
+          "file": "libs/profile/src/lib/ui/index.ts",
+          "hash": "13282057804414634716"
+        },
+        {
+          "file": "libs/profile/src/lib/ui/profile-card/profile-card.html",
+          "hash": "13904743305473456805"
+        },
+        {
+          "file": "libs/profile/src/lib/ui/profile-card/profile-card.scss",
+          "hash": "2529741031764816406"
+        },
+        {
+          "file": "libs/profile/src/lib/ui/profile-card/profile-card.ts",
+          "hash": "7809236121065298678",
+          "deps": [
+            "npm:@angular/core",
+            "data-access",
+            "common-ui"
+          ]
+        },
+        {
+          "file": "libs/profile/src/lib/ui/profile-header/profile-header.component.html",
+          "hash": "399679920050119922"
+        },
+        {
+          "file": "libs/profile/src/lib/ui/profile-header/profile-header.component.scss",
+          "hash": "3155641015093746925"
+        },
+        {
+          "file": "libs/profile/src/lib/ui/profile-header/profile-header.component.ts",
+          "hash": "15461061370460101733",
+          "deps": [
+            "npm:@angular/core",
+            "data-access",
+            "common-ui"
+          ]
+        },
+        {
+          "file": "libs/profile/src/test-setup.ts",
+          "hash": "10311052578323244902",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/profile/tsconfig.json",
+          "hash": "6285972941286170869"
+        },
+        {
+          "file": "libs/profile/tsconfig.lib.json",
+          "hash": "1998132411444579690"
+        },
+        {
+          "file": "libs/profile/tsconfig.spec.json",
+          "hash": "1134536510301531269"
+        }
+      ],
+      "layout": [
+        {
+          "file": "libs/layout/README.md",
+          "hash": "13230947109284574595"
+        },
+        {
+          "file": "libs/layout/eslint.config.mjs",
+          "hash": "18087596490542984526",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "libs/layout/jest.config.ts",
+          "hash": "9047175562258929869"
+        },
+        {
+          "file": "libs/layout/project.json",
+          "hash": "16753385785493001373"
+        },
+        {
+          "file": "libs/layout/src/index.ts",
+          "hash": "3363414418942632992"
+        },
+        {
+          "file": "libs/layout/src/lib/layout/index.ts",
+          "hash": "477935298978097272"
+        },
+        {
+          "file": "libs/layout/src/lib/layout/layout.component.html",
+          "hash": "4458870159876491034"
+        },
+        {
+          "file": "libs/layout/src/lib/layout/layout.component.scss",
+          "hash": "15889197720542403662"
+        },
+        {
+          "file": "libs/layout/src/lib/layout/layout.component.ts",
+          "hash": "9414795066176524290",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "libs/layout/src/lib/sidebar/sidebar.component.html",
+          "hash": "2127078555073995497"
+        },
+        {
+          "file": "libs/layout/src/lib/sidebar/sidebar.component.scss",
+          "hash": "13656953900767760444"
+        },
+        {
+          "file": "libs/layout/src/lib/sidebar/sidebar.component.ts",
+          "hash": "2762877021147991659",
+          "deps": [
+            "npm:@angular/core",
+            "common-ui",
+            "npm:@angular/router",
+            "data-access",
+            "npm:@angular/common",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "libs/layout/src/lib/sidebar/subscriber-card/subscriber-card.component.html",
+          "hash": "11346731920252320625"
+        },
+        {
+          "file": "libs/layout/src/lib/sidebar/subscriber-card/subscriber-card.component.scss",
+          "hash": "1997711416640267680"
+        },
+        {
+          "file": "libs/layout/src/lib/sidebar/subscriber-card/subscriber-card.component.ts",
+          "hash": "9883775758995340932",
+          "deps": [
+            "npm:@angular/core",
+            "data-access",
+            "common-ui"
+          ]
+        },
+        {
+          "file": "libs/layout/src/test-setup.ts",
+          "hash": "10311052578323244902",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/layout/tsconfig.json",
+          "hash": "6285972941286170869"
+        },
+        {
+          "file": "libs/layout/tsconfig.lib.json",
+          "hash": "1998132411444579690"
+        },
+        {
+          "file": "libs/layout/tsconfig.spec.json",
+          "hash": "1134536510301531269"
+        }
+      ],
+      "tik-talk-app": [
+        {
+          "file": "apps/tik-talk/project.json",
+          "hash": "10372693485408704587"
+        },
+        {
+          "file": "apps/tik-talk/src/app/app.config.ts",
+          "hash": "3879908331609595071",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:@angular/common",
+            "auth",
+            "npm:@ngrx/store",
+            "npm:@ngrx/effects"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/app.html",
+          "hash": "13127839036880294027"
+        },
+        {
+          "file": "apps/tik-talk/src/app/app.routes.ts",
+          "hash": "16681605930491704857",
+          "deps": [
+            "npm:@angular/router",
+            "auth",
+            "profile",
+            "layout",
+            "chats",
+            "polygon",
+            "npm:@ngrx/store",
+            "data-access",
+            "npm:@ngrx/effects"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/app.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/tik-talk/src/app/app.spec.ts",
+          "hash": "1736441727276701383",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/app/app.ts",
+          "hash": "11740996680748791609",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/fonts.scss",
+          "hash": "18388392616442009176"
+        },
+        {
+          "file": "apps/tik-talk/src/index.html",
+          "hash": "15929235682994516289"
+        },
+        {
+          "file": "apps/tik-talk/src/main.ts",
+          "hash": "10405740721546735325",
+          "deps": [
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "apps/tik-talk/src/margins.scss",
+          "hash": "18445489706707827817"
+        },
+        {
+          "file": "apps/tik-talk/src/styles.scss",
+          "hash": "14175860072640358728"
+        },
+        {
+          "file": "apps/tik-talk/tsconfig.app.json",
+          "hash": "5641499982429519154"
+        }
+      ],
+      "auth": [
+        {
+          "file": "libs/auth/README.md",
+          "hash": "13813340934239156039"
+        },
+        {
+          "file": "libs/auth/eslint.config.mjs",
+          "hash": "18087596490542984526",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "libs/auth/jest.config.ts",
+          "hash": "1270906863536328634"
+        },
+        {
+          "file": "libs/auth/project.json",
+          "hash": "5290109991690591652"
+        },
+        {
+          "file": "libs/auth/src/index.ts",
+          "hash": "375204705692268412"
+        },
+        {
+          "file": "libs/auth/src/lib/auth/access.guard.ts",
+          "hash": "11767981696354445106",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "libs/auth/src/lib/auth/auth.interceptor.ts",
+          "hash": "10199737359977445029",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "libs/auth/src/lib/auth/auth.interface.ts",
+          "hash": "8437810145875717797"
+        },
+        {
+          "file": "libs/auth/src/lib/auth/auth.service.ts",
+          "hash": "5645126133064524993",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:rxjs",
+            "npm:ngx-cookie-service",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "libs/auth/src/lib/feature-login/login-page/login-page.component.html",
+          "hash": "18437148347221479617"
+        },
+        {
+          "file": "libs/auth/src/lib/feature-login/login-page/login-page.component.scss",
+          "hash": "8326516879669064365"
+        },
+        {
+          "file": "libs/auth/src/lib/feature-login/login-page/login-page.component.ts",
+          "hash": "226792799219356283",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "libs/auth/src/test-setup.ts",
+          "hash": "10311052578323244902",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/auth/tsconfig.json",
+          "hash": "6285972941286170869"
+        },
+        {
+          "file": "libs/auth/tsconfig.lib.json",
+          "hash": "1998132411444579690"
+        },
+        {
+          "file": "libs/auth/tsconfig.spec.json",
+          "hash": "1134536510301531269"
         }
       ]
     }
