@@ -37,9 +37,9 @@ export class ProfileFiltersComponent {
   }
 
   ngOnInit() {
-    this.searchForm.controls.firstName.setValue(localStorage.getItem('firstName') === 'undefined' ? '' : localStorage.getItem('firstName'))
-    this.searchForm.controls.lastName.setValue(localStorage.getItem('lastName') === 'undefined' ? '' : localStorage.getItem('lastName'))
-    this.searchForm.controls.stack.setValue(localStorage.getItem('stack') === 'undefined' ? '' : localStorage.getItem('stack'))
+    this.searchForm.controls.firstName.setValue(localStorage.getItem('firstName') === 'undefined' || localStorage.getItem('firstName') === 'null' ? '' : localStorage.getItem('firstName'))
+    this.searchForm.controls.lastName.setValue(localStorage.getItem('lastName') === 'undefined' || localStorage.getItem('lastName') === 'null' ? '' : localStorage.getItem('lastName'))
+    this.searchForm.controls.stack.setValue(localStorage.getItem('stack') === 'undefined' || localStorage.getItem('stack') === 'null' ? '' : localStorage.getItem('stack'))
   }
 
    ngOnDestroy() {
