@@ -185,12 +185,20 @@
           "hash": "16440285013542451778"
         },
         {
+          "file": "libs/data-access/src/lib/chats/interfaces/chat-ws-message.interface.ts",
+          "hash": "16911067084072774464"
+        },
+        {
           "file": "libs/data-access/src/lib/chats/interfaces/chat-ws-service.interfaces.ts",
-          "hash": "5220160738660490817"
+          "hash": "7284323288218447592"
         },
         {
           "file": "libs/data-access/src/lib/chats/interfaces/chats.interfaces.ts",
           "hash": "8619591062972855600"
+        },
+        {
+          "file": "libs/data-access/src/lib/chats/interfaces/type-guards.ts",
+          "hash": "12333702968402314886"
         },
         {
           "file": "libs/data-access/src/lib/chats/services/chat-ws-native.service.ts",
@@ -198,7 +206,7 @@
         },
         {
           "file": "libs/data-access/src/lib/chats/services/chats.service.ts",
-          "hash": "13123582743274048895",
+          "hash": "6947244756007459327",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",

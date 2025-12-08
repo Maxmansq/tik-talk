@@ -7,6 +7,8 @@ import { DateTime } from 'luxon';
 import { ChatWsService } from '../interfaces/chat-ws-service.interfaces';
 import { ChatWsNativeService } from './chat-ws-native.service';
 import { AuthService } from '@tt/auth'
+import { ChatWsMessage } from '../interfaces/chat-ws-message.interface';
+import { isNewMessage, isUnreadMessage } from '../interfaces/type-guards';
 
 @Injectable({
   providedIn: 'root',
@@ -35,12 +37,13 @@ export class ChatsService {
   }
 
 
-  handleWSMessage = (message: any) => {
-    console.log(message)
-    if (message.action === 'unread') {
+  handleWSMessage = (message: ChatWsMessage) => {
+    if (!('action' in message)) return
+
+    if (isUnreadMessage(message)) {
       this.unreadMessagesCount.set(message.data.count)
     }
-    if (message.action === 'message') {
+    if (isNewMessage(message)) {
       const typeMessage: Message = {
       id: message.data.id,
       userFromId: message.data.author,
