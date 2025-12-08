@@ -15,3 +15,8 @@ export const selectInputComment = createSelector(
   inputCommentFeature.selectInputCommentFeatureState,
   (state) => {return state.inputComment}
 )
+
+export const selectTest = createSelector(
+  postFeature.selectTestData,
+  (data) => {return data}
+)

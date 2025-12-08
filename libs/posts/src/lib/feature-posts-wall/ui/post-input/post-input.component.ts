@@ -38,6 +38,8 @@ export class PostInputComponent {
   //Отправка данных инпута в поток
   onCreateMassage() {
     if (this.postId() === 0) {
+      this.store.dispatch(postAction.testAction({value: 1}))
+      console.log('DISPATCH TEST ACTION');
       this.store.dispatch(postAction.inputNewPost(
       {inputPost: {
         title: this.titlePost,

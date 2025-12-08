@@ -2,7 +2,7 @@ import { Component, inject } from '@angular/core';
 import { SvgIconComponent } from '@tt/common-ui';
 import { SubscriberCardComponent } from './subscriber-card/subscriber-card.component';
 import { RouterLinkActive, RouterModule } from '@angular/router';
-import { ProfileService } from '@tt/data-access';
+import { ChatsService, ProfileService } from '@tt/data-access';
 import { AsyncPipe } from '@angular/common';
 import { firstValueFrom } from 'rxjs';
 import { ImgUrlPipe } from '@tt/common-ui';
@@ -18,6 +18,11 @@ export class SidebarComponent {
   profileService = inject(ProfileService)
 
   subscribers$ = this.profileService.getSubscribersShortList(3)
+
+  chatService = inject(ChatsService)
+
+  countUnreadMessage = this.chatService.unreadMessagesCount
+
 
   me = this.profileService.me
 

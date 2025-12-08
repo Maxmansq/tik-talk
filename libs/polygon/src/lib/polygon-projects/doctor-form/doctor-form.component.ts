@@ -1,8 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { AbstractControl, FormControl, FormGroup, ReactiveFormsModule, ValidatorFn, Validators } from '@angular/forms';
 import { MaskitoDirective } from '@maskito/angular';
+import { Store } from '@ngrx/store';
 import { phoneMask } from '@tt/common-ui';
 import { onlyText } from '@tt/common-ui';
+import { selectPosts, selectTest } from '@tt/data-access';
 
 
 
@@ -48,6 +50,14 @@ export class DoctorformComponent {
   doctorTime = doctorTime
   phoneMask = phoneMask
   onlyText = onlyText
+  store = inject(Store)
+
+
+  constructor() {
+    this.store.select(selectTest).subscribe(res => {
+      console.log(res);
+    });
+  }
 
   form = new FormGroup(
     { 

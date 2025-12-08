@@ -4,6 +4,9 @@ import { Chat, GroupMessages, LastMessage, Message } from '../interfaces/chats.i
 import { ProfileService } from './../../profile';
 import { map } from 'rxjs';
 import { DateTime } from 'luxon';
+import { ChatWsService } from '../interfaces/chat-ws-service.interfaces';
+import { ChatWsNativeService } from './chat-ws-native.service';
+import { AuthService } from '@tt/auth'
 
 @Injectable({
   providedIn: 'root',
@@ -14,8 +17,49 @@ export class ChatsService {
   chatsUrl = `${this.baseUrl}chat/`
   messageUrl = `${this.baseUrl}message/`
   profileServiceMe = inject(ProfileService).me
+  #authService = inject(AuthService)
+
+  wsAdapter: ChatWsService = new ChatWsNativeService()
 
   activeChatMessage = signal<GroupMessages[]>([])
+
+  unreadMessagesCount = signal<number>(0)
+
+
+  connectWS() {
+    this.wsAdapter.connect({
+      url: `${this.baseUrl}chat/ws`,
+      token: this.#authService.token ?? '',
+      handleMessage: this.handleWSMessage
+    })
+  }
+
+
+  handleWSMessage = (message: any) => {
+    console.log(message)
+    if (message.action === 'unread') {
+      this.unreadMessagesCount.set(message.data.count)
+    }
+    if (message.action === 'message') {
+      const typeMessage: Message = {
+      id: message.data.id,
+      userFromId: message.data.author,
+      personalChatId: message.data.chat_id,
+      text: message.data.message,
+      createdAt: message.data.created_at.replace(" ", "T") + ".219462",
+      isRead: false,
+      isMine: false
+    }
+      const data = []
+      for (const group of this.activeChatMessage()) {
+        data.push(...group.messages)
+      }
+
+      data.push(typeMessage)
+      console.log(data)
+      this.activeChatMessage.set(this.listDateMessage(data))
+    } 
+  }
 
   createChat(userId: number){
     return this.http.post<Chat>(`${this.chatsUrl}${userId}`, {})

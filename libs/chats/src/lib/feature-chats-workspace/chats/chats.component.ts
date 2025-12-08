@@ -1,7 +1,8 @@
-import { Component, ElementRef, inject, Renderer2 } from '@angular/core';
+import { Component, ElementRef, inject, OnInit, Renderer2 } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { debounceTime, fromEvent, Subject, takeUntil } from 'rxjs';
 import { ChatsListComponent } from '../chats-list/chats-list.component';
+
 
 @Component({
   selector: 'app-chats',
@@ -13,6 +14,7 @@ export class ChatsComponent {
   private destroy$ = new Subject<void>();
   hostElement = inject(ElementRef)
   r2 = inject(Renderer2)
+
 
   ngAfterViewInit() {
     this.resizeChat()
@@ -33,7 +35,6 @@ export class ChatsComponent {
   resizeChat() {
     const {top} = this.hostElement.nativeElement.getBoundingClientRect();
     const height = window.innerHeight - top - 24
-    console.log(height)
     this.r2.setStyle(this.hostElement.nativeElement, 'height', `${height}px`)
   }
 }

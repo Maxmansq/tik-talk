@@ -25,28 +25,28 @@ export class ChatWorkspaceMessageWrapperComponent {
       this.hostelement.nativeElement.scrollTop = this.hostelement.nativeElement.scrollHeight
     }, 100)
     return this.chatservice.activeChatMessage()
-  }) 
-
-  constructor() {
-    console.log(this.message())
-    timer(0, 100000)
-      .pipe(
-        takeUntil(this.destroy$)
-      )
-      .subscribe(async () => {
-        await this.chatservice.getChatId(this.chat().id)
-    })
+  })
+  // constructor() {
+  //   timer(0, 100000)
+  //     .pipe(
+  //       takeUntil(this.destroy$)
+  //     )
+  //     .subscribe(async () => {
+  //       await this.chatservice.getChatId(this.chat().id)
+  //   })
     
-  }
+  // }
   
 
   async onSendMessage(message: string) {
-    await firstValueFrom(this.chatservice.sendMessage(this.chat().id, message))
-    const chat = firstValueFrom(this.chatservice.getChatId(this.chat().id))
+    // await firstValueFrom(this.chatservice.sendMessage(this.chat().id, message))
+    firstValueFrom(this.chatservice.getChatId(this.chat().id))
+    this.chatservice.wsAdapter.sendMessage(this.chat().id, message)
+    
 
-    setTimeout(() => {
-      this.hostelement.nativeElement.scrollTop = this.hostelement.nativeElement.scrollHeight
-    }, 100)
+    // setTimeout(() => {
+    //   this.hostelement.nativeElement.scrollTop = this.hostelement.nativeElement.scrollHeight
+    // }, 100)
     
   }
 

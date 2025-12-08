@@ -1,12 +1,13 @@
 import { createFeature, createReducer, on } from "@ngrx/store";
-import { Comment, CommentCreateDto, Post, PostCreateDto } from "../interfaces/post.interfaces";
+import { CommentCreateDto, Post, PostCreateDto } from "../interfaces/post.interfaces";
 import { postAction } from "./post.action";
 
 export interface PostState {
   posts: Post[],
   newPost: Post | null,
   inputPost: PostCreateDto,
-  inputComment: CommentCreateDto
+  inputComment: CommentCreateDto,
+  testData: number[]
 }
 
 export const initialPostState: PostState = {
@@ -21,7 +22,8 @@ export const initialPostState: PostState = {
     text: '',
     authorId: 0,
     postId: 0,
-  }
+  },
+  testData: []
 }
 
 export const postFeature = createFeature({
@@ -32,19 +34,19 @@ export const postFeature = createFeature({
       return {
         ...state,
         posts: payload.posts
-      }
-    })
-  )
-})
 
-export const createNewPostFeature = createFeature({
-  name: 'createNewPostFeature',
-  reducer: createReducer(
-    initialPostState,
+      }
+    }),
     on(postAction.loadNewPost, (state, payload) => {
       return {
         ...state,
         newPost: payload.post
+      }
+    }),
+    on(postAction.testAction, (state, payload) => {
+      return {
+        ...state,
+        testData: [...state.testData, payload.value]
       }
     })
   )

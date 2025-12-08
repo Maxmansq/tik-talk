@@ -20,15 +20,18 @@ export class ChatWorkspaceComponent {
 
   activeChat$ = this.route.params
     .pipe(switchMap(({id}) => {
+      
       if (id === 'new') {
         return this.route.queryParams
           .pipe(
-            filter(({userId}) => userId),
-            switchMap(({userId}) => {
-              return this.chatsService.createChat(userId)
+            filter(({userid}) => userid),
+            switchMap(({userid}) => {
+              console.log(`я тут2 $`)
+              return this.chatsService.createChat(userid)
                 .pipe(
                   switchMap(chat => {
-                    this.router.navigate(['chats', chat.id])
+                    console.log('я тут3')
+                    this.router.navigate(['chat', chat.id])
                     return of(null)
                   })
                 )

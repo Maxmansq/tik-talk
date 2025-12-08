@@ -5,7 +5,7 @@
           placeholder="Искать..."
           type="text"
           class="tt-form-input" [formControl]="filterChatsControl" >
-      </label>
+  </label>
 </div>
 
 @for (chat of chatsList$ | async; track chat.id) {

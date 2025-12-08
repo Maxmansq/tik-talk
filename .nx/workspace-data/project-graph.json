@@ -15326,6 +15326,11 @@
       },
       {
         "source": "data-access",
+        "target": "auth",
+        "type": "static"
+      },
+      {
+        "source": "data-access",
         "target": "npm:@ngrx/store",
         "type": "static"
       },
@@ -15457,6 +15462,11 @@
       },
       {
         "source": "polygon",
+        "target": "npm:@ngrx/store",
+        "type": "static"
+      },
+      {
+        "source": "polygon",
         "target": "common-ui",
         "type": "static"
       },
@@ -15551,12 +15561,12 @@
       },
       {
         "source": "layout",
-        "target": "common-ui",
+        "target": "data-access",
         "type": "static"
       },
       {
         "source": "layout",
-        "target": "data-access",
+        "target": "common-ui",
         "type": "static"
       },
       {
@@ -37073,5 +37083,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1764924010495
+  "computedAt": 1765188170320
 }

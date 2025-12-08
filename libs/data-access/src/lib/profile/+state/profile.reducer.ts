@@ -4,7 +4,7 @@ import { profileAction } from "./profile.action";
 
 export interface ProfileState {
   profiles: Profile[],
-  profileFilters: Record<string, any>
+  profileFilters: Record<string, any>,
 }
 
 export const initialState: ProfileState = {
@@ -13,18 +13,6 @@ export const initialState: ProfileState = {
 }
 
 
-export const profileSaveFilterFeature = createFeature({
-  name: 'profileSaveFilterFeature',
-  reducer: createReducer(
-    initialState,
-    on(profileAction.filterEvents, (state, payload) => {
-      return {
-        ...state,
-        profileFilters: payload.filters,
-      }
-    })
-  )
-})
 
 export const profileFeature = createFeature({
   name: 'profileFeature',
@@ -34,6 +22,12 @@ export const profileFeature = createFeature({
       return {
         ...state,
         profiles: payload.profiles,
+      }
+    }),
+    on(profileAction.filterEvents, (state, payload) => {
+      return {
+        ...state,
+        profileFilters: payload.filters,
       }
     })
   )

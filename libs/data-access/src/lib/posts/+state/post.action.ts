@@ -10,9 +10,12 @@ export const postAction = createActionGroup(
       'create post': props<{newPost: PostCreateDto}>(),
       'load new post': props<{post: Post}>(),
       'input new post': props<{inputPost: PostCreateDto}>(),
+
       'input new comment': props<{inputComment: CommentCreateDto}>(),
       'create comment': props<{newComment: CommentCreateDto}>(),
-      'load new comment': props<{comment: Comment}>()
+      'load new comment': props<{comment: Comment}>(),
+
+      'test action': props<{value: number}>()
     }
   }
 )

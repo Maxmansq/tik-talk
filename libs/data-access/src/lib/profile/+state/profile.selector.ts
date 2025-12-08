@@ -1,5 +1,5 @@
 import { createSelector } from "@ngrx/store";
-import { profileFeature, profileSaveFilterFeature } from "./profile.reducer";
+import { profileFeature } from "./profile.reducer";
 
 export const selectFilteredProfiles = createSelector(
   profileFeature.selectProfiles,
@@ -7,7 +7,7 @@ export const selectFilteredProfiles = createSelector(
 )
 
 export const selectFilteredSaveProfiles = createSelector(
-  profileSaveFilterFeature.selectProfileFilters,
+  profileFeature.selectProfileFilters,
   (profileFilters) => { return profileFilters}
 )
 
