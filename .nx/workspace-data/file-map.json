@@ -273,7 +273,7 @@
         },
         {
           "file": "libs/data-access/src/lib/chats/services/chat-ws-rxjs.service.ts",
-          "hash": "7944126595319876359",
+          "hash": "2164973612216294635",
           "deps": [
             "npm:rxjs",
             "auth",
@@ -282,7 +282,7 @@
         },
         {
           "file": "libs/data-access/src/lib/chats/services/chats.service.ts",
-          "hash": "9664900619045518144",
+          "hash": "17287905551472219875",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",

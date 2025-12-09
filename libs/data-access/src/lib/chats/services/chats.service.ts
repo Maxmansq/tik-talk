@@ -47,33 +47,40 @@ export class ChatsService {
       this.unreadMessagesCount.set(message.data.count)
     }
     if (isNewMessage(message)) {
+      let falg = false
       const userProfile = await firstValueFrom(this.profileService.getAccount(message.data.author.toString()))
       const typeMessage: Message = {
       id: message.data.id,
       userFromId: message.data.author,
       personalChatId: message.data.chat_id,
       text: message.data.message,
-      createdAt: message.data.created_at.replace(" ", "T") + ".219462",
+      createdAt: message.data.created_at.replace(" ", "T") + ".000000",
       isRead: false,
       isMine: false,
       user: userProfile
       }
-      const data = []
-      for (const group of this.activeChatMessage()) {
-        data.push(...group.messages)
+      this.activeChatMessage.set(
+        this.activeChatMessage().map(group => {
+          if (this.dateFormat(group.date) === this.dateFormat(typeMessage.createdAt)) {
+            falg = true
+            return {
+              date: group.date,
+              messages: [...group.messages, typeMessage]
+            }
+          }
+          return group
+        })
+      )
+      if (!falg) {
+        this.activeChatMessage.set(
+          [...this.activeChatMessage(),
+            {
+            date: typeMessage.createdAt,
+            messages: []
+          }],
+        )
       }
-      data.push(typeMessage)
-      console.log(data)
-      this.activeChatMessage.set(this.listDateMessage(data))
     }
-    // if (isErrorTokenMessage(message)) {
-    //   console.log('Токен протух, переподключаемся...');
-    //   this.wsAdapter.disconnect()
-    //   this.#authService.refreshAuthToken().subscribe(() => {
-    //     this.connectWS()
-    //   })
-      
-    //   }
   }
 
   createChat(userId: number){
@@ -116,26 +123,29 @@ export class ChatsService {
   }
 
   listDateMessage(dataMessage: Message[]) {
-    let iterTime:any = null
-    const result: any[] = []
-    dataMessage.forEach(val => {
-      const day = DateTime.fromISO(val.createdAt, {zone: "utc"}).toLocal().day
-      if (day != iterTime) {
-        iterTime = day
-        result.push(
-          { 
-            date: val.createdAt,
-            messages: dataMessage
-              .filter(val => {
-                const filterDay = DateTime.fromISO(val.createdAt, {zone: "utc"}).toLocal().day
-                return filterDay == iterTime
-              })
-          } 
-        )
+    const result: GroupMessages[] = []
+    for (const val of dataMessage) {
+      const dataMessage = this.dateFormat(val.createdAt)
+
+      const group = result.find(group => this.dateFormat(group.date) === dataMessage)
+
+      if (group) {
+        group.messages.push(val)
       }
+      else {
+        result.push({
+          date: val.createdAt,
+          messages: [val]
+        })
       }
-    )
+    }
+    console.log(result)
     return result
+  }
+
+
+  dateFormat(dateString: string) {
+    return DateTime.fromISO(dateString, {zone: "utc"}).toFormat("dd-MM-yyyy")
   }
   
 }

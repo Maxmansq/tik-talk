@@ -38,7 +38,7 @@ export class ChatWsRxjsService implements ChatWsService{
   disconnect() {
     this.#socket = null;
     this.#socket = null
-    };
+  };
 
   reconnectSocket(params: ChatConnectionWSParams) {
     this.authService.refreshAuthToken()
