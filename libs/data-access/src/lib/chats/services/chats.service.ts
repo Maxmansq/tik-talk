@@ -6,7 +6,7 @@ import { firstValueFrom, map, Observable } from 'rxjs';
 import { DateTime } from 'luxon';
 import { ChatWsService } from '../interfaces/chat-ws-service.interfaces';
 import { ChatWsNativeService } from './chat-ws-native.service';
-import { AuthService } from '@tt/auth'
+import { AuthService } from '../../auth'
 import { ChatWsMessage } from '../interfaces/chat-ws-message.interface';
 import { isErrorTokenMessage, isNewMessage, isUnreadMessage } from '../interfaces/type-guards';
 import { ChatWsRxjsService } from './chat-ws-rxjs.service';
@@ -56,7 +56,7 @@ export class ChatsService {
       text: message.data.message,
       createdAt: message.data.created_at.replace(" ", "T") + ".000000",
       isRead: false,
-      isMine: false,
+      isMine: this.profileServiceMe()!.id === message.data.author,
       user: userProfile
       }
       this.activeChatMessage.set(

@@ -15306,12 +15306,7 @@
       },
       {
         "source": "data-access",
-        "target": "npm:rxjs",
-        "type": "static"
-      },
-      {
-        "source": "data-access",
-        "target": "auth",
+        "target": "npm:@angular/common",
         "type": "static"
       },
       {
@@ -15321,7 +15316,17 @@
       },
       {
         "source": "data-access",
-        "target": "npm:@angular/common",
+        "target": "npm:rxjs",
+        "type": "static"
+      },
+      {
+        "source": "data-access",
+        "target": "npm:ngx-cookie-service",
+        "type": "static"
+      },
+      {
+        "source": "data-access",
+        "target": "npm:@angular/router",
         "type": "static"
       },
       {
@@ -15561,12 +15566,12 @@
       },
       {
         "source": "layout",
-        "target": "data-access",
+        "target": "common-ui",
         "type": "static"
       },
       {
         "source": "layout",
-        "target": "common-ui",
+        "target": "data-access",
         "type": "static"
       },
       {
@@ -15687,6 +15692,11 @@
       },
       {
         "source": "auth",
+        "target": "data-access",
+        "type": "static"
+      },
+      {
+        "source": "auth",
         "target": "npm:@angular/router",
         "type": "static"
       },
@@ -15698,11 +15708,6 @@
       {
         "source": "auth",
         "target": "npm:rxjs",
-        "type": "static"
-      },
-      {
-        "source": "auth",
-        "target": "npm:ngx-cookie-service",
         "type": "static"
       },
       {
@@ -37083,5 +37088,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1765281554694
+  "computedAt": 1765285097940
 }

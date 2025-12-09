@@ -2,9 +2,9 @@ import { Component, DestroyRef, inject, OnInit } from '@angular/core';
 import { SvgIconComponent } from '@tt/common-ui';
 import { SubscriberCardComponent } from './subscriber-card/subscriber-card.component';
 import { RouterLinkActive, RouterModule } from '@angular/router';
-import { ChatsService, ProfileService } from '@tt/data-access';
+import { AuthService, ChatsService, ProfileService } from '@tt/data-access';
 import { AsyncPipe } from '@angular/common';
-import { firstValueFrom, Subscription, timer } from 'rxjs';
+import { firstValueFrom, Subscription } from 'rxjs';
 import { ImgUrlPipe } from '@tt/common-ui';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { isErrorTokenMessage } from '@tt/data-access';
@@ -18,6 +18,7 @@ import { isErrorTokenMessage } from '@tt/data-access';
 })
 export class SidebarComponent implements OnInit {
   profileService = inject(ProfileService)
+  authService = inject(AuthService)
   subscribers$ = this.profileService.getSubscribersShortList(3)
   chatService = inject(ChatsService)
   me = this.profileService.me
@@ -56,8 +57,7 @@ export class SidebarComponent implements OnInit {
   ]
 
   async reconnectWs() {
-    await firstValueFrom(this.profileService.getMe())
-    await firstValueFrom(timer(2000))
+    await firstValueFrom(this.authService.refreshAuthToken())
     this.connectWS()
   }
 
@@ -75,7 +75,6 @@ export class SidebarComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log('SidebarComponent initialized');
     firstValueFrom(this.profileService.getMe())
     this.connectWS()
   }

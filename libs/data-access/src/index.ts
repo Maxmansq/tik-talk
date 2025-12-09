@@ -4,3 +4,4 @@ export * from './lib/posts';
 export * from './lib/profile';
 export * from './lib/global-store';
 export * from './lib/pagination';
+export * from './lib/auth';

@@ -2,7 +2,7 @@ import { finalize, Observable, tap } from "rxjs";
 import { ChatWsMessage } from "../interfaces/chat-ws-message.interface";
 import { ChatConnectionWSParams, ChatWsService } from "../interfaces/chat-ws-service.interfaces";
 import { webSocket, WebSocketSubject } from "rxjs/webSocket";
-import { AuthService } from "@tt/auth";
+import { AuthService } from "../../auth";
 import { inject } from "@angular/core";
 
 export class ChatWsRxjsService implements ChatWsService{
