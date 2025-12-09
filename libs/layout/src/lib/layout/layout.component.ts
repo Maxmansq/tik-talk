@@ -11,9 +11,4 @@ import { ChatsService } from '@tt/data-access';
 })
 export class LayoutComponent {
 
-  #chatService = inject(ChatsService)
-
-  ngOnInit(): void {
-    this.#chatService.connectWS()
-  }
 }

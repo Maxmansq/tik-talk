@@ -1,14 +1,15 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable, signal } from '@angular/core';
 import { Chat, GroupMessages, LastMessage, Message } from '../interfaces/chats.interfaces';
-import { ProfileService } from './../../profile';
-import { map } from 'rxjs';
+import { Profile, ProfileService } from './../../profile';
+import { firstValueFrom, map, Observable } from 'rxjs';
 import { DateTime } from 'luxon';
 import { ChatWsService } from '../interfaces/chat-ws-service.interfaces';
 import { ChatWsNativeService } from './chat-ws-native.service';
 import { AuthService } from '@tt/auth'
 import { ChatWsMessage } from '../interfaces/chat-ws-message.interface';
-import { isNewMessage, isUnreadMessage } from '../interfaces/type-guards';
+import { isErrorTokenMessage, isNewMessage, isUnreadMessage } from '../interfaces/type-guards';
+import { ChatWsRxjsService } from './chat-ws-rxjs.service';
 
 @Injectable({
   providedIn: 'root',
@@ -19,9 +20,10 @@ export class ChatsService {
   chatsUrl = `${this.baseUrl}chat/`
   messageUrl = `${this.baseUrl}message/`
   profileServiceMe = inject(ProfileService).me
+  profileService = inject(ProfileService)
   #authService = inject(AuthService)
 
-  wsAdapter: ChatWsService = new ChatWsNativeService()
+  wsAdapter: ChatWsService = new ChatWsRxjsService()
 
   activeChatMessage = signal<GroupMessages[]>([])
 
@@ -29,21 +31,23 @@ export class ChatsService {
 
 
   connectWS() {
-    this.wsAdapter.connect({
+    console.log(this.#authService.token)
+    return this.wsAdapter.connect({
       url: `${this.baseUrl}chat/ws`,
       token: this.#authService.token ?? '',
-      handleMessage: this.handleWSMessage
-    })
+      handleMessage: this.handleWSMessage.bind(this)
+    }) as Observable<ChatWsMessage>;
   }
 
 
-  handleWSMessage = (message: ChatWsMessage) => {
-    if (!('action' in message)) return
+   async handleWSMessage(message: ChatWsMessage) {
+    console.log('Получено сообщение в сервисе чатов:', message);
 
     if (isUnreadMessage(message)) {
       this.unreadMessagesCount.set(message.data.count)
     }
     if (isNewMessage(message)) {
+      const userProfile = await firstValueFrom(this.profileService.getAccount(message.data.author.toString()))
       const typeMessage: Message = {
       id: message.data.id,
       userFromId: message.data.author,
@@ -51,17 +55,25 @@ export class ChatsService {
       text: message.data.message,
       createdAt: message.data.created_at.replace(" ", "T") + ".219462",
       isRead: false,
-      isMine: false
-    }
+      isMine: false,
+      user: userProfile
+      }
       const data = []
       for (const group of this.activeChatMessage()) {
         data.push(...group.messages)
       }
-
       data.push(typeMessage)
       console.log(data)
       this.activeChatMessage.set(this.listDateMessage(data))
-    } 
+    }
+    // if (isErrorTokenMessage(message)) {
+    //   console.log('Токен протух, переподключаемся...');
+    //   this.wsAdapter.disconnect()
+    //   this.#authService.refreshAuthToken().subscribe(() => {
+    //     this.connectWS()
+    //   })
+      
+    //   }
   }
 
   createChat(userId: number){

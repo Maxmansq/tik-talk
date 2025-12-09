@@ -1,6 +1,6 @@
 import { Component, computed, ElementRef, inject, input, Renderer2 } from '@angular/core';
 import { ChatWorkspaceMessageComponent } from '../chat-workspace-message.component';
-import { debounceTime, firstValueFrom, fromEvent, Subject, takeUntil, timer } from 'rxjs';
+import { debounceTime, firstValueFrom, fromEvent, Subject, takeUntil } from 'rxjs';
 import { InputMessageComponent } from './../../../../ui';
 import { TimeMassagePipe } from '@tt/common-ui';
 import { ChatsService } from '@tt/data-access';
@@ -26,28 +26,16 @@ export class ChatWorkspaceMessageWrapperComponent {
     }, 100)
     return this.chatservice.activeChatMessage()
   })
-  // constructor() {
-  //   timer(0, 100000)
-  //     .pipe(
-  //       takeUntil(this.destroy$)
-  //     )
-  //     .subscribe(async () => {
-  //       await this.chatservice.getChatId(this.chat().id)
-  //   })
-    
-  // }
   
 
   async onSendMessage(message: string) {
     // await firstValueFrom(this.chatservice.sendMessage(this.chat().id, message))
-    firstValueFrom(this.chatservice.getChatId(this.chat().id))
     this.chatservice.wsAdapter.sendMessage(this.chat().id, message)
-    
-
     // setTimeout(() => {
-    //   this.hostelement.nativeElement.scrollTop = this.hostelement.nativeElement.scrollHeight
-    // }, 100)
+    //   firstValueFrom(this.chatservice.getChatId(this.chat().id))
+    // }, 500)
     
+      
   }
 
 

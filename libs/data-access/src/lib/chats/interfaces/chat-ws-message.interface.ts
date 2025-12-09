@@ -10,7 +10,7 @@ export interface ChatWsUnreadMessage extends ChatWsMessageBase {
   }
 }
 
-export interface ChatWsSendMessage extends ChatWsMessageBase {
+export interface ChatWsSendMessage {
   text: string,
   chat_id: number
 }
@@ -35,4 +35,4 @@ export interface ChatWsErrorMessage extends ChatWsMessageBase {
   message: string
 }
 
-export type ChatWsMessage = ChatWsUnreadMessage | ChatWsNewMessage | ChatWsErrorMessage;
+export type ChatWsMessage = ChatWsUnreadMessage | ChatWsNewMessage | ChatWsErrorMessage | ChatWsSendMessage;

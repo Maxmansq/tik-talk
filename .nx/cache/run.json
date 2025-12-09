@@ -1,8 +1,8 @@
 {
   "run": {
     "command": "nx run tik-talk-app:serve",
-    "startTime": "2025-12-05T08:20:26.487Z",
-    "endTime": "2025-12-05T08:42:43.540Z",
+    "startTime": "2025-12-08T07:20:16.730Z",
+    "endTime": "2025-12-08T12:47:52.745Z",
     "inner": false
   },
   "tasks": [
@@ -10,9 +10,9 @@
       "taskId": "tik-talk-app:serve:development",
       "target": "serve",
       "projectName": "tik-talk-app",
-      "hash": "9120851876381561011",
-      "startTime": "2025-12-05T08:20:26.557Z",
-      "endTime": "2025-12-05T08:42:43.535Z",
+      "hash": "9684160882351336999",
+      "startTime": "2025-12-08T07:20:16.797Z",
+      "endTime": "2025-12-08T12:47:52.733Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 1

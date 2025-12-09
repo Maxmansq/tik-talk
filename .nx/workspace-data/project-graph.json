@@ -15306,7 +15306,12 @@
       },
       {
         "source": "data-access",
-        "target": "npm:@angular/common",
+        "target": "npm:rxjs",
+        "type": "static"
+      },
+      {
+        "source": "data-access",
+        "target": "auth",
         "type": "static"
       },
       {
@@ -15316,17 +15321,12 @@
       },
       {
         "source": "data-access",
-        "target": "npm:rxjs",
+        "target": "npm:@angular/common",
         "type": "static"
       },
       {
         "source": "data-access",
         "target": "npm:luxon",
-        "type": "static"
-      },
-      {
-        "source": "data-access",
-        "target": "auth",
         "type": "static"
       },
       {
@@ -37083,5 +37083,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1765193092801
+  "computedAt": 1765277230722
 }

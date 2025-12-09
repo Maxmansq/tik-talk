@@ -1,11 +1,13 @@
-import { Component, inject } from '@angular/core';
+import { Component, DestroyRef, inject, OnInit } from '@angular/core';
 import { SvgIconComponent } from '@tt/common-ui';
 import { SubscriberCardComponent } from './subscriber-card/subscriber-card.component';
 import { RouterLinkActive, RouterModule } from '@angular/router';
 import { ChatsService, ProfileService } from '@tt/data-access';
 import { AsyncPipe } from '@angular/common';
-import { firstValueFrom } from 'rxjs';
+import { firstValueFrom, Subscription, timer } from 'rxjs';
 import { ImgUrlPipe } from '@tt/common-ui';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import { isErrorTokenMessage } from '@tt/data-access';
 
 @Component({
   selector: 'app-sidebar',
@@ -14,17 +16,17 @@ import { ImgUrlPipe } from '@tt/common-ui';
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.scss',
 })
-export class SidebarComponent {
+export class SidebarComponent implements OnInit {
   profileService = inject(ProfileService)
-
   subscribers$ = this.profileService.getSubscribersShortList(3)
-
   chatService = inject(ChatsService)
-
+  me = this.profileService.me
   countUnreadMessage = this.chatService.unreadMessagesCount
 
+  destroyRef = inject(DestroyRef)
 
-  me = this.profileService.me
+  wsSubscribe!: Subscription
+
 
   menuItems = [
     {
@@ -53,7 +55,28 @@ export class SidebarComponent {
     }
   ]
 
+  async reconnectWs() {
+    await firstValueFrom(this.profileService.getMe())
+    await firstValueFrom(timer(2000))
+    this.connectWS()
+  }
+
+  connectWS() {
+    this.wsSubscribe?.unsubscribe()
+    this.wsSubscribe = this.chatService.connectWS()
+      .pipe(
+        takeUntilDestroyed(this.destroyRef)
+      ).subscribe((message) => {
+        if(isErrorTokenMessage(message)) {
+          console.log('Токен протух, переподключаемся...')
+          this.reconnectWs()
+        }
+      })
+  }
+
   ngOnInit() {
-    firstValueFrom(this.profileService.getMe()) 
+    console.log('SidebarComponent initialized');
+    firstValueFrom(this.profileService.getMe())
+    this.connectWS()
   }
 }
