@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { PoligonHeaderComponent } from './../ui';
 import { RouterOutlet } from '@angular/router';
 
@@ -7,6 +7,7 @@ import { RouterOutlet } from '@angular/router';
   imports: [PoligonHeaderComponent, RouterOutlet],
   templateUrl: './poligon.component.html',
   styleUrl: './poligon.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PoligonComponent {
   

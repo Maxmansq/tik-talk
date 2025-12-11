@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { AbstractControl, FormControl, FormGroup, ReactiveFormsModule, ValidatorFn, Validators } from '@angular/forms';
 import { MaskitoDirective } from '@maskito/angular';
 import { Store } from '@ngrx/store';
@@ -42,6 +42,7 @@ const validateStartEror: ValidatorFn = (control: AbstractControl) => {
   imports: [ReactiveFormsModule, MaskitoDirective],
   templateUrl: './doctor-form.component.html',
   styleUrl: './doctor-form.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DoctorformComponent {
 

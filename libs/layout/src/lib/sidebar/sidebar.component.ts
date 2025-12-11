@@ -1,4 +1,4 @@
-import { Component, DestroyRef, inject, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, DestroyRef, inject, OnInit } from '@angular/core';
 import { SvgIconComponent } from '@tt/common-ui';
 import { SubscriberCardComponent } from './subscriber-card/subscriber-card.component';
 import { RouterLinkActive, RouterModule } from '@angular/router';
@@ -15,6 +15,7 @@ import { isErrorTokenMessage } from '@tt/data-access';
     SubscriberCardComponent, RouterModule, AsyncPipe, ImgUrlPipe, RouterLinkActive],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SidebarComponent implements OnInit {
   profileService = inject(ProfileService)

@@ -1,4 +1,4 @@
-import { Component, inject, input, OnInit, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, input, OnInit, signal } from '@angular/core';
 import { AvatarCircleComponent } from "@tt/common-ui";
 import { SvgIconComponent } from "@tt/common-ui";
 import { map, Subject, takeUntil } from 'rxjs';
@@ -12,6 +12,7 @@ import { Store } from '@ngrx/store';
   imports: [AvatarCircleComponent, SvgIconComponent, PostInputComponent , CommentComponent, PassedTimePipe],
   templateUrl: './post.component.html',
   styleUrl: './post.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PostComponent implements OnInit{
   post = input<Post>()

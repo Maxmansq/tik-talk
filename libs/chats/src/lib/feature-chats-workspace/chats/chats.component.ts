@@ -1,4 +1,4 @@
-import { Component, ElementRef, inject, OnInit, Renderer2 } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, inject, OnInit, Renderer2 } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { debounceTime, fromEvent, Subject, takeUntil } from 'rxjs';
 import { ChatsListComponent } from '../chats-list/chats-list.component';
@@ -9,6 +9,7 @@ import { ChatsListComponent } from '../chats-list/chats-list.component';
   imports: [RouterOutlet, ChatsListComponent],
   templateUrl: './chats.component.html',
   styleUrl: './chats.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ChatsComponent {
   private destroy$ = new Subject<void>();

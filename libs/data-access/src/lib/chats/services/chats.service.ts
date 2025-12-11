@@ -76,7 +76,7 @@ export class ChatsService {
           [...this.activeChatMessage(),
             {
             date: typeMessage.createdAt,
-            messages: []
+            messages: [typeMessage]
           }],
         )
       }

@@ -1,4 +1,4 @@
-import { Component, ElementRef, inject, input, Renderer2 } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, inject, input, Renderer2 } from '@angular/core';
 import { debounceTime, firstValueFrom, fromEvent, Subject, takeUntil } from 'rxjs';
 import { postAction, PostService, selectInputComment, selectInputPost, selectPosts } from '@tt/data-access';
 import { PostInputComponent } from '../ui';
@@ -11,6 +11,7 @@ import { Store } from '@ngrx/store';
   imports: [PostInputComponent, PostComponent],
   templateUrl: './post-feed.component.html',
   styleUrl: './post-feed.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PostFeedComponent {
   private destroy$ = new Subject<void>();

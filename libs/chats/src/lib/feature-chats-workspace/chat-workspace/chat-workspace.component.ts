@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { ChatWorkspaceHeaderComponent } from './chat-workspace-header/chat-workspace-header.component';
 import { ChatWorkspaceMessageWrapperComponent } from './chat-workspace-message/chat-workspace-message-wrapper/chat-workspace-message-wrapper.component';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -12,6 +12,8 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [ChatWorkspaceHeaderComponent, ChatWorkspaceMessageWrapperComponent, AsyncPipe, ReactiveFormsModule],
   templateUrl: './chat-workspace.component.html',
   styleUrl: './chat-workspace.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
+  
 })
 export class ChatWorkspaceComponent {
   route = inject(ActivatedRoute)

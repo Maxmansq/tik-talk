@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { RouterLink } from "@angular/router";
 
 @Component({
@@ -6,6 +6,7 @@ import { RouterLink } from "@angular/router";
   imports: [RouterLink],
   templateUrl: './poligon-header.component.html',
   styleUrl: './poligon-header.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PoligonHeaderComponent {
   flag = localStorage.getItem('flag')

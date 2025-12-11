@@ -1,4 +1,4 @@
-import { Component, effect, inject, ViewChild,} from '@angular/core';
+import { ChangeDetectionStrategy, Component, effect, inject, ViewChild,} from '@angular/core';
 import { ProfileHeaderComponent } from './../../ui';
 import { FormBuilder, Validators, ɵInternalFormsSharedModule, ReactiveFormsModule } from '@angular/forms';
 import { ProfileService } from '@tt/data-access';
@@ -12,6 +12,7 @@ import { SvgIconComponent } from "@tt/common-ui";
   imports: [ProfileHeaderComponent, ɵInternalFormsSharedModule, ReactiveFormsModule, AvatarUploadComponent, RouterLink, SvgIconComponent],
   templateUrl: './settings-page.component.html',
   styleUrl: './settings-page.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SettingsPageComponent {
   fb = inject(FormBuilder)

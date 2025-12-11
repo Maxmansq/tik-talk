@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { FormArray, FormControl, FormGroup, FormRecord, ReactiveFormsModule, Validators, ɵInternalFormsSharedModule } from '@angular/forms';
 import { FormServiceService } from '@tt/data-access'
@@ -30,6 +30,7 @@ interface Feature {
   imports: [ɵInternalFormsSharedModule, ReactiveFormsModule, KeyValuePipe],
   templateUrl: './react-form.component.html',
   styleUrl: './react-form.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ReactFormComponent {
   formService = inject(FormServiceService)

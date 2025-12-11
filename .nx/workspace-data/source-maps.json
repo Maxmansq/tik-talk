@@ -466,6 +466,14 @@
       "apps/tik-talk/project.json",
       "nx/core/project-json"
     ],
+    "targets.serve.options": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.proxyConfig": [
+      "apps/tik-talk/project.json",
+      "nx/core/project-json"
+    ],
     "targets.serve.configurations.production": [
       "apps/tik-talk/project.json",
       "nx/core/project-json"

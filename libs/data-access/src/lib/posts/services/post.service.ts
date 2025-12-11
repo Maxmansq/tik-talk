@@ -1,14 +1,14 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable, signal } from '@angular/core';
 import { CommentCreateDto, Post, PostCreateDto } from '../interfaces/post.interfaces';
-import { map, Subject, switchMap, tap } from 'rxjs';
+import { map, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class PostService {
   #http = inject(HttpClient)
-  baseApiUrl = 'https://icherniakov.ru/yt-course/'
+  baseApiUrl = '/yt-course/'
 
   posts = signal<Post[]>([])
 

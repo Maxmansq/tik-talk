@@ -1,5 +1,5 @@
 import { JsonPipe } from '@angular/common';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { NoReactValidator } from "./../../validators";
 
@@ -8,6 +8,7 @@ import { NoReactValidator } from "./../../validators";
   imports: [FormsModule, JsonPipe, NoReactValidator],
   templateUrl: './test-form.component.html',
   styleUrl: './test-form.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TestFormComponent {
   username = ''
