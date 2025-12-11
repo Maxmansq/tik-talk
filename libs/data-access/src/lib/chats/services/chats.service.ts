@@ -16,7 +16,7 @@ import { ChatWsRxjsService } from './chat-ws-rxjs.service';
 })
 export class ChatsService {
   http = inject(HttpClient)
-  baseUrl = 'https://icherniakov.ru/yt-course/'
+  baseUrl = '/yt-course/'
   chatsUrl = `${this.baseUrl}chat/`
   messageUrl = `${this.baseUrl}message/`
   profileServiceMe = inject(ProfileService).me
