@@ -29,6 +29,8 @@ export class ChatsService {
 
   unreadMessagesCount = signal<number>(0)
 
+  activeChatProfile = signal<Chat | null>(null)
+
 
   connectWS() {
     console.log(this.#authService.token)
@@ -47,8 +49,11 @@ export class ChatsService {
       this.unreadMessagesCount.set(message.data.count)
     }
     if (isNewMessage(message)) {
+      const me = this.profileServiceMe()?.id
+      const activeUser = this.activeChatProfile()?.userFirst.id === message.data.author ? this.activeChatProfile()?.userFirst : this.activeChatProfile()?.userSecond
+      if (!me) return
+      if (!activeUser) return
       let falg = false
-      const userProfile = await firstValueFrom(this.profileService.getAccount(message.data.author.toString()))
       const typeMessage: Message = {
       id: message.data.id,
       userFromId: message.data.author,
@@ -56,8 +61,8 @@ export class ChatsService {
       text: message.data.message,
       createdAt: message.data.created_at.replace(" ", "T") + ".000000",
       isRead: false,
-      isMine: this.profileServiceMe()!.id === message.data.author,
-      user: userProfile
+      isMine: me === message.data.author,
+      user: activeUser
       }
       this.activeChatMessage.set(
         this.activeChatMessage().map(group => {
@@ -95,6 +100,7 @@ export class ChatsService {
     return this.http.get<Chat>(`${this.chatsUrl}${chatId}`)
       .pipe(
         map(chat => {
+          this.activeChatProfile.set(chat)
           const patchedMessages = chat.messages.map(message => {
               return {
                 ...message,
