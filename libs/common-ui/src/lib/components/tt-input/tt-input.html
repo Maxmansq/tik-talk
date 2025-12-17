@@ -1,0 +1,13 @@
+<label class="login-comtrol-label">
+  <ng-content></ng-content>
+  <div class="login_input">
+    <input
+      [ngModel]="value"
+      (ngModelChange)="onModelChange($event)"
+      class="input-control"
+      [type]="type()"
+      [placeholder]="placeholder()"
+      (blur)="onTouched()">
+      <img class="username_icon_telegram" src="/assets/imags/telegram_Icon.png" alt="">
+  </div>
+</label>
