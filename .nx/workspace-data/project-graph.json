@@ -14169,6 +14169,16 @@
       },
       {
         "source": "common-ui",
+        "target": "data-access",
+        "type": "static"
+      },
+      {
+        "source": "common-ui",
+        "target": "npm:rxjs",
+        "type": "static"
+      },
+      {
+        "source": "common-ui",
         "target": "npm:@maskito/core",
         "type": "static"
       },
@@ -33451,5 +33461,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1765962275585
+  "computedAt": 1766128628474
 }

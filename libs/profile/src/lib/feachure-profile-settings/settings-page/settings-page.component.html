@@ -1,3 +1,4 @@
+<!-- eslint-disable @angular-eslint/template/label-has-associated-control -->
 <app-profile-header></app-profile-header>
 
 <form class="profile-form__wrapper" [formGroup]="form">
@@ -24,14 +25,15 @@
           rows="4"></textarea>
       </label>
     <label class="tt-form-lable">
-        <span class="tt-form-lable__text">Аватар</span>
-        <app-avatar-upload></app-avatar-upload>
-      </label>
-    
-    <label class="tt-form-lable">
-        <span class="tt-form-lable__text">Навыки</span>
-        <input type="text" class="tt-form-input" formControlName="stack">
-      </label>
+      <span class="tt-form-lable__text">Аватар</span>
+      <app-avatar-upload></app-avatar-upload>
+    </label>
+    <lib-stack-input
+      formControlName="stack"
+    ></lib-stack-input>
+    <lib-address-input
+      formControlName="city">
+    </lib-address-input>
   </div>
 
   <div>
@@ -45,7 +47,7 @@
         </a>
       </div>
       <div class="settings-menu__right">
-        <button class="btn dark_btn" (click)="onClear()">Отмена</button>
+        <button class="btn dark_btn">Отмена</button>
         <button class="btn widtch_btn" (click)="onSave()">Сохранить</button>
       </div>
     </div>
