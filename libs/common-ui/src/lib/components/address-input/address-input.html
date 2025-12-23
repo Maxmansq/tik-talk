@@ -11,12 +11,29 @@
         <button
           class="suggestion-btn"
           (click)="onSuggestionPick(suggestion)"
-        >{{ suggestion }}</button>
+        >{{ suggestion.value }}</button>
       }
     </div>
     
   }
 }
+
+<form [formGroup]="resultAddressForm">
+  <div class="wrapper-address">
+    <label class="login-comtrol-label" for="">
+      Город
+      <input class="input-control" formControlName="city" type="text">
+    </label>
+    <label class="login-comtrol-label" for="">
+      Улица
+      <input class="input-control" formControlName="street" type="text">
+    </label>
+    <label class="login-comtrol-label" for="">
+      Дом
+      <input class="input-control" formControlName="house" type="text">
+    </label>
+  </div>  
+</form>
 
 
 

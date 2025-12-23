@@ -26,7 +26,7 @@ export class SettingsPageComponent {
     username: [{value: '', disabled: true}, Validators.required],
     description: [''],
     stack: [''],
-    city: [null]
+    city: ['']
   })
 
   constructor() {

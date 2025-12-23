@@ -3,6 +3,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { NoReactValidator } from "./../../validators";
 
+
 @Component({
   selector: 'app-test-form',
   imports: [FormsModule, JsonPipe, NoReactValidator],
@@ -32,4 +33,8 @@ export class TestFormComponent {
   onSubmit(form: NgForm) {
     console.log(form)
   }
+  
+
+
+  
 }

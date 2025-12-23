@@ -25,7 +25,7 @@ export class DadataService {
           new Set(
             res.suggestions.map(
               (suggestion: DadataSuggestion) => {
-                return suggestion.data.city
+                return suggestion
               }
             )
           )

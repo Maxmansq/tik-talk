@@ -27,6 +27,11 @@ export class PoligonHeaderComponent {
       name: 'Шаблон-форм',
       link: 'tempform'
     },
+    {
+      id: 3,
+      name: 'Rx-Js',
+      link: 'rxjs'
+    },
   ]
   
 
