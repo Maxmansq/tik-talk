@@ -14164,17 +14164,17 @@
       },
       {
         "source": "common-ui",
-        "target": "npm:@angular/common",
-        "type": "static"
-      },
-      {
-        "source": "common-ui",
         "target": "data-access",
         "type": "static"
       },
       {
         "source": "common-ui",
         "target": "npm:rxjs",
+        "type": "static"
+      },
+      {
+        "source": "common-ui",
+        "target": "npm:@angular/common",
         "type": "static"
       },
       {
@@ -14299,6 +14299,11 @@
       {
         "source": "polygon",
         "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "polygon",
+        "target": "npm:rxjs",
         "type": "static"
       },
       {
@@ -33461,5 +33466,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1766128628474
+  "computedAt": 1766474036223
 }

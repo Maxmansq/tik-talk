@@ -1,13 +1,14 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, forwardRef, inject, signal } from '@angular/core';
 import { ControlValueAccessor, FormArray, FormControl, FormGroup, FormRecord, FormsModule, NG_VALUE_ACCESSOR, ReactiveFormsModule } from '@angular/forms';
 import { DadataService } from '@tt/data-access';
+import { PoligonInput } from "../poligon-input/poligon-input";
 import { debounceTime, map, switchMap, tap } from 'rxjs';
 import { AsyncPipe } from '@angular/common';
 import { DadataSuggestion } from '@tt/data-access';
 
 @Component({
   selector: 'lib-address-input',
-  imports: [ReactiveFormsModule, FormsModule, AsyncPipe],
+  imports: [ReactiveFormsModule, FormsModule, PoligonInput, AsyncPipe],
   templateUrl: './address-input.html',
   styleUrl: './address-input.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

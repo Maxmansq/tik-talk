@@ -40,7 +40,6 @@ export class TtInput implements ControlValueAccessor{
   }
 
   registerOnChange(fn: any): void {
-    console.log(fn)
     this.onChange = fn
   }
 

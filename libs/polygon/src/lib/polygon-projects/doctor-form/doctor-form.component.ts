@@ -5,6 +5,7 @@ import { Store } from '@ngrx/store';
 import { phoneMask } from '@tt/common-ui';
 import { onlyText } from '@tt/common-ui';
 import { selectPosts, selectTest } from '@tt/data-access';
+import { AddressInput } from '../../ui/address-input/address-input';
 
 
 
@@ -39,7 +40,7 @@ const validateStartEror: ValidatorFn = (control: AbstractControl) => {
 
 @Component({
   selector: 'app-doctorform',
-  imports: [ReactiveFormsModule, MaskitoDirective],
+  imports: [ReactiveFormsModule, MaskitoDirective, AddressInput],
   templateUrl: './doctor-form.component.html',
   styleUrl: './doctor-form.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
@@ -67,7 +68,8 @@ export class DoctorformComponent {
       service: new FormControl(dataService.start ,[Validators.required, validateStartEror]),
       week: new FormControl(this.week.weekdays),
       timedoctor: new FormControl(this.doctorTime.morning),
-      personData: new FormControl<boolean>(false)
+      personData: new FormControl<boolean>(false),
+      address: new FormControl<string>('')
     }
   )
 
