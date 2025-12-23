@@ -1,84 +1,78 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, forwardRef, inject, signal } from '@angular/core';
-import { ControlValueAccessor, FormArray, FormControl, FormGroup, FormRecord, FormsModule, NG_VALUE_ACCESSOR, ReactiveFormsModule } from '@angular/forms';
-import { DadataService } from '@tt/data-access';
-import { debounceTime, map, switchMap, tap } from 'rxjs';
-import { AsyncPipe } from '@angular/common';
-import { DadataSuggestion } from '@tt/data-access';
+import { ControlValueAccessor, FormControl, FormsModule, NG_VALUE_ACCESSOR, ReactiveFormsModule } from '@angular/forms';
+import { TtInput } from "../tt-input/tt-input";
+import { CommonModule } from '@angular/common';
+import { DadataService } from '@tt/data-access'
+import { debounceTime, switchMap, tap } from 'rxjs';
 
 @Component({
   selector: 'lib-address-input',
-  imports: [ReactiveFormsModule, FormsModule, AsyncPipe],
+  imports: [TtInput, FormsModule, ReactiveFormsModule, CommonModule],
   templateUrl: './address-input.html',
   styleUrl: './address-input.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
-      useExisting: forwardRef(() => AddressInput),
-      multi: true
+      multi: true,
+      useExisting: forwardRef(() => AddressInput) 
     }
   ]
 })
 export class AddressInput implements ControlValueAccessor {
 
-  address = new FormControl()
+  innerSearchControl = new FormControl()
 
-  resultAddress = new FormGroup({
-    city: new FormControl<string>(''),
-    street: new FormControl<string>(''),
-    house: new FormControl<string>(''),
-  })
+  onChange = (city: string) => {}
 
-  listAddressFlag = signal<number>(0)
+  onTouched = () => {}
 
+  #dadataService = inject(DadataService)
 
-  onChange = (address: DadataSuggestion) => {};
-
-  onTouched = () => {};
-
-  dadataService = inject(DadataService)
+  isDropdownOpened = signal<number>(0)
 
   cdr = inject(ChangeDetectorRef)
 
 
-  listAddressData$ = this.address.valueChanges
-    .pipe(
+  suggestions$ = this.innerSearchControl.valueChanges
+    .pipe( 
+      debounceTime(500),
       switchMap(val => {
-        return this.dadataService.getSuggestion(val)
-      }),
-      tap((val) => this.listAddressFlag.set(val.length))
+        return this.#dadataService.getSuggestion(val)
+          .pipe(
+            tap(res => {
+              this.isDropdownOpened.set(res.length)
+            })
+          )
+      })
     )
 
-
-  writeValue(addres: string | null): void {
+  writeValue(city: string): void {
+    this.innerSearchControl.patchValue(city, {
+      emitEvent: false
+    })
   }
+
 
   registerOnChange(fn: any): void {
-    this.onChange = fn
-    
+    this.onChange = fn;
   }
+
 
   registerOnTouched(fn: any): void {
     this.onTouched = fn
-    
   }
-  
+
+
   setDisabledState?(isDisabled: boolean): void {
   }
 
-  onAddresClick(addres: DadataSuggestion) {
-    this.address.patchValue(addres.unrestricted_value)
-    this.resultAddress.patchValue({
-      city: addres.data.city,
-      street: addres.data.street,
-      house: addres.data.house
+  onSuggestionPick(city: string) {
+    console.log(city)
+    this.isDropdownOpened.set(0)
+    this.innerSearchControl.patchValue(city, {
+      emitEvent: false
     })
-    setTimeout(()=> {
-      this.listAddressFlag.set(0)
-    }, 200)
-    
+    this.onChange(city)
   }
-
-
-
 }
