@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnDestroy } from '@angular/core';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { BehaviorSubject, catchError, combineLatest, concatMap, debounceTime, distinctUntilChanged, exhaustMap, find, first, firstValueFrom, forkJoin, from, fromEvent, interval, lastValueFrom, map, mergeMap,
   Observable, of, pairwise, pipe, reduce, ReplaySubject, scan, skip, Subject, switchMap, take, takeUntil, tap, throttleTime, throwError, timer, 
   withLatestFrom} from 'rxjs';
@@ -43,6 +44,8 @@ export class RxJs implements OnDestroy {
 
   // }
 
+
+  // Метод отписки
   constructor() {
     let i = 0
     timer(0, 500)
@@ -51,7 +54,10 @@ export class RxJs implements OnDestroy {
           i++
           return val += i
         }),
-        takeUntil(this.destroy$)
+        takeUntil(this.destroy$),
+        //Можно так если в конструкторе
+        takeUntilDestroyed()
+        
       )
       .subscribe(val => {
         console.log(val)
