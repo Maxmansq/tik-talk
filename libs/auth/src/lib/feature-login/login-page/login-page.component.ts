@@ -14,15 +14,16 @@ import { TtInput } from '@tt/common-ui'
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class LoginPageComponent implements OnInit {
+  
   authService = inject(AuthService)
   router = inject(Router)
-
   isPasswordVisible = signal<boolean>(false)
 
   form = new FormGroup({
     username: new FormControl(null, Validators.required),
     password: new FormControl(null, Validators.required)
   })
+
 
   ngOnInit(): void {
     this.form.valueChanges.subscribe(val => {
