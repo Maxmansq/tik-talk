@@ -1,0 +1,16 @@
+:host {
+  display: grid;
+  grid-gap: 20px;
+  height: calc(100vh - 160px);
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+}
+
+.profile-card__wrapper {
+  display: grid;
+  grid-gap: 8px;
+}

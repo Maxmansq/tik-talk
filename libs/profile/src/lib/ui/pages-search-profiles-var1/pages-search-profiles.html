@@ -1,0 +1,16 @@
+<div class="profile-card__wrapper" >
+  @for (profile of profiles(); track profile.id; let last = $last) {
+    <app-profile-card
+      [profile]="profile"
+    ></app-profile-card>
+    @if (last) {
+      @defer (on viewport) {
+      <lib-infinite-scroll-trigger
+        (loaded)="timeToFeach()">
+      </lib-infinite-scroll-trigger>
+      } @placeholder {
+      <div></div>
+      } 
+    } 
+  } 
+</div>

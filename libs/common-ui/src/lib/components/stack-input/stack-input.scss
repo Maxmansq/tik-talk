@@ -1,0 +1,67 @@
+
+
+
+.stack-control {
+  display: flex;
+  border-bottom: 1px solid var(--light-color);
+  background: var(--dark-color);
+  width: 100%;
+  padding: 12px 0px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+
+
+.stack-btn__delete {
+  background: none;
+  border: none;
+  place-content: center;
+  cursor: pointer;
+
+}
+
+.stack-tag {
+  display: inline-flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.stack-ghost-input {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: 'JetBrains Mono', sans-serif;
+  color: var(--light-color);
+  border: none;
+  background: none;
+  outline: none;
+}
+
+
+:host.disabled {
+  .stack-control {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+}
+
+
+
+
+// .tt-form-input {
+//   font-size: 14px;
+//   font-style: normal;
+//   font-weight: 400;
+//   line-height: 21px;
+//   border: none;
+//   border-bottom: 1px solid var(--light-color);
+//   height: 33px;
+//   background: none;
+//   color: white;
+//   border-radius: 4px;
+
+//   &:focus-visible {
+//     outline: 1px solid var(--primary-color);
+//   }
+// }

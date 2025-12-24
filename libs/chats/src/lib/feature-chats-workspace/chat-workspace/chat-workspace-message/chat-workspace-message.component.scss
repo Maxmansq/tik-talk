@@ -1,0 +1,48 @@
+:host {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  grid-gap: 12px;
+  justify-self: start;
+  
+}
+
+:host.is-mine {
+  grid-template-columns: 1fr 32px ;
+  justify-self: end;
+
+  .message-conteiner{
+    order: -1;
+  }
+
+  .heder-wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+
+  .message-text {
+    background: var(--primary-color);
+    color: var(--dark-color);
+  }
+
+  .time-message {
+    order: -1;
+  }
+
+}
+
+.heder-wrapper {
+  display: flex;
+  font-size: 12px;
+  gap: 4px;
+}
+
+.message-text {
+  padding: 8px 16px;
+  background: var(--message-color);
+  font-weight: 500;
+  color: var(--light-color);
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}

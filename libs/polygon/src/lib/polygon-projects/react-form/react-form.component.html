@@ -1,0 +1,71 @@
+<form
+  [formGroup]="form"
+  (ngSubmit)="onSubmit($event)">
+    <h4 class="mb20">Информация о доставке</h4>
+  <label class="login-comtrol-label">
+    Тип получателя
+    <select class="input-control" formControlName="type">
+      <option [value]="ReciverType.LEGAL">Юридическое лицо</option>
+      <option [value]="ReciverType.PERSON">Физическое лицо</option>
+    </select>
+  </label>
+
+  <label class="login-comtrol-label">
+    Имя
+    <input class="input-control" type="text" formControlName="name">
+  </label>
+  @if (form.controls.name.touched && form.controls.name.hasError('required')) {
+    <small>Это поле обязательно!!!</small>
+  }
+
+  @if (form.value.type === 'LEGAL') {
+    <label class="login-comtrol-label">
+    ИНН
+    <input class="input-control" type="text" formControlName="inn">
+  </label>
+  } @else {
+
+    <label class="login-comtrol-label">
+    Фамилия
+    <input class="input-control" type="text" formControlName="lastname">
+  </label>
+  }
+  <div class="info-address-wrapper">
+    <h4 class="mb20">Информация о доставке</h4>
+  <button class="set-address" (click)="addAddress()">+</button>
+  </div>
+  @for (group of form.controls.addresses.controls; track $index; let i = $index) {
+  <div class="address-control mb20" [formGroup]="group">
+    <label class="login-comtrol-label">
+    Город
+    <input class="input-control" type="text" formControlName="city">
+  </label>
+  <label class="login-comtrol-label">
+    Улица
+    <input class="input-control" type="text" formControlName="street">
+  </label>
+  <label class="login-comtrol-label">
+    Дом
+    <input class="input-control" type="text" formControlName="home">
+  </label>
+  <label class="login-comtrol-label">
+    Квартира
+    <input class="input-control" type="text" formControlName="aport">
+  </label>
+  <button class="buttom__login max-calomn" (click)="deleteAddress(i)">Удалить</button>
+  </div>
+  }
+
+  <div class="divilery-wrapper" [formGroup]="form.controls.feature">
+    <h4 class="mb20">Способ доставки</h4>
+    @for (control of form.controls.feature.controls | keyvalue: sort; track control; let i = $index) {
+      <label>
+        {{ feacure[i].lable }}
+        <input type="checkbox" [formControlName]="control.key">
+      </label>
+    }
+  </div>
+
+
+  <button class="buttom__login">Подтверить</button>
+</form>

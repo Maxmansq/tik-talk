@@ -1,0 +1,17 @@
+:host {
+  display: grid;
+  grid-template-columns: 112px 1fr;
+  grid-gap: 24px;
+}
+
+.profile-avatar-haeder {
+  height: 112px;
+  width: 112px;
+  border-radius: 50%;
+}
+
+.user-and-name {
+  text-align: left;
+
+}
+
