@@ -16,6 +16,7 @@ import { map, startWith, switchMap } from 'rxjs';
 export class ChatsListComponent {
   chatsService = inject(ChatsService)
   filterChatsControl = new FormControl('')
+  
   chatsList$ = this.chatsService.getMychats()
     .pipe(
       switchMap(chats => {

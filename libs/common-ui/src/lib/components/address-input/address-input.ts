@@ -22,7 +22,6 @@ import { debounceTime, switchMap, tap } from 'rxjs';
 export class AddressInput implements ControlValueAccessor {
 
   innerSearchControl = new FormControl()
-
   resultAddressForm = new FormGroup({
     city: new FormControl('', Validators.required),
     street: new FormControl('', Validators.required),
@@ -30,13 +29,9 @@ export class AddressInput implements ControlValueAccessor {
   })
 
   onChange = (city: string) => {}
-
   onTouched = () => {}
-
   #dadataService = inject(DadataService)
-
   isDropdownOpened = signal<number>(0)
-
   cdr = inject(ChangeDetectorRef)
 
 

@@ -26,9 +26,7 @@ export class SidebarComponent implements OnInit {
   countUnreadMessage = this.chatService.unreadMessagesCount
 
   destroyRef = inject(DestroyRef)
-
   wsSubscribe!: Subscription
-
 
   menuItems = [
     {

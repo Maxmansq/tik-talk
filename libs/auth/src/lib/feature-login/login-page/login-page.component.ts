@@ -14,7 +14,7 @@ import { TtInput } from '@tt/common-ui'
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class LoginPageComponent implements OnInit {
-  
+
   authService = inject(AuthService)
   router = inject(Router)
   isPasswordVisible = signal<boolean>(false)
@@ -33,7 +33,6 @@ export class LoginPageComponent implements OnInit {
 
   
   onSubmit(event: Event) {
-
     if (this.form.valid) {
       console.log(event)
 

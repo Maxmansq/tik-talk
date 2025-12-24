@@ -21,16 +21,10 @@ export class TtInput implements ControlValueAccessor{
 
   type = input<'text' | 'password'>('text')
   placeholder = input<string>()
-
   cdr = inject(ChangeDetectorRef)
-
-
   value: string | null = null
-
   onChange: any
-
   disabled = signal<boolean>(false)
-
   onTouched: any
 
 

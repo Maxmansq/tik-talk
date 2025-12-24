@@ -61,11 +61,9 @@ export class StackInput implements ControlValueAccessor {
 
 
   onChange(value: string[] | null) {
-
   }
 
   onTouched() {
-    
   }
 
   onTagDelete(id: number) {

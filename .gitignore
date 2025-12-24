@@ -49,8 +49,6 @@ __screenshots__/
 Thumbs.db
 
 .angular
-
-
-
 .nx/cache
 .nx/workspace-data
+package-look.json
